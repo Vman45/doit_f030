@@ -1,5 +1,5 @@
 body {
-
+	margin-top: 15px;
 	background-color: #FFFFFF;
 }
 
@@ -21,3 +21,4 @@ a:active {
 	height: 24px;
 	border: none;
 }
+
