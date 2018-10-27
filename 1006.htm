@@ -29,11 +29,11 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: METEX DMM Multimeter
 </p>
 <p><img src="image/deutsch.gif" border=0 width="35" height="22"></p><br>
 <p>Die genaue Bezeichnungen der Buchsenbelegung des Multimeters im
-mitgelieferten Handbuch sind ziemlich irref&uuml;hrend da diese
+mitgelieferten Handbuch sind ziemlich irreführend da diese
 Beschreibung offensichtlich wohl von Laien gemacht wurde. Zudem passt
-die Kabelbelegung im Urzustand leider nur, wie &uuml;blich, an einen
+die Kabelbelegung im Urzustand leider nur, wie üblich, an einen
 PC. Zumindest war das hier so. Es ging erst als ich mit das Kabel
-passend umgel&ouml;tet hatte
+passend umgelötet hatte
 <br>
 </p>
 <p>Die genaue Pinbelegung des Steckers:
@@ -42,8 +42,8 @@ passend umgel&ouml;tet hatte
 <pre>
 Pinbelegung und Beschreibung METEX M-46xx. Die Seitenansicht.
 
-           Oberseite des Ger&auml;tes
-Me&szlig;-Buchsen                      Display
+           Oberseite des Gerätes
+Meß-Buchsen                      Display
 ----------------------------------------
            o   DTR
            o   DSR
@@ -54,13 +54,13 @@ Me&szlig;-Buchsen                      Display
 
 </pre>
 <p>Wie mir nach Anschauen des Schaltplanes klar wurde, erwartet das
-Multimeter an dem mit &quot;RX&quot; bezeichneten Anschlu&szlig; eine
+Multimeter an dem mit &quot;RX&quot; bezeichneten Anschluß eine
 negative Hilfsspannung. Diese Hilfsspannung wird durch Verbinden von
 RX (Multimeter) mit RTS (Computer) und Ausschalten von RTS am Computer
 hergestellt.
 </p>
-<p>Die richtige Verbindung der Anschl&uuml;sse des DMM mit der RS232
-am Atari ist nun wie folgt, dazu &ouml;ffen Sie den DB25 Stecker des
+<p>Die richtige Verbindung der Anschlüsse des DMM mit der RS232
+am Atari ist nun wie folgt, dazu öffen Sie den DB25 Stecker des
 Kabels:
 <br>
 <br>
@@ -77,16 +77,16 @@ Atari </tt>
 <p>Die Pin-Nummern beziehen sich auf einen 25-poligen Stecker am
 Atari. Das mit dem Multimeter mitgelieferte Kabel ist also
 entsprechend zu modifizieren. Das Funktiniert hier schon seit Jahren.
-F&uuml;r Atari-Computer mit DB9 Buchse als serielle Schnittstelle
+Für Atari-Computer mit DB9 Buchse als serielle Schnittstelle
 sehen Sie bitte unter Stecker, Verbindungskabel oder bei den
 <a href="0c0702.htm" target="UDOcon">Modemkabel</a> nach. Hier finden Sie die korrekte Pinbelegung der 9
 poligen seriellen Schnittstelle des Atari.
 <br>
 <br>
 </p>
-<p>Nochmal die Pinbelegung f&uuml;r die 9- und 25 polige
-Anschlu&szlig;buchse am Atari im vergleich zu einen VOLTKRAFT
-Me&szlig;ger&auml;t mit ebenfalls serieller Schnittstelle.
+<p>Nochmal die Pinbelegung für die 9- und 25 polige
+Anschlußbuchse am Atari im vergleich zu einen VOLTKRAFT
+Meßgerät mit ebenfalls serieller Schnittstelle.
 </p>
 <pre>
   Stift-     25-pol     9-pol    Bezeichnung
@@ -98,9 +98,9 @@ Me&szlig;ger&auml;t mit ebenfalls serieller Schnittstelle.
      O --------- 7-------- 5         GND
 
 </pre>
-<p>Folgende GFA-Basic-Programme m&ouml;ge als Beispiel dienen, wie
-Me&szlig;werte aus dem Metex DMM Multimeter ausgelesen werden
-k&ouml;nnen, prinzipbedingt k&ouml;nnen diese Programme auch auf
+<p>Folgende GFA-Basic-Programme möge als Beispiel dienen, wie
+Meßwerte aus dem Metex DMM Multimeter ausgelesen werden
+können, prinzipbedingt können diese Programme auch auf
 VOLTCRAFT Instrumente angewand werden.
 <br>
 </p>
@@ -118,7 +118,7 @@ REM
 REM                                 XBIOS 30: Ongibit
 REM                                 RTS ausschalten; Bit 3 von Port A setzen
 REM
-OPEN &quot;I&quot;,#1,&quot;AUX:&quot;                  ! Kanal &ouml;ffnen
+OPEN &quot;I&quot;,#1,&quot;AUX:&quot;                  ! Kanal öffnen
 REPEAT
     st_eingabe=0
     REPEAT
@@ -181,14 +181,14 @@ testen:
 47 POKE $FF8802,Iold_Rts%
 48 CLOSE
 49 END
-   ! Me&szlig;wert anfordern
+   ! Meßwert anfordern
         st_messwert=0
         REPEAT
-            st_messwert=BIOS(1,1)   ! Me&szlig;wert verf&uuml;gbar? BIOS 1: Bconstat
+            st_messwert=BIOS(1,1)   ! Meßwert verfügbar? BIOS 1: Bconstat
         UNTIL st_messwert&lt;&gt;0
-        a$=INPUT$(14,1)             ! Me&szlig;wert einlesen
+        a$=INPUT$(14,1)             ! Meßwert einlesen
         CLS
-        PRINT AT(1,1);a$;           ! Me&szlig;wert auf Bildschirm ausgeben
+        PRINT AT(1,1);a$;           ! Meßwert auf Bildschirm ausgeben
         PAUSE 50
         st_eingabe=BIOS(1,2)        ! Tatstatureingabe? BIOS 1: Bconstat
     UNTIL st_eingabe&lt;&gt;0
@@ -198,9 +198,9 @@ dum=XBIOS(29,&amp;X11110111)
 REM
 REM                                 XBIOS 29: Offgibit
 REM                                 RTS wieder einschalten;
-REM                                 Bit 3 von Port A l&ouml;schen
+REM                                 Bit 3 von Port A löschen
 REM
-CLOSE#1                             ! Kanal wieder schlie&szlig;en
+CLOSE#1                             ! Kanal wieder schließen
 END
 
 </pre>
@@ -212,8 +212,8 @@ END
 <br>
 </p>
 <p>Leitung an Pin 4 (RTS) des Sub-D-Steckers (bei mir gelb)
-abtrennen, dann klappt es. Zum Ausprobieren gen&uuml;gt ein beliebiges
-Terminal-Programm mit den Parametern: 1200 Bps, keine Parit&auml;t,
+abtrennen, dann klappt es. Zum Ausprobieren genügt ein beliebiges
+Terminal-Programm mit den Parametern: 1200 Bps, keine Parität,
 7bit, 2 Stopbits, kein Handshake.
 <br>
 </p>
@@ -228,7 +228,7 @@ Terminal-Programm mit den Parametern: 1200 Bps, keine Parit&auml;t,
 'Register restaurieren
 <br>
 </p>
-<p>Auf <a href="0305.htm" target="UDOcon">Hardware</a>-Ebene k&ouml;nnte Dir n&auml;mlich irgendein
+<p>Auf <a href="0305.htm" target="UDOcon">Hardware</a>-Ebene könnte Dir nämlich irgendein
 Programm, das auch den Soundchip adressiert (z.B.Crazy Sounds) in die
 Quere kommen.
 <br>
@@ -293,8 +293,8 @@ Quere kommen.
 <br>Hallo allerseits, endlich bin ich wieder online, und jetzt kann es
 auch mit dem Thermometer-Treiber losgehen. Weil ich das Proggi
 komplett in Assembler geschrieben habe und es deshalb entsprechend
-kurz ist, habe ich es einfach UU-coded an die Mail angeh&auml;ngt.
-Au&szlig;erdem gibt's noch eine kleine GFA-BASIC-Routine, die man
+kurz ist, habe ich es einfach UU-coded an die Mail angehängt.
+Außerdem gibt's noch eine kleine GFA-BASIC-Routine, die man
 leicht in eigene Programme integrieren kann.
 <br>
 </p>
@@ -314,33 +314,33 @@ _<a href="0305.htm" target="UDOcon">Hardware</a>_*Thermometer   2xNPN (z.B. BC54
                                        | \________________(11)
                                           c              Busy
 </pre>
-<p>Die mit 1,5V anliegenden Daten werden &uuml;ber Treiberstufen auf
+<p>Die mit 1,5V anliegenden Daten werden über Treiberstufen auf
 den normalerweise mit Pull-Ups versehenen Druckerport gegeben. Sollte
 das ausirgendeinem Grund nicht der Fall sein, sind die Leitungen 2
-(Data 0) und 11(Busy) &uuml;ber 4k7-Widerst&auml;nde an +5V (z.B. vom
+(Data 0) und 11(Busy) über 4k7-Widerstände an +5V (z.B. vom
 Joystickport) zu legen.
 <br>
 </p>
 <p><b> Software </b>
 <br>
 </p>
-<p>Zur Inbetriebnahme mu&szlig; lediglich derTreiber THERMO.PRG im
+<p>Zur Inbetriebnahme muß lediglich derTreiber THERMO.PRG im
 AUTO-Ordner oder manuell gestartet werden. Er benutzt die XBRA- und
 Cookie-Kennung 'THRM' (die Mail an Julian geht heute raus). Der
 Cookie-Wert zeigt auf eine Struktur aus 2 Words: Das erste
-(vorzeichenbehaftete) Word enth&auml;lt die Temperatur * 10 (also z.B.
-254 f&uuml;r 25.4 Grad). Steht dort allerdings 2550 (255 Grad...), ist
+(vorzeichenbehaftete) Word enthält die Temperatur * 10 (also z.B.
+254 für 25.4 Grad). Steht dort allerdings 2550 (255 Grad...), ist
 bei der Auswertung ein Fehler aufgetreten - dieser Fall sollte nur
 auftreten, wenn das Modul nicht angeschlossen ist oder noch keine
 Daten angekommen sind - das Thermometer liefert seine Daten
-standardm&auml;&szlig;ig nur alle 10sec. In der GFA-BASIC-Routine habe
+standardmäßig nur alle 10sec. In der GFA-BASIC-Routine habe
 ich die Fehlererkennung noch erweitert:
 <br>Auch bei einem fehlenden Treiber oder gar einem fehlenden Cookie
-Jar wird eine Temperatur von 255 Grad zur&uuml;ckgegeben. Bis jetzt
-wird &uuml;brigens noch keine Fahrenheit-Auswertung unterst&uuml;tzt.
-Das zweite Word enth&auml;lt die 13 Bits vom Thermometer. D1 bis D13
-sind unver-&auml;ndert in den Bits 0 bis 12 enthalten. Diese Daten
-sind eigentlich nur f&uuml;r Erweiterungen wie Fahrenheit-Auswertung
+Jar wird eine Temperatur von 255 Grad zurückgegeben. Bis jetzt
+wird übrigens noch keine Fahrenheit-Auswertung unterstützt.
+Das zweite Word enthält die 13 Bits vom Thermometer. D1 bis D13
+sind unver-ändert in den Bits 0 bis 12 enthalten. Diese Daten
+sind eigentlich nur für Erweiterungen wie Fahrenheit-Auswertung
 sinnvoll, da auch in den Original-Daten nur die Temperatur enthalten
 ist.
 <br>
@@ -348,23 +348,23 @@ ist.
 <p><b> Ein Bug? </b>
 <br>
 </p>
-<p>Unter ung&uuml;nstigen Umst&auml;nden kommt es beim Einlesen der
-Temperaturdaten zu Abst&uuml;rzen. Dieses Problem ist bei mir bis
+<p>Unter ungünstigen Umständen kommt es beim Einlesen der
+Temperaturdaten zu Abstürzen. Dieses Problem ist bei mir bis
 jetzt nur im GFA-BASIC-Interpreter aufgetreten, und weil es so selten
-auftritt, konnte ich die Fehlerursachenoch nicht aufsp&uuml;ren. Ich
-&uuml;bernehme aber keine Haftung f&uuml;r verlorengege-gangene
+auftritt, konnte ich die Fehlerursachenoch nicht aufspüren. Ich
+übernehme aber keine Haftung für verlorengege-gangene
 Daten... Wie man im UUE gut sehen kann, ist der Cookie Jar (der bei
 Bedarf neu an-gelegt wird) im TEXT-Segment enthalten. Das schadet zwar
 nichts, kostetaber ein paar Bytes (egal - das kB ist noch nicht voll).
-In der n&auml;chsten Version wird er aber im BSS-Segment stehen.
+In der nächsten Version wird er aber im BSS-Segment stehen.
 <br>
 </p>
 <p><b> Rechtlicher Status </b>
 <br>
 </p>
-<p>Der Treiber ist Freeware und darf nur unver&auml;ndert beliebig
+<p>Der Treiber ist Freeware und darf nur unverändert beliebig
 oft weitergegebenwerden. Das GFA-BASIC-Programm dagegen ist
-Public-Domain und darf auch ver&auml;ndert werden vielleicht gibt's ja
+Public-Domain und darf auch verändert werden vielleicht gibt's ja
 auch daran noch etwas zu feilen.
 <br>
 </p>

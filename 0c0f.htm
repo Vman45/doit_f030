@@ -31,9 +31,9 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Jaguar Pad am Falcon
 <p>
 <br>
 </p>
-<p>An erster Stelle finden Sie Beispiele daf&uuml;r wie man das
+<p>An erster Stelle finden Sie Beispiele dafür wie man das
 JaguarPad am Atari Falcon per Software abfragt. Die Beispiele sind
-f&uuml;r PureC
+für PureC
 <br>
 <br>
 </p>
@@ -58,7 +58,7 @@ JAGUAR.PRJ
 
 MAIN.C
 1: */
-2: */Testprogramm f&uuml;r Jaguar Controller-Abfrage
+2: */Testprogramm für Jaguar Controller-Abfrage
 3: */
 4:
 5:      #include &lt;stdlib.h&gt;
@@ -106,16 +106,16 @@ MAIN.C
 
 JAGSTICK.H
 1: /*
-2:      /* Headerfile f&uuml;rs Abfragen der Jaguarjoypads
+2:      /* Headerfile fürs Abfragen der Jaguarjoypads
 3:      /*
 4:
 5:      typedef struct
 6:      {
-7:      int up,down,left,right : 1; /* Zust&auml;nde der Richtungen */
-8:      int fire_a,fire_b,fire_c : 1; /* Zust&auml;nde der Feuerkn&ouml;pfe */
-9:      int pause,option : 1; /* Zust&auml;nde von Option/Feuer */
+7:      int up,down,left,right : 1; /* Zustände der Richtungen */
+8:      int fire_a,fire_b,fire_c : 1; /* Zustände der Feuerknöpfe */
+9:      int pause,option : 1; /* Zustände von Option/Feuer */
 10:   int k1,k2,k3,k4,k5,k6,k7,k8,k9,k0,kr,ks: 1;
-11:     /* Zust&auml;nde der Tastatur am JoyPad */
+11:     /* Zustände der Tastatur am JoyPad */
 12:     /* kr = # und ks = * */
 13:     } JAGPAD;
 14:
@@ -145,7 +145,7 @@ JAGSTICK.C
 18:     /* liefert -1
 19:     wenn das Bit bit
 20:     in der Variable var
-21:     gel&ouml;scht ist */
+21:     gelöscht ist */
 22:
 23:     JAGPAD jpstatus[2];
 24:     /* Hier wird das Ergebnis gespeichert */
@@ -268,39 +268,39 @@ JAGSTICK.C
 </b>
 <br>
 </p>
-<p>Da&szlig; man den Jaguar-Controler in irgend einer Form auch an
-den Falcon oder STE anschlie&szlig;en kann ist naheliegend. Wie die
-Abfrage aber konkret geschehen mu&szlig;, wird hier kurz
-erl&auml;utert.
+<p>Daß man den Jaguar-Controler in irgend einer Form auch an
+den Falcon oder STE anschließen kann ist naheliegend. Wie die
+Abfrage aber konkret geschehen muß, wird hier kurz
+erläutert.
 <br>
 </p>
 <p>Jeder, der einen Jaguar und einen Falcon030 bzw. STE besitzt wird
-festgestellt haben, da&szlig; die analogen Joyports vollkommen
+festgestellt haben, daß die analogen Joyports vollkommen
 identisch sind. Wie man den Computern beibringt, den Controller auch
-auszuwerten, soll dieser Artikel zeigen. Nun, zun&auml;chst einmal ist
+auszuwerten, soll dieser Artikel zeigen. Nun, zunächst einmal ist
 man ja versucht, einfach diverse Spiele, die den erweiterten Joyport
-nutzten, auszuprobieren. Doch leider mu&szlig; man schnell
-feststellen, da&szlig; zwar irgendwelche Signale vom Computer
-empfangen werden, so da&szlig; der Protagonist des entsprechenden
+nutzten, auszuprobieren. Doch leider muß man schnell
+feststellen, daß zwar irgendwelche Signale vom Computer
+empfangen werden, so daß der Protagonist des entsprechenden
 Spielchens entweder an Orientierungslosigkeit leidet und rennt oder
-ziellos umherrennt und nicht dort hin, wohin man dr&uuml;ckt, oder er
-springt nicht, weil der gedr&uuml;ckte Feuerknopf nicht als solcher
+ziellos umherrennt und nicht dort hin, wohin man drückt, oder er
+springt nicht, weil der gedrückte Feuerknopf nicht als solcher
 erkannt wird. Also Fehlanzeige?
 <br>
 <br>
 </p>
-<p>&Uuml;berlegt und nachgez&auml;hlt...
+<p>überlegt und nachgezählt...
 <br>
 <br>
 </p>
 <p>Der Joyport hat ja nur 15 Pins, obwohl der Controller 21
-Schaltelemente hat. Nun, es mu&szlig; also einen Trick geben. Da war
+Schaltelemente hat. Nun, es muß also einen Trick geben. Da war
 doch noch etwas wie - klar, man kann die ext. Joyports als Ein- und
-Ausg&auml;nge benutzen. Damit kann man dann so etwas wie eine Matrix
+Ausgänge benutzen. Damit kann man dann so etwas wie eine Matrix
 implementieren, bei der man einfach dem Controller sendet, welchen
-Status der Tasten man gerne h&auml;tte - und zur&uuml;ck bekommt man
+Status der Tasten man gerne hätte - und zurück bekommt man
 einen entsprechenden Code. Genauso hat sich Atari das auch gedacht.
-Das Ganze ist wirklich &auml;hnlich wie die Sound-/DMA-Matrix
+Das Ganze ist wirklich ähnlich wie die Sound-/DMA-Matrix
 geschaltet. Matrizen ziehen sich also durch das gesamte Innenleben des
 Falcon. Kommen wir zum Wesentlichen.
 <br>
@@ -313,9 +313,9 @@ Falcon. Kommen wir zum Wesentlichen.
 <br>
 </p>
 <p>Diese wurden somit umdefiniert. $FFFF9200 wird zwar weiterhin
-f&uuml;r die Firebuttons verwendet, jedoch kommen die Buttons
-&quot;Option&quot; und &quot;Pause&quot; hinzu. Also mu&szlig;
-m&uuml;ssen hier f&uuml;nf Buttons mit 2 Bits codiert sein. Auch die
+für die Firebuttons verwendet, jedoch kommen die Buttons
+&quot;Option&quot; und &quot;Pause&quot; hinzu. Also muß
+müssen hier fünf Buttons mit 2 Bits codiert sein. Auch die
 restlichen 16 Schalter im Jaguar Controller sind mit jeweils nur 4 Bit
 im Register $FFFF9202 geschaltet. Der grobe Ablauf des Abfragens der
 JoyPorts bzw. des Controllers ist jetzt also in etwa wie folgt:
@@ -333,38 +333,38 @@ auslesen
 <p>
 <br>
 </p>
-<p>Dabei ist allerdings zu beachten, da&szlig; die entsprechend
-angef&uuml;hrten Register low-aktiv sind, d.h. ein gel&ouml;schtes Bit
-bedeutet &quot;gedr&uuml;ckt&quot; bzw. &quot;ist abzufragen&quot;.
-Kommen wir also zu der m&auml;chtigen Matrix, um die sich alles dreht.
+<p>Dabei ist allerdings zu beachten, daß die entsprechend
+angeführten Register low-aktiv sind, d.h. ein gelöschtes Bit
+bedeutet &quot;gedrückt&quot; bzw. &quot;ist abzufragen&quot;.
+Kommen wir also zu der mächtigen Matrix, um die sich alles dreht.
 <br>
 </p>
 <p>Um z.B. den Status von Feuerknopf B aus JoyPort B zu ermitteln,
 sendet man auf $FFFF9202 den Wert NOT(2^7)=$FF7F (d.h. man schreibt
 den Wert in das entsprechende Register), liest dann den Wert von
-$FFFF9200 aus, und &uuml;berpr&uuml;ft, ob das Bit 5 mit der
-Wertigkeit 2^5 gel&ouml;scht ist. Wenn dies der Fall ist, ist der
-Feuerknopf gedr&uuml;ckt.
+$FFFF9200 aus, und überprüft, ob das Bit 5 mit der
+Wertigkeit 2^5 gelöscht ist. Wenn dies der Fall ist, ist der
+Feuerknopf gedrückt.
 <br>
 </p>
-<p>Analog gilt f&uuml;r ein anderes Beispiel folgendes (diejenigen,
-die es begriffen haben, k&ouml;nnen diesen Absatz &uuml;berspringen):
+<p>Analog gilt für ein anderes Beispiel folgendes (diejenigen,
+die es begriffen haben, können diesen Absatz überspringen):
 Angenommen, wir wollen wissen, ob an Port A das Pad noch oben
-gedr&uuml;ckt ist. Senden wir also auf $FFFF9200 den Wert
+gedrückt ist. Senden wir also auf $FFFF9200 den Wert
 NOT(2^0)=$FFFE, dann fragen wir das Register $FFFF9200 auf
-Gel&ouml;schtheit des Bits 8 ab. Ist es gel&ouml;scht, so wurde nach
-oben gedr&uuml;ckt.
+Gelöschtheit des Bits 8 ab. Ist es gelöscht, so wurde nach
+oben gedrückt.
 <br>
 </p>
-<p>Da&szlig; die gesamten Zugriffe auf die <a href="0305.htm" target="UDOcon">Hardware</a>-Register im
+<p>Daß die gesamten Zugriffe auf die <a href="0305.htm" target="UDOcon">Hardware</a>-Register im
 &quot;Supervisormodus&quot; zu erfolgen haben, sollte wohl klar sein.
-Man sieht, es sind 4 Abfragen f&uuml;r das gesamte JoyPad notwendig,
+Man sieht, es sind 4 Abfragen für das gesamte JoyPad notwendig,
 aber das ist es doch wert, oder?
 <br>
 </p>
-<p>Noch eine Bitte an alte, die diese gro&szlig;artigen Pads jetzt
-supporten wollen: Bitte macht Eure Sache konfigurierbar, so da&szlig;
-Video-Erweiterungsbesitzer (wie ich) ausw&auml;hlen k&ouml;nnen, in
+<p>Noch eine Bitte an alte, die diese großartigen Pads jetzt
+supporten wollen: Bitte macht Eure Sache konfigurierbar, so daß
+Video-Erweiterungsbesitzer (wie ich) auswählen können, in
 welchen Port sie den Joystick stecken wollen, zumal es auch andere
 Erweiterungen gibt, die bestimmte Paddleports brauchen, z.B mit
 Screenblaster oder einer SpeedResoloution Karte.
@@ -372,8 +372,8 @@ Screenblaster oder einer SpeedResoloution Karte.
 </p>
 <p>Der abgedruckte Sourcecode soll die ganze Vorgehensweise noch
 etwas durchleuchten. Er wurde mit Pure C erstellt, und es wurde darauf
-geachtet, da&szlig; keine speziellen Befehle, die eine Portierung in
-andere Sprachen erschweren w&uuml;rden, verwendet wurden.
+geachtet, daß keine speziellen Befehle, die eine Portierung in
+andere Sprachen erschweren würden, verwendet wurden.
 <br>
 </p>
 <p>Carsten Tolkmit

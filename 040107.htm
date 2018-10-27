@@ -29,11 +29,11 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: 630V1 Keyboardchip
 </p>
 <p><img src="image/deutsch.gif" border=0 width="35" height="22"></p><br>
 <p>Der sog. Tastaturprozessor ist bei allen bisher bekannten original
-Keyboards f&uuml;r ST/TT/STe und Falcon ein Single-Mikrocomputer des
-Typs 6301V1 welcher zur 6800er Familie z&auml;hlt. Das Geh&auml;use
-ist 40 polig DIL. Der Chip enth&auml;lt eine 8-Bit CMOS CPU, 124 Byte
+Keyboards für ST/TT/STe und Falcon ein Single-Mikrocomputer des
+Typs 6301V1 welcher zur 6800er Familie zählt. Das Gehäuse
+ist 40 polig DIL. Der Chip enthält eine 8-Bit CMOS CPU, 124 Byte
 RAM, 4K ROM und einen 16-Bit Timer sowie eine serielle Schnittstelle.
-Dazu geh&ouml;ren ebenfalls noch vier I/O-Ports mit insgesammt
+Dazu gehören ebenfalls noch vier I/O-Ports mit insgesammt
 zusammen 29 Portleitungen.
 <br>
 </p>
@@ -89,38 +89,38 @@ PIN    FUNKTION   ST/FALCON
 <br>
 </p>
 <p>Der 630V1 kennt insgesammt 8 Betriebsarten (0-7). Diese
-m&uuml;ssen w&auml;hrend dem Reset (PowerOn) eingestellt. Im Atari
-l&auml;uft der 630V1 immer in Modus 7. Zur Auswahl werden die drei
+müssen während dem Reset (PowerOn) eingestellt. Im Atari
+läuft der 630V1 immer in Modus 7. Zur Auswahl werden die drei
 Leitungen, Leitung 0-2, des Port 2 benutzt. An den Bits 1 und 2
-h&auml;ngen aber auch die Maus-Tasten, daher diese
-Umschaltm&ouml;glichkeit. F&uuml;r Atari wird der Betriebsmodus fest
-&uuml;ber 3 PullUp-Widerst&auml;nde eingestellt.
+hängen aber auch die Maus-Tasten, daher diese
+Umschaltmöglichkeit. Für Atari wird der Betriebsmodus fest
+über 3 PullUp-Widerstände eingestellt.
 <br>
 </p>
 <p>Dieser Microcontroller kann auch mit externem Speicher
 ausgestattet werden. Dazu werden einige Portleitungen zu
-Adressleitungen umfunktioniert. Im Atari gibt es daf&uuml;r leider
-keinen extra Speicher. Daher erfolgt ein Absturz. Der Modus l&auml;sst
-sich nachtr&auml;glich nicht mehr &auml;ndern.
+Adressleitungen umfunktioniert. Im Atari gibt es dafür leider
+keinen extra Speicher. Daher erfolgt ein Absturz. Der Modus lässt
+sich nachträglich nicht mehr ändern.
 <br>
 </p>
 <p>Die Portleitungen P10-P17 sowie P22-P31 bilden die
 Multiplex-Matrix die zur mechanischen Anordnung der bekannten
 Atari-Tastatur passt. P22-P31 bilden hierbei die vertikalen Leitungen
-w&auml;hrend P10-P17 die horizontalen Leitungen betreibt.
+während P10-P17 die horizontalen Leitungen betreibt.
 (Adress-Datenleitungen) An jeweils einem Knotenpunkt befindet sich
 eine einzelnen Taste die in Kombination mit anderen Tasten u.U auch
 eine Mehrfachfunktion haben kann. P23-P24 wird dazu benutzt um mit der
-Keybord-ACIA im Falcon kommunizieren zu k&ouml;nnen. Alle Daten werden
-hierbei seriell mit 7812.5 Bit/Sec &uuml;bertragen.
+Keybord-ACIA im Falcon kommunizieren zu können. Alle Daten werden
+hierbei seriell mit 7812.5 Bit/Sec übertragen.
 <br>
 </p>
-<p>Bisher sind alle Platinen der Atari-Keyboards v&ouml;llig
+<p>Bisher sind alle Platinen der Atari-Keyboards völlig
 identisch so das jedes <a href="0c02.htm" target="UDOcon">Keyboard</a> mit jedem Atari Computer verwendet
 werden kann.
 <br>
 </p>
-<p>Beachten Sie bitte stets die entsprechende Anschlu&szlig;folge!
+<p>Beachten Sie bitte stets die entsprechende Anschlußfolge!
 <br>
 </p>
 <p>

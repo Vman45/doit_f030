@@ -33,13 +33,13 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: 68030 CPU
 </p>
 <p>Der 68030 hat zwei Leitungen SIZ0, SIZ1, womit er der Peripherie
 mitteilt, wo, wie und wann Daten auf welchen Busleitungen anliegen.
-Diese Signale sind nicht wie f&auml;lschlich oft zu lesen, ist zur
-Steuerung der CPU gedacht und sind somit auch keine Eing&auml;nge! Es
-sind Ausg&auml;nge, mit denen unter anderem die CPU der Peripherie
+Diese Signale sind nicht wie fälschlich oft zu lesen, ist zur
+Steuerung der CPU gedacht und sind somit auch keine Eingänge! Es
+sind Ausgänge, mit denen unter anderem die CPU der Peripherie
 anzeigt, wo und wie Daten auf die Datenleitungen gelegt werden.
 <br>
 </p>
-<p>Folgende Kombination d&uuml;rfte dazu im Falcon aktiviert sein:
+<p>Folgende Kombination dürfte dazu im Falcon aktiviert sein:
 <br>
 </p>
 <pre>
@@ -54,7 +54,7 @@ CPU-Register: Bit    31-----23-----15-----7    0
                      Byte 0 Byte 1 Byte 2 Byte 3
 
 </pre>
-<p>Die Signale /DSACKx sind CPU-Eing&auml;nge, &uuml;ber welche die
+<p>Die Signale /DSACKx sind CPU-Eingänge, über welche die
 die Peripheriebausteine der CPU mitteilen, in welcher Datenbusbreite
 die CPU die Daten auf den Datenbus zu legen hat und ferner werden
 immer alle 32 Datenleitungen benutzt. Beim Falcon 68030er
@@ -70,7 +70,7 @@ gelegt.
       1       1      Wartezyklen
 
 </pre>
-<p>&Uuml;ber den interen Multiplexer werden dann die Daten auf die
+<p>über den interen Multiplexer werden dann die Daten auf die
 externen Datenleitungen gelegt.
 </p>
 <p>

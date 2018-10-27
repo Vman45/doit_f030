@@ -28,15 +28,15 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Druckerschnittstelle
 <br>
 </p>
 <p><img src="image/deutsch.gif" border=0 width="35" height="22"></p><br>
-<p>Eine relativ gute Erkl&auml;rung dazu findet sich im ELV-Journal
-Nr. 53 oder im &quot;PC-Repair&quot; von Schn&uuml;ller/Veddeier.
+<p>Eine relativ gute Erklärung dazu findet sich im ELV-Journal
+Nr. 53 oder im &quot;PC-Repair&quot; von Schnüller/Veddeier.
 <br>
 </p>
 <p>Die Hauptanwendung der 8-Bit Parallelschnittstelle liegt in der
 Verbindung von einem Rechner mit einem passenden Drucker.
-Grunds&auml;tzlich kann anstelle eines Druckers auch ein beliebig
-anderes Ger&auml;t, das eine sog. &quot;Centronics-Schnittstelle&quot;
-besitzt, angeschlossen werden. Die Daten&uuml;bertragung erfolgt in
+Grundsätzlich kann anstelle eines Druckers auch ein beliebig
+anderes Gerät, das eine sog. &quot;Centronics-Schnittstelle&quot;
+besitzt, angeschlossen werden. Die Datenübertragung erfolgt in
 der gleichen Art.
 <br>
 </p>
@@ -47,35 +47,35 @@ der gleichen Art.
 Mit 'H' wird ein 'High'-Signal bezeichnet, dessen Pegel gegen GND
 gemessen zwischen +2.5V und +5V liegt. (Normal ca. 4.5V) Mit 'L' wird
 ein 'Low'-Signal bezeichnet, dessen Pegel lediglich zwischen 0V und
-0.7V liegen darf. H&ouml;here Pegel k&ouml;nnten als 'H' interpretiert
+0.7V liegen darf. Höhere Pegel könnten als 'H' interpretiert
 werden. Die Schnittstelle am Atari Falcon ist werksseitig
 Bi-direktional ausgelegt.
 <br>
 </p>
-<p>Um auf einem Drucker eben drucken zu k&ouml;nnen, m&uuml;ssen
+<p>Um auf einem Drucker eben drucken zu können, müssen
 bestimmte Leitungen der Parallel-Schnittstelle des Falcons mit eben
 dem zu verwendeten Drucker verbunden werden. I.d.R. werden hierzu
 fertige Kabel benutzt, die u.a. auch im Lieferumfang des Druckers zu
-finden sein k&ouml;nnen.
+finden sein können.
 <br>
 </p>
 <p>An allen Atari-Computern sollten sie &quot;Epson-Kompatible&quot;
 Drucker verwenden. Neuere Drucker mit der Bezeichnung &quot;Windows
-Plug &amp; Play&quot; m&uuml;ssen an der Atari-Schnittstelle nicht
+Plug &amp; Play&quot; müssen an der Atari-Schnittstelle nicht
 unbedingt arbeiten! Fragen Sie vor dem Kauf eines neuen Druckers ihren
-Fachh&auml;ndler genau!
+Fachhändler genau!
 <br>
 </p>
 <p>Alle Drucker besitzen an den 8 Datenleitungen sog.
-Pullup-Widerst&auml;nde. I.d.R. sind diese Widerst&auml;nde ca.
-3.3KOhm gro&szlig;. Kleinere Widerst&auml;nde k&ouml;nnen
-Atari-Computer -den internen Soundchip Port B- rasch besch&auml;digen.
-Bei einer St&ouml;rung gehen die Ausgangsports des Chips in den
-&Uuml;berlastschutz; nach einem Reset des Computers oder einem
+Pullup-Widerstände. I.d.R. sind diese Widerstände ca.
+3.3KOhm groß. Kleinere Widerstände können
+Atari-Computer -den internen Soundchip Port B- rasch beschädigen.
+Bei einer Störung gehen die Ausgangsports des Chips in den
+überlastschutz; nach einem Reset des Computers oder einem
 Abschalten und erneuten Einschalten sollte er wieder funktionieren.
 Allerdings klappt das auch nicht immer, der Chip ist dann irreparabel
-besch&auml;digt und mu&szlig; leider ausgetauscht werden. Wie auch bei
-bisher allen Atari-Computern werden die Signale f&uuml;r die
+beschädigt und muß leider ausgetauscht werden. Wie auch bei
+bisher allen Atari-Computern werden die Signale für die
 Druckerschnittstelle auch beim <a href="0302.htm" target="UDOcon">Falcon F030</a> komplett vom sog. Soundchip
 erzeugt. Es kommt hier ein YM-3439 (PSG) des Herstellers Yamaha zur
 Verwendung. Siehe Pin und <a href="030805.htm" target="UDOcon">Ersatzteile</a>. Meines Wissens arbeitet der
@@ -86,42 +86,42 @@ Rechner auch nur genau mit diesem Chiptyp korrekt.
 <br>
 <br>
 </p>
-<p>Die 8 Datenleitungen laufen als Bus (PSG7) &uuml;ber jeweils einen
+<p>Die 8 Datenleitungen laufen als Bus (PSG7) über jeweils einen
 T-Filter; das sind die Bauteile L15-L23 direkt hinter der DB25-Buchse
 auf dem Mainboard, ungepuffert bis an den Port B des Soundchips. Der
-Soundchip tr&auml;gt die Bezeichung U17 auf dem Falcon-Mainboard.
+Soundchip trägt die Bezeichung U17 auf dem Falcon-Mainboard.
 <br>Die Datenleitungen treten hier an Pin 1 - Pin 8, direkt am Chip,
 (IOB7-IOB0) in genau der gleichen Reihenfolge wieder zum Vorschein.
-Pin 17 des Druckeranschlu&szlig; (J4) -also das SELECT-Signal- kommt
-&uuml;ber das T-Filter L19 zum Pin 25 (IO0) des MC68901; das ist
+Pin 17 des Druckeranschluß (J4) -also das SELECT-Signal- kommt
+über das T-Filter L19 zum Pin 25 (IO0) des MC68901; das ist
 Bauteil U31, welches auch das Select-Signal erzeugt.
 <br>
 </p>
 <p><b> STROBE-Signal </b>
-<br>STROBE kommt &uuml;ber das T-Filter L14 von Pin 11 (IOA5) des
+<br>STROBE kommt über das T-Filter L14 von Pin 11 (IOA5) des
 YM-3439 und liegt somit an Pin 1 der Druckerschnittstelle (J4) an.
 <br>
 </p>
 <p><b> BUSY-Signal </b>
-<br>Das BUSY-Signal, Pin 11 l&auml;uft &uuml;ber die T-Filterspule
+<br>Das BUSY-Signal, Pin 11 läuft über die T-Filterspule
 L25, einem 3.3K Pullup Widerstand bis nach Pin 25 von U31.
 <br>
 </p>
 <p><b> AKNOWLEDGE </b>
-<br>ACKNOWLEDGE, Pin 10 der Druckerschnittstelle f&uuml;hrt &uuml;ber
+<br>ACKNOWLEDGE, Pin 10 der Druckerschnittstelle führt über
 L24 zu Pin 26 von U31 (IO1).
 <br>
 </p>
 <p>
-<br>Deutlich also auch so zu sehen, da&szlig; Sie eine unbedachte
+<br>Deutlich also auch so zu sehen, daß Sie eine unbedachte
 Bastelei an der Druckerschnittstelle des Falcon auf jeden Fall einen
 Soundchip kostet. Es gibt keinen Buffer, keinen Hardwaretreiber
-f&uuml;r diesen Port. Aller Regel nach reicht die Treiberleisung der
-Chipports f&uuml;r eben besagte 3.3KOhm-Pullup Widerst&auml;nde und
-ein Druckerkabel mit einer L&auml;nge von bis maximal 5 Meter.
+für diesen Port. Aller Regel nach reicht die Treiberleisung der
+Chipports für eben besagte 3.3KOhm-Pullup Widerstände und
+ein Druckerkabel mit einer Länge von bis maximal 5 Meter.
 <br>
 </p>
-<p>L&auml;ngere Druckerkabel ben&ouml;tigen auf alle F&auml;lle einen
+<p>Längere Druckerkabel benötigen auf alle Fälle einen
 Hardwaretreiber.
 <br>Siehe Druckertreiber.
 <br>
@@ -129,12 +129,12 @@ Hardwaretreiber.
 <p>Also wie bei den alten STs, keine Verbesserung, wie gehabt.
 <br>
 <br>
-<br><b>Erkl&auml;rung der wenigen Schnittstellensignale</b>
+<br><b>Erklärung der wenigen Schnittstellensignale</b>
 </p>
 <dl>
 <dt><b>STROBE (STB)</b></dt><dd> Ein vom Rechner kommendes Signal zur Syncronisation der
-Daten&uuml;bertragung in den Drucker.
-<br>Das Signal f&uuml;hrt H-Pegel, wobei Daten eingelesen werden, wenn
+Datenübertragung in den Drucker.
+<br>Das Signal führt H-Pegel, wobei Daten eingelesen werden, wenn
 STROBE auf L-Pegel geht. Der Strobe Impuls muss mindestens 0.5 S auf
 L-Pegel liegen.
 <br>
@@ -144,7 +144,7 @@ L-Pegel liegen.
 <br>
 <br>&nbsp;
 <dt><b>BUSY</b></dt><dd> Signal wird vom Drucker generiert und zeigt dem Computer mit
-einem H-Pegel an, da&szlig; gerade arbeitet wird; also keine Daten
+einem H-Pegel an, daß gerade arbeitet wird; also keine Daten
 geschickt werden sollen.
 <br>L-Pegel signalisiert Empfangsbereitschaft.
 <br>H-Pegel:
@@ -168,19 +168,19 @@ Offline.
 <br>
 <br>&nbsp;
 <dt><b>AUTO FEED XT (AFXT)</b></dt><dd> Automatischer Zeilenvorschub nach jedem CR). Liegt AFXT auf L
-wird ein Zeilenvorschub (LF) angef&uuml;gt
+wird ein Zeilenvorschub (LF) angefügt
 <br>&nbsp;
-<dt><b>Signal-Masse (SG)</b></dt><dd> Masse, GND, logischer Bezugspunkt f&uuml;r alle Leitungen.
+<dt><b>Signal-Masse (SG)</b></dt><dd> Masse, GND, logischer Bezugspunkt für alle Leitungen.
 <br>
 <br>&nbsp;
-<dt><b>Geh&auml;use Masse (FG)</b></dt><dd> Schutzerde, Abschirmung, Leitungsschirm.
+<dt><b>Gehäuse Masse (FG)</b></dt><dd> Schutzerde, Abschirmung, Leitungsschirm.
 <br>
 <br>&nbsp;
-<dt><b>+5V</b></dt><dd> Positive Versorgungsspannung von 5V, Pr&uuml;fspannung.
+<dt><b>+5V</b></dt><dd> Positive Versorgungsspannung von 5V, Prüfspannung.
 <br>10 bis 50mA! (Keine Verwendung an allen Ataris)
 <br>
 <br>&nbsp;
-<dt><b>RESET / INIT / PRIME</b></dt><dd> Signal wird vom Computer generiert, es l&ouml;st einen
+<dt><b>RESET / INIT / PRIME</b></dt><dd> Signal wird vom Computer generiert, es löst einen
 <a href="0305.htm" target="UDOcon">Hardware</a>-Reset des Druckers aus. Es wechselt zur Initialisierung des
 Druckers vom H in den L Pegel. Es kann jederzeit vom Drucker empfangen
 werden.
@@ -189,7 +189,7 @@ werden.
 <dt><b>ERROR</b></dt><dd> Wird vom Drucker erzeugt und zeigt mit einem L-Pegel an:
 <br>- Papierende
 <br>- Drucker ist Offline
-<br>- Durch eine &Uuml;berlast (z.B. Druckkopf h&auml;ngt fest)
+<br>- Durch eine überlast (z.B. Druckkopf hängt fest)
 <br>
 <br>&nbsp;
 </dl>
@@ -197,14 +197,14 @@ werden.
 <br>
 </p>
 <p>Einige Signale werden von den Atari-Computern leider nicht
-ausgewertet. Eine d&auml;mliche Sparsamkeit bei der
-<a href="0305.htm" target="UDOcon">Hardware</a>-Herstellung. Es ist m&ouml;glich, auch bei Ataris an der
+ausgewertet. Eine dämliche Sparsamkeit bei der
+<a href="0305.htm" target="UDOcon">Hardware</a>-Herstellung. Es ist möglich, auch bei Ataris an der
 Centronics-Schnittstelle einen Scanner oder auch einen Eprommer zu
 betreiben.
 <br>
 <br>
 </p>
-<p><b> Pinbelegung des Druckeranschlu&szlig; </b>
+<p><b> Pinbelegung des Druckeranschluß </b>
 </p>
 <p>
 <br>
@@ -271,15 +271,15 @@ betreiben.
 <br>
 <br>
 </p>
-<p>Mehr Leitungen werden am Falcon auch nicht ben&ouml;tigt. Die +5V
+<p>Mehr Leitungen werden am Falcon auch nicht benötigt. Die +5V
 Leitung vom Drucker -manche besitzen eine solche Leitung- sollte am
-Falcon niemals angeschlossen werden, sie k&ouml;nnte hier leicht auf
+Falcon niemals angeschlossen werden, sie könnte hier leicht auf
 GND liegen!
 <br>
 </p>
 <p>Selbstredend - sollte sich jemand doch sein Kabel selber
-l&ouml;ten wollen: es wird nur abgeschirmte Steuerleitung verwendet!
-Der Kabelschirm sollte mit der jeweiligen Ger&auml;temasse verbunden
+löten wollen: es wird nur abgeschirmte Steuerleitung verwendet!
+Der Kabelschirm sollte mit der jeweiligen Gerätemasse verbunden
 werden.
 <br>
 <br>
@@ -288,34 +288,34 @@ werden.
 <p><b> Drucker arbeitet nicht </b>
 <br>
 </p>
-<p>Es ist mir bei noch keinem Atari passiert, da&szlig; der Soundchip
-keine Verbindung zur DB25 Buchse gehabt h&auml;tte, dennoch
-k&ouml;nnen Sie die Leiterbahnverbindungen -anhand der Beschreibung
+<p>Es ist mir bei noch keinem Atari passiert, daß der Soundchip
+keine Verbindung zur DB25 Buchse gehabt hätte, dennoch
+können Sie die Leiterbahnverbindungen -anhand der Beschreibung
 von oben- leicht verfolgen und eventuell mit einem Ohm-Meter
-nachpr&uuml;fen.
+nachprüfen.
 </p>
 <p>Aller Regel nach aber eine Zeitverschwenung.
 <br>
 </p>
-<p>In vielen F&auml;llen, nachdem Sie auch einen anderen Drucker an
-Ihrem Rechner ausprobiert haben, wird es so sein, da&szlig; kein
+<p>In vielen Fällen, nachdem Sie auch einen anderen Drucker an
+Ihrem Rechner ausprobiert haben, wird es so sein, daß kein
 STROBE-Signal mehr vorhanden ist, der Drucker also nicht registrieren
-kann, da&szlig; ihm eigentlich Daten geschickt werden.
+kann, daß ihm eigentlich Daten geschickt werden.
 <br>
 </p>
-<p>Der Rechner kommuniziert mit dem Drucker ausschliesslich &uuml;ber
+<p>Der Rechner kommuniziert mit dem Drucker ausschliesslich über
 STROBE, BUSY und AKNOWLEDE. Fehlt nur eines dieser Signale,
-schl&auml;gt die Verbindung fehl. Der Drucker reagiert nicht oder die
+schlägt die Verbindung fehl. Der Drucker reagiert nicht oder die
 Daten werden einfach in das Nirwana gesendet. Auch ist eher
-unwahrscheinlich, da&szlig; eine oder mehrere Datenleitungen
-besch&auml;digt werden im normalen Druckbetrieb; es sei denn, Sie sind
-eine experimentierfreudige Natur und l&ouml;ten oder stecken einfach
+unwahrscheinlich, daß eine oder mehrere Datenleitungen
+beschädigt werden im normalen Druckbetrieb; es sei denn, Sie sind
+eine experimentierfreudige Natur und löten oder stecken einfach
 alles Erreichbare an die Druckerschnittstelle.
 <br>
 </p>
 <p>Nehmen Sie irgendwelche Messungen an den Steuerleitungen des
-Druckerports vor, achten Sie darauf, da&szlig; der Drucker nicht
-angesteckt ist; er w&uuml;rde alle Anzeigen verf&auml;lschen.
+Druckerports vor, achten Sie darauf, daß der Drucker nicht
+angesteckt ist; er würde alle Anzeigen verfälschen.
 <br>
 </p>
 <p>Entgegen anderweitiger Publikationen besitzt der Falcon sehr wohl
@@ -323,56 +323,56 @@ das AKNOWLEDGE-Signal; es erscheint an Pin 10 der Schnittstelle und es
 wird definitiv auch benutzt!
 <br>
 </p>
-<p>Der Drucker meldet &uuml;ber die BUSY-Leitung, da&szlig; er
-besch&auml;ftigt ist!
-<br>BUSY ist daher ein Eingang f&uuml;r den Rechner. BUSY finden Sie
+<p>Der Drucker meldet über die BUSY-Leitung, daß er
+beschäftigt ist!
+<br>BUSY ist daher ein Eingang für den Rechner. BUSY finden Sie
 an Pin 11 der Schnittstellenbuchse und an Pin 25 von U31, das ist der
-MFP, MC 68901 wieder. Der MFP stopt &uuml;ber diesen Pin/Interrupt die
-Datenausgabe an den Drucker. Pr&uuml;fen Sie, ob der Drucker nicht
+MFP, MC 68901 wieder. Der MFP stopt über diesen Pin/Interrupt die
+Datenausgabe an den Drucker. Prüfen Sie, ob der Drucker nicht
 dauerhaft BUSY sendet!!
-<br>Im Falcon liegt die BUSY-Leitung &uuml;ber einen 3.3K (R29)
+<br>Im Falcon liegt die BUSY-Leitung über einen 3.3K (R29)
 Widerstand auf +5V.
 <br>
 </p>
-<p>&Auml;ndert sich dieser Widerstand, besteht die M&ouml;glichkeit,
-da&szlig; BUSY nicht mehr erkannt werden kann. BUSY ist LOW-Aktiv!
+<p>ändert sich dieser Widerstand, besteht die Möglichkeit,
+daß BUSY nicht mehr erkannt werden kann. BUSY ist LOW-Aktiv!
 <br>
 </p>
 <p>STROBE wird ebenfalls vom Yamaha Soundchip PSG YM 3439 (U17)
 erzeugt.
-<br>U17 gibt STROBE &uuml;ber Pin 11 aus; Sie finden STROBE an Pin 1
+<br>U17 gibt STROBE über Pin 11 aus; Sie finden STROBE an Pin 1
 der Schnittstellenbuchse wieder. STROBE ist High aktiv und toggelt im
 Gegentakt zu AKNOWLEDGE, wenn Daten an den Drucker gesendet werden.
-Ist das nicht der Fall, &uuml;berpr&uuml;fen Sie auf alle F&auml;lle
-Ihre komplette Druckersoftware und achten Sie darauf, da&szlig; z.B.
+Ist das nicht der Fall, überprüfen Sie auf alle Fälle
+Ihre komplette Druckersoftware und achten Sie darauf, daß z.B.
 NVDI korrekt installiert ist. Kommen Sie damit nicht weiter, sehen Sie
 kein STROBE-Signal, gibt auch das <a href="030801.htm" target="UDOcon">Testkit</a> keine konkrete Aussage,
-wechseln Sie den Soundchip einfach aus. L&ouml;ten Sie anstelle dessen
+wechseln Sie den Soundchip einfach aus. Löten Sie anstelle dessen
 einen Sockel mit gedrehten Pins ein, setzen Sie den neuen Chip einfach
-in den Sockel. Das spart beim n&auml;chsten Mal eine Menge Arbeit.
+in den Sockel. Das spart beim nächsten Mal eine Menge Arbeit.
 <br>
 </p>
 <p>Finden Sie am MFP heraus, ob der Drucker BUSY korrekt sendet.
 Ziehen Sie den Drucker danach wieder ab!
 <br>Meldet eine Software -nicht- bei einem erneuten Druckversuch das
-Fehlen des Druckers, k&ouml;nnen Sie sich mit dem Gedanken anfreunden,
-auch den MFP-Chip auswechseln zu d&uuml;rfen.
+Fehlen des Druckers, können Sie sich mit dem Gedanken anfreunden,
+auch den MFP-Chip auswechseln zu dürfen.
 <br>
 </p>
 <p>ACKNOWLEDE entspringt Pin 26 am MFP, es ist ein Steuersignal, das
 eng mit STROBE zusammenarbeitet; sendet der MFP kein AKNOWLEDGE,
 arbeitet auch der Drucker nicht. AKNOWLEDGE finden Sie an Pin 10 der
 Druckerschnittstelle aussen wieder. AKNOWLEDGE erscheint nur, wenn
-STROBE f&uuml;r mindestens 0.5 Sekunden von Low nach High gewechselt
+STROBE für mindestens 0.5 Sekunden von Low nach High gewechselt
 hat!
 <br>
 </p>
-<p>Wird der MFP oder der PSG ungew&ouml;hnlich warm, wechseln Sie
+<p>Wird der MFP oder der PSG ungewöhnlich warm, wechseln Sie
 diesen Chip einfach gleich aus; spart eine Menge Arbeit. Beide Chips
-bekommt man im einschl&auml;gigen (Atari) Ersatzteilhandel.
+bekommt man im einschlägigen (Atari) Ersatzteilhandel.
 <br>
 </p>
-<p>Bedenken Sie bitte auch, da&szlig; es zumeist einfacher ist,
+<p>Bedenken Sie bitte auch, daß es zumeist einfacher ist,
 zuerst den Drucker an einem anderen Computer, oder aber einen anderen
 Drucker an Ihrem vermeindlich defekten Computer zu testen. U.U. ist
 das wesentlich billiger und geht auch schneller. Ein Defekt am Drucker
@@ -389,18 +389,18 @@ kann auch einen Defekt am Computer nachgezogen haben.
 <br>
 </p>
 <p>Als &quot;Druckerkabel&quot; kommen am Falcon Kabel mit einer
-maximalen L&auml;nge von 5 Metern zur Verwendung. Die besten
-Ergebnisse erh&auml;lt man, wenn man sich mit 1,5-3 Metern langen
+maximalen Länge von 5 Metern zur Verwendung. Die besten
+Ergebnisse erhält man, wenn man sich mit 1,5-3 Metern langen
 Kabeln zufrieden geben kann.
 <br>
 </p>
-<p>Vergessen Sie 10 Meter Kabel! Sie gef&auml;hrden Ihren Soundchip!!
+<p>Vergessen Sie 10 Meter Kabel! Sie gefährden Ihren Soundchip!!
 <br>
 </p>
 <p>Reicht das nicht, sollten Sie unbedingt einen <a href="100f.htm" target="UDOcon">Druckerbuffer</a>
 einsetzen. Sie finden dazu eine sehr einfache Schaltung hier im Archiv
-unter Specials. Zwei ICs, ein Steckergeh&auml;use erledigen das ganz
-einfach, sofern Sie l&ouml;ten k&ouml;nnen.
+unter Specials. Zwei ICs, ein Steckergehäuse erledigen das ganz
+einfach, sofern Sie löten können.
 <br>
 </p>
 <p>

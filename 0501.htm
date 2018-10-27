@@ -39,10 +39,10 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Video - Register
 
 $FFFF8200 [R/W] ********
 $FFFF8201 [R/W] 76543210  ................................... VIDEO-BASE HI
-                          [ Schreib-Zugriff l&ouml;scht Video-Address Lo-Byte! ]
+                          [ Schreib-Zugriff löscht Video-Address Lo-Byte! ]
 $FFFF8202 [R/W] ********
 $FFFF8203 [R/W] 76543210  ................................... VIDEO-BASE MI
-                          [ Schreib-Zugriff l&ouml;scht Video-Address Lo-Byte! ]
+                          [ Schreib-Zugriff löscht Video-Address Lo-Byte! ]
 $FFFF8204 [R/W] ********
 $FFFF8205 [R/W] 76543210  ........................ VIDEO-ADDRESS-COUNTER HI
 $FFFF8206 [R/W] ********
@@ -52,7 +52,7 @@ $FFFF8209 [R/W] 76543210  ........................ VIDEO-ADDRESS-COUNTER LO
 $FFFF820A [R/W] _______0  ....................................... SYNC-MODE
                       ||
                       |+--Synchronisation [ 0:intern / 1:extern ]
-                      +---Vertikal-Frequenz [ Bit nicht ver&auml;nderbar! ]
+                      +---Vertikal-Frequenz [ Bit nicht veränderbar! ]
                           [ Monochrome-Monitor:0 / Farb-Monitor:1 ]
 $FFFF820B [R/W] ________
 $FFFF820C [R/W] ********
@@ -111,11 +111,11 @@ $FFFF823E [R/W] ********
 $FFFF823F [R/W] ********
 $FFFF8240 [R/W] ____3210  ................................. ST COLOR $00 HI
                     ||||
-                    ++++--Rot-Intensit&auml;t [ Bitwertigkeit: 0321 ]
+                    ++++--Rot-Intensität [ Bitwertigkeit: 0321 ]
 $FFFF8241 [R/W] 76543210  ..................................ST COLOR $00 LO
                 ||||||||
-                ||||++++--Blau-Intensit&auml;t [ Bitwertigkeit: 0321 ]
-                ++++------Gr&uuml;n-Intensit&auml;t [ Bitwertigkeit: 0321 ]
+                ||||++++--Blau-Intensität [ Bitwertigkeit: 0321 ]
+                ++++------Grün-Intensität [ Bitwertigkeit: 0321 ]
 $FFFF8242 [R/W] ____3210  ................................. ST COLOR $01 HI
 $FFFF8243 [R/W] 76543210  ...............................................LO
 $FFFF8244 [R/W] ____3210  ................................. ST COLOR $02 HI
@@ -147,7 +147,7 @@ $FFFF825D [R/W] 76543210  ...............................................LO
 $FFFF825E [R/W] ____3210  ................................. ST COLOR $0F HI
 $FFFF825F [R/W] 76543210  ...............................................LO
 $FFFF8260 [R/W] ______10  ................................... ST-SHIFT-MODE
-                      ||  [ Schreib-Zugriff &auml;ndert Linewide+Videocontrol! ]
+                      ||  [ Schreib-Zugriff ändert Linewide+Videocontrol! ]
                       ||
                       ||                                   $FF8210  $FF82C2
                       00--4 Bitplanes / 320 Pixel =======&gt;  $0050    $0000
@@ -163,11 +163,11 @@ $FFFF8263 [R/W] ________
 $FFFF8264 [R/W] ________  ..................................... H-SCROLL HI
                     ||||  [ Schatten-Register von $FFFF8265 ]
                     ++++--Pixel [ 0:normal / 1..15:Links-Verschiebung ]
-                          [ &Auml;nderung von Linewide NICHT erforderlich! ]
+                          [ änderung von Linewide NICHT erforderlich! ]
 $FFFF8265 [R/W] ____3210  ......................................H-SCROLL LO
                     ||||
                     ++++--Pixel [ 0:normal / 1..15:Links-Verschiebung ]
-                          [ &Auml;nderung von Linewide erforderlich! ]
+                          [ änderung von Linewide erforderlich! ]
 $FFFF8266 [R/W] _____210  ............................ FALCON-SHIFT-MODE HI
                      |||
                      ||+--True-Color [ 0:Aus / 1:Ein ]
@@ -220,8 +220,8 @@ $FFFF8286 [R/W] _______0  ........................ HORIZONTAL-BORDER-END HI
 $FFFF8287 [R/W] 76543210  .............................................. LO
 $FFFF8288 [R/W] ______10  ..................... HORIZONTAL-DISPLAY-BEGIN HI
                       |
-                      +-----0: Wert gilt f&uuml;r 1. Halbzeile
-                            1: Wert gilt f&uuml;r 2. Halbzeile
+                      +-----0: Wert gilt für 1. Halbzeile
+                            1: Wert gilt für 2. Halbzeile
 $FFFF8289 [R/W] 76543210  .............................................. LO
 $FFFF828A [R/W] _______0  ....................... HORIZONTAL-DISPLAY-END HI
 $FFFF828B [R/W] 76543210  .............................................. LO
@@ -232,13 +232,13 @@ $FFFF828F [R/W] 76543210  .............................................. LO
                           wenn Video-Control 1 Bit 4=1:
                           Gibt an wie lange nach Halbzeilenbeginn der HSync-
                           impule der vorherigen Halbzeile gehalten werden
-                          soll(beeinflu&szlig;t nur die mittleren 5 HSync-Impulse)
+                          soll(beeinflußt nur die mittleren 5 HSync-Impulse)
                           sonst:
                           keine Funktion.
 $FFFF8290 [R/W] _______0  ................................ HORIZONTAL-HH HI
 $FFFF8291 [R/W] 76543210  .............................................. LO
                           wenn Video-Control 1 Bit 4=1:
-                          s.o., beeinflu&szlig;t aber die ersten und letzten 5
+                          s.o., beeinflußt aber die ersten und letzten 5
                           HSync-Impulse.
                           sonst:
                           keine Funktion.
@@ -299,11 +299,11 @@ $FFFF82C1 [R/W] 76543210  .............................. VIDEO-CONTROL 1 LO
                 ||||||00--Monochrome-Monitor [ SM124 ]
                 ||||||01--Farb-Monitor [ SC1224 und SC1435 ]
                 ||||||10--VGA-Monitor
-                ||||||11--Fernsehger&auml;t
+                ||||||11--Fernsehgerät
                 |||||+----Video-Grundtakt: 0: 32MHz/1: 25.175MHz
                 |||||
                 ||||+-----15 Halbzeilen-HSyncs ab Beginn der unteren
-                ||||      Austastl&uuml;cke [ 0:Aus / 1:An ]
+                ||||      Austastlücke [ 0:Aus / 1:An ]
                 |||+------??Unbekannt??
                 ||+-------VSync-Flanke: 0:negativ(5V&gt;0V)/ 1:posetiv(0V&gt;5V)
                 |+--------HSync-Flanke: 0:negativ(5V&gt;0V)/ 1:posetiv(0V&gt;5V)
@@ -314,7 +314,7 @@ $FFFF82C3 [R/W] ____3210  .............................................. LO
                     |||+--Double-Scan [ 0:Aus / 1:Ein ]
                     ||+---Interlace [ 0:Aus / 1:Ein ]
                     ||
-                    ||    Setzt den Videovorteiler UND die Pixeltaktl&auml;nge:
+                    ||    Setzt den Videovorteiler UND die Pixeltaktlänge:
                     ||    - Vorteilerwert des Videosystems im Falcon-Mode
                     ||      bei Video-Mode-Controlbits: %10 (VGA-Mode)
                     00----4
@@ -326,7 +326,7 @@ $FFFF82C3 [R/W] ____3210  .............................................. LO
                     01----2
                     10----1
                     11----nute
-                    ||      STE-Kompatibilit&auml;tsmodus:
+                    ||      STE-Kompatibilitätsmodus:
                     00----16
                     01----16
                     10----16
@@ -345,9 +345,9 @@ $FFFF82C3 [R/W] ____3210  .............................................. LO
 $FFFF9800 [R/W] :$FC 765432__ ........................ FALCON-COLOR $00 ROT
                      ||||||
                      ++++++------ 0-63: Rot-Helligkeit
-$FFFF9801 [R/W] :$FC 765432__ ....................... FALCON-COLOR $00 GR&Uuml;N
+$FFFF9801 [R/W] :$FC 765432__ ....................... FALCON-COLOR $00 GRüN
                      ||||||
-                     ++++++------ 0-63: Gr&uuml;n-Helligkeit
+                     ++++++------ 0-63: Grün-Helligkeit
 $FFFF9802 [R/W] :$00 ******
 $FFFF9803 [R/W] :$00 765432__ ....................... FALCON-COLOR $00 BLAU
                      ||||||
@@ -356,7 +356,7 @@ $FFFF9803 [R/W] :$00 765432__ ....................... FALCON-COLOR $00 BLAU
     :       :     :    :
     :       :     :    :
 $FFFF9BFC [R/W] :$00 765432__ ........................ FALCON-COLOR $FF ROT
-$FFFF9BFD [R/W] :$00 765432__ ....................... FALCON-COLOR $FF GR&Uuml;N
+$FFFF9BFD [R/W] :$00 765432__ ....................... FALCON-COLOR $FF GRüN
 $FFFF9BFE [R/W] :$00 ******
 $FFFF9BFF [R/W] :$00 765432__ ....................... FALCON-COLOR $FF BLAU
 
@@ -382,7 +382,7 @@ TRU/40: 140 0x0 100 0FE 0CB 027 02E 08F 0D8 271 265 02F 07F 20F 26B 181 000
 TRU/80: 280 0x0 100 1FE 199 050 071 122 1B2 271 265 02F 07F 20F 26B 181 004
 + INTERLACE:                                -1         -1 -1         +2
 
-MODUS: Kompatibilit&auml;tsmodus oder Farben/Spalten.
+MODUS: Kompatibilitätsmodus oder Farben/Spalten.
 (Achtung!  Die ST-High Werte sind bei RGB schon im Interlacemodus!)
 
 ---------------------------------------------------------------------------
@@ -403,7 +403,7 @@ ST-HIG: 028 0x0 400 0C6 08D 015 273 050 096 419 3AF 08F 08F 3AF 415 186 008
 256/40: 0A0 0x0 010 0C6 08D 015 29A 07B 096 419 3FF 03F 03F 3FF 415 186 005
 256/80: 140 0x0 010 0C6 08D 015 2AB 084 096 419 3FF 03F 03F 3FF 415 186 009
 TRU/40: 140 0x0 100 0C6 08D 015 2AC 091 096 419 3FF 03F 03F 3FF 415 186 005
-TRU/80: (offiziell nicht m&ouml;glich)
+TRU/80: (offiziell nicht möglich)
 ZEILENVERDOPPLUNG AUS:                                                  -1
 
 ---------------------------------------------------------------------------
@@ -419,7 +419,7 @@ ST-HIG: 028 020 000 01A 000 000 20F 00C 014 3E9 000 000 043 363 3E7 080 008
 ###########################################################################
 
 Vorab: Diese Dokumentation soll nicht als Lehrbuch betrachtet werden, es
-       soll lediglich eine kurze Einf&uuml;hrung in das Videosystem erm&ouml;glichen.
+       soll lediglich eine kurze Einführung in das Videosystem ermöglichen.
 
 
 
@@ -445,78 +445,78 @@ Der Aufbau einer Bildschirmzeile:
                                                           |          |
                                                           |&lt;--------&gt;|
                                                                 #3
-#1: linke Austastl&uuml;cke
+#1: linke Austastlücke
 #2: sichtbarer Bildschirmbereich
-#3: rechte Austastl&uuml;cke
+#3: rechte Austastlücke
 #4: HSync-Impuls
-#5: Grafik&uuml;bertragungsbereich
+#5: Grafikübertragungsbereich
 
 Jede Bildschirmzeile, auch die ausgetastete, besitzt einen solchen Aufbau:
-linke Austastl&uuml;cke, sichtbarer Bereich mit ggf. Grafikbreich , rechte Aus-
-tastl&uuml;cke und in der rechten Austastl&uuml;cke den HSyncimpuls. Grunds&auml;tzlich
-kann man sagen, da&szlig; eine Zeile in 2 Halbzeilen unterteilt ist. Um die
-Horizontalregister der Bildschirmhalbzeilen berechnen zu k&ouml;nnen ben&ouml;tigt
+linke Austastlücke, sichtbarer Bereich mit ggf. Grafikbreich , rechte Aus-
+tastlücke und in der rechten Austastlücke den HSyncimpuls. Grundsätzlich
+kann man sagen, daß eine Zeile in 2 Halbzeilen unterteilt ist. Um die
+Horizontalregister der Bildschirmhalbzeilen berechnen zu können benötigt
 man einige Angaben:
 
    - Videogrundtakt: 32MHz, 25.175 MHz oder externer Takt
                                       RGB/TV       VGA
    - Horizontalfrequenz des Monitors: 15625 Hz     31250 Hz
-   - L&auml;nge des Hsyncimpuls:           4.7us        3.81us
-   - L&auml;nge der rechten Austastl&uuml;cke:  6.2us        4.45us
-   - L&auml;nge der linken Austastl&uuml;cke:   5.145us      1.91us
+   - Länge des Hsyncimpuls:           4.7us        3.81us
+   - Länge der rechten Austastlücke:  6.2us        4.45us
+   - Länge der linken Austastlücke:   5.145us      1.91us
 
-Diese Werte werden vom Betriebsystem benutzt. Die L&auml;nge des Hsyncimpuls
-sollte nicht ge&auml;ndert sowie die Austastzeit nicht unterschritten werden.
+Diese Werte werden vom Betriebsystem benutzt. Die Länge des Hsyncimpuls
+sollte nicht geändert sowie die Austastzeit nicht unterschritten werden.
 
-Das Zeitverhalten wird im Videosystem in Taktzyklen gemessen. So mu&szlig;
-eine gewisse Anzahl von Taktzyklen vergehen bis z.B. die rechte Austastl&uuml;cke
-aktiv wird. S&auml;mtliche Registerinhalte h&auml;ngen von den obigen Zeitangaben (die
-nat&uuml;rlich ver&auml;ndert werden k&ouml;nnen, es sind ja keine Festwerte vom Video-
+Das Zeitverhalten wird im Videosystem in Taktzyklen gemessen. So muß
+eine gewisse Anzahl von Taktzyklen vergehen bis z.B. die rechte Austastlücke
+aktiv wird. Sämtliche Registerinhalte hängen von den obigen Zeitangaben (die
+natürlich verändert werden können, es sind ja keine Festwerte vom Video-
 system selbst sondern Vorgaben von den Monitoren), dem Videogrundtakt und
 von dem Videovorteiler, der den Grundtakt runterteilt, ab.
-Der Videovorteiler l&auml;&szlig;t sich durch das Video-Control 2 ($82C2) Bit 2/3 in
-Abh&auml;ngigkeit der Video-Mode-Control-Bits (Video-Control 1 ($82C0) Bit 0/1)
-oder dem STE-Kompatibilit&auml;tsmodus einstellen. Wichtig: der Videovorteiler
-und die Pixeltaktl&auml;nge werden beide von Bit 2/3 des Video-Control 2 ge-
+Der Videovorteiler läßt sich durch das Video-Control 2 ($82C2) Bit 2/3 in
+Abhängigkeit der Video-Mode-Control-Bits (Video-Control 1 ($82C0) Bit 0/1)
+oder dem STE-Kompatibilitätsmodus einstellen. Wichtig: der Videovorteiler
+und die Pixeltaktlänge werden beide von Bit 2/3 des Video-Control 2 ge-
 steuert.
 
-Zun&auml;chst die Berechnung folgender Horizontalregister:
+Zunächst die Berechnung folgender Horizontalregister:
 
-HHT gibt die Videotaktanzahl f&uuml;r eine Halbzeile an:
+HHT gibt die Videotaktanzahl für eine Halbzeile an:
                 |            Videogrundtakt                  |
 HHT($8282) = int|---------------------------------------- - 2|
                 |Horizontalfrequenz in Hz * Vorteiler * 2    |
-Nach HHT richtet sich der Videotaktz&auml;hler HHC($8280) der die einzelnen Takt-
-impule bis zum HHT-Wert hochz&auml;hlt. Wird der Wert &uuml;berschritten, ist also
-HHC = HHT+1, so ist 1 Halbzeile beendet und der Z&auml;hler f&auml;ngt f&uuml;r die
-n&auml;chste Halbzeile von vorne an. HHT gibt somit die Anzahl der Videotakte
-einer Halbzeile an. Alle nachfolgenden Register m&uuml;ssen sich innerhalb des
-HHT-Wertes+1 befinden, da sie die Videoz&auml;hlerposition angeben ab wann eine
-Aktion ausgef&uuml;hrt werden soll (z.B. Start der linken Austastl&uuml;cke...).
+Nach HHT richtet sich der Videotaktzähler HHC($8280) der die einzelnen Takt-
+impule bis zum HHT-Wert hochzählt. Wird der Wert überschritten, ist also
+HHC = HHT+1, so ist 1 Halbzeile beendet und der Zähler fängt für die
+nächste Halbzeile von vorne an. HHT gibt somit die Anzahl der Videotakte
+einer Halbzeile an. Alle nachfolgenden Register müssen sich innerhalb des
+HHT-Wertes+1 befinden, da sie die Videozählerposition angeben ab wann eine
+Aktion ausgeführt werden soll (z.B. Start der linken Austastlücke...).
 
 
-HSS gibt an ab welcher Videotaktz&auml;hlerposition in der 2. Halbzeile der
-HSyncimpuls bis Halbzeilenende ausgel&ouml;st werden soll:
+HSS gibt an ab welcher Videotaktzählerposition in der 2. Halbzeile der
+HSyncimpuls bis Halbzeilenende ausgelöst werden soll:
                       |HSynczeit in us * Videogrundtakt |
 HSS($828A) = HHT - int|-------------------------------- | - 1
                       |          Vorteiler              |
-Ist HSS gr&ouml;&szlig;er als HHT+1 so wird kein VSync-Impuls ausgel&ouml;st.
+Ist HSS größer als HHT+1 so wird kein VSync-Impuls ausgelöst.
 
 
-HBB gibt an ab welcher Videotaktz&auml;hlerposition in der 2. Halbzeile die
-rechte Austastl&uuml;cke bis Halbzeilenende aktiv werden soll:
-                      |rechte Austastl&uuml;ckenzeit in us * Videogrundtakt|
+HBB gibt an ab welcher Videotaktzählerposition in der 2. Halbzeile die
+rechte Austastlücke bis Halbzeilenende aktiv werden soll:
+                      |rechte Austastlückenzeit in us * Videogrundtakt|
 HBB($8284) = HHT - int|-----------------------------------------------| - 1
                       |                  Vorteiler                    |
-Ist HBB gr&ouml;&szlig;er als HHT+1 so wird keine Ausstastl&uuml;cke erzeugt.
+Ist HBB größer als HHT+1 so wird keine Ausstastlücke erzeugt.
 
 
-HBE gibt an bis zu welcher Videotaktz&auml;hlerposition in der 1. Halbzeile die
-linke Austastl&uuml;cke aktiv bleiben soll:
-                |linke Austastl&uuml;ckenzeit in us * Videogrundtakt|
+HBE gibt an bis zu welcher Videotaktzählerposition in der 1. Halbzeile die
+linke Austastlücke aktiv bleiben soll:
+                |linke Austastlückenzeit in us * Videogrundtakt|
 HBE($8286) = int|----------------------------------------------| - 1
                 |                 Vorteiler                    |
-Ist HBE gr&ouml;&szlig;er als HHT+1 so wird &uuml;ber beide Halbzeilen eine Austastl&uuml;cke er-
+Ist HBE größer als HHT+1 so wird über beide Halbzeilen eine Austastlücke er-
 zeugt.
 
 
@@ -533,24 +533,24 @@ Vertikales Zeitverhalten
 ========================
 
 Jeder Bildschirmaufbau setzt sich aus Halbzeilen zusammen. Die Anzahl der
-Halbzeilen ergibt in Abh&auml;ngigkeit von HHT, der die Dauer einer Halbzeile
+Halbzeilen ergibt in Abhängigkeit von HHT, der die Dauer einer Halbzeile
 angibt, die Vertikalfrequenz. Gehen wir von einer Horizontalfrequenz von
 15625 Hz aus so sind 312.5 Zeilen oder 625 Halbzeilen notwendig um eine
-Vertikalfrequenz von 50 Hz zu erzeugen. HHT mu&szlig; nat&uuml;rlich so eingestellt
-sein, da&szlig; eine Horizontalfrequenz von 15625 Hz erzeugt wird (s.o.).
+Vertikalfrequenz von 50 Hz zu erzeugen. HHT muß natürlich so eingestellt
+sein, daß eine Horizontalfrequenz von 15625 Hz erzeugt wird (s.o.).
 
-Auch hier werden wieder vom Monitor abh&auml;ngige Angaben ben&ouml;tigt:
+Auch hier werden wieder vom Monitor abhängige Angaben benötigt:
 
                                       TV/RGB 50Hz  TV/RGB 60Hz    VGA
    - Horizontalfrequenz des Monitors: 15625 Hz     15625 Hz       31250 Hz
    - Vertikalfrequenz des Monitors:   50 Hz        59.52 Hz       59.58 Hz
-   - L&auml;nge des VSyncimpuls:           0.192ms      0.192ms        0.064ms
-   - L&auml;nge der oberen Austastl&uuml;cke:   1.504ms      0.700ms        1.008ms
-   - L&auml;nge der unteren Austastl&uuml;cke:  0.384ms      0.384ms        0.416ms
+   - Länge des VSyncimpuls:           0.192ms      0.192ms        0.064ms
+   - Länge der oberen Austastlücke:   1.504ms      0.700ms        1.008ms
+   - Länge der unteren Austastlücke:  0.384ms      0.384ms        0.416ms
 
 Diese Werte werden ebenfalls vom Betriebsystem verwendet. Der VSyncimpuls
-sollte nicht ge&auml;ndert und die Austastl&uuml;cken nicht unterschritten werden.
-Bemerkenswert ist, da&szlig; das Videosystem bei 60 Hz auf ~59.5 Hz programmiert
+sollte nicht geändert und die Austastlücken nicht unterschritten werden.
+Bemerkenswert ist, daß das Videosystem bei 60 Hz auf ~59.5 Hz programmiert
 wird.
 
 Hier nun die Berechnung der einzelnen Verikalregister:
@@ -561,26 +561,26 @@ VFT gibt die Anzahl der Halbzeilen pro VBL an:
 VFT($82A2) = int|----------------------|
                 |   Vertikalfrequenz   |
 
-Nach VFT richtet sich der Halbzeilenz&auml;hler VFC($82A0), der die einzelnen
-Halbzeilen bis zu dem Wert von VFT hochz&auml;hlt. VFC wird immer dann erh&ouml;ht
+Nach VFT richtet sich der Halbzeilenzähler VFC($82A0), der die einzelnen
+Halbzeilen bis zu dem Wert von VFT hochzählt. VFC wird immer dann erhöht
 wenn HHC den Wert von HHT erreicht hat. Erreicht VFC den Wert von VFT , so
-ist der Bildschirmaufbau beendet und der Z&auml;hler beginnt von vorne. VFT
-beeinflu&szlig;t alle nachfolgenden Register.
+ist der Bildschirmaufbau beendet und der Zähler beginnt von vorne. VFT
+beeinflußt alle nachfolgenden Register.
 Im Interlace-Modus bei RGB-Monitoren sollte VFT um eins erniedrigt werden.
 
 
 VSS gibt an, ab welcher Halbzeile der VSyncimpuls bis Bildschirmende aus-
-gel&ouml;st werden soll:
+gelöst werden soll:
 VSS($82AC) = VFT - int|VSync-Zeit in ms * Horizontalfrequenz in Hz * 2| - 1
 
-VBB gibt an, ab welcher Halbzeile die untere Austastl&uuml;cke bis Bildschirmende
+VBB gibt an, ab welcher Halbzeile die untere Austastlücke bis Bildschirmende
 aktiv werden soll:
-VBB($82A4) = VFT - int|untere Austastl&uuml;ckenzeit in ms * Horiz.freq.| * 2 - 1
+VBB($82A4) = VFT - int|untere Austastlückenzeit in ms * Horiz.freq.| * 2 - 1
 
 
 VBE gibt an, bis zu welcher Halbzeile von Bildschirmbeginn an, die obere
-Austastl&uuml;cke aktiv bleiben soll:
-VBE($82A6) = int|obere Austastl&uuml;ckenzeit in ms * Horizontalfrequenz| * 2 + 1
+Austastlücke aktiv bleiben soll:
+VBE($82A6) = int|obere Austastlückenzeit in ms * Horizontalfrequenz| * 2 + 1
 
 
 

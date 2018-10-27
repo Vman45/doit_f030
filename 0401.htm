@@ -42,7 +42,7 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Falcon Custom Chip
 <br>
 <br>
 </div>
-<div align=center></b> Die deutsche &Uuml;bersetzung der englischen
+<div align=center></b> Die deutsche übersetzung der englischen
 Chip-Beschreibung
 <br>(c) Robert Schaffner
 <br>
@@ -66,26 +66,26 @@ Chip-Beschreibung
  ________________________________________________________________________
 
  40           COM         Input    Highpegel schaltet den internen
-                                   digital Kanal auf den Tonverst&auml;rker
+                                   digital Kanal auf den Tonverstärker
 
- 4-1, 44-41   G0-7        Input    8 Bit Gr&uuml;n In vom VIDEL
+ 4-1, 44-41   G0-7        Input    8 Bit Grün In vom VIDEL
 
  36-29        B0-7        Input    8 Bit Blau In vom VIDEL
 
  12-5         R0-7        Input    8 Bit Rot In vom VIDEL
 
- 37           RC          Input    Highpegel selektiert bin&auml;r Code auf
+ 37           RC          Input    Highpegel selektiert binär Code auf
                                    R und B data
 
  25           BEXT        Input    Externer blau Eingang
 
- 22           GEXT        Input    Externer gr&uuml;n Eingang
+ 22           GEXT        Input    Externer grün Eingang
 
  19           REXT        Input    Extnerer rot  Eingang
 
  18           ROUT        Output   Rot  Ausgang / Monitor
 
- 21           GOUT        Output   Gr&uuml;n Ausgang / Monitor
+ 21           GOUT        Output   Grün Ausgang / Monitor
 
  24           BOUT        Output   Blau Ausgang / Monitor
 
@@ -111,7 +111,7 @@ Chip-Beschreibung
                                    anzeigt
  2            RESET-      Input    Reseteingang um den Chip in einen
                                    definierten Zustand zu versetzen
- 3            CLKIN       Input    Masterclock Input f&uuml;r den A/D und D/A
+ 3            CLKIN       Input    Masterclock Input für den A/D und D/A
                                    Wandler im CODEC. Beide Converter
                                    benutzen den gleichen Takt!
  4            DVcc        Input    Stromversorgung +5V
@@ -125,25 +125,25 @@ Chip-Beschreibung
 
  16           LOUT        Output   Linkes analoges <a href="0907.htm" target="UDOcon">Audio</a> Out Signal
 
- 18           POMCR       -        Kondesatoranschlu&szlig; f&uuml;r die &auml;ussere
+ 18           POMCR       -        Kondesatoranschluß für die äussere
                                    Feedbackschleife die den Pulsmodulator
                                    des rechten Kanals steuert.
 
- 19           POMCL       -        Kondesatoranschlu&szlig; f&uuml;r die &auml;ussere
+ 19           POMCL       -        Kondesatoranschluß für die äussere
                                    Feedbackschleife die den Pulsmodulator
                                    des linken Kanals steuert.
 
- 20           REFBUF      -        Gepufferter interner GND Pin welcher f&uuml;r
-                                   die &auml;ussere Beschaltung mit Kondesatoren
-                                   ben&ouml;tigt wird.
+ 20           REFBUF      -        Gepufferter interner GND Pin welcher für
+                                   die äussere Beschaltung mit Kondesatoren
+                                   benötigt wird.
 
- 21           REFBYP      -        interner sauberer GND Pin welche f&uuml;r die
-                                   analogen Ein- und Ausg&auml;nge ben&ouml;tigt wird.
+ 21           REFBYP      -        interner sauberer GND Pin welche für die
+                                   analogen Ein- und Ausgänge benötigt wird.
 
  22           REFGND      -        Referenz analog GND zum Schutz des sauberen
                                    CODEC GND Pin
 
- 23           AGND        -        Analog GND f&uuml;r den CODEC Chip.
+ 23           AGND        -        Analog GND für den CODEC Chip.
 
  24           AVcc        Input    Analoge Versorgungsspannung
 
@@ -155,8 +155,8 @@ Chip-Beschreibung
 
  28           LIN2        Input    Linker anlaoger Eingang Signal 2
 
- 29           MDSEL       Input    Mode Selekt Eingang um zus&auml;tzliche serielle
-                                   Formate w&auml;hlen zu k&ouml;nnen. (High) Liegt beim
+ 29           MDSEL       Input    Mode Selekt Eingang um zusätzliche serielle
+                                   Formate wählen zu können. (High) Liegt beim
                                    Falcon dauerhaft auf GND
 
  30           SBF2        Input    Subframe Eingang 2
@@ -194,11 +194,11 @@ Chip-Beschreibung
  56,58,64-
  68,72
 
- 10           DOTCK       Output   Takt f&uuml;r den DAC
+ 10           DOTCK       Output   Takt für den DAC
 
  8            MONO        Output   Monochrome Ausgang (Not XGA)
 
- 96           COLOR       Output   Sync.-Signal f&uuml;r NTSC/ Composit Video
+ 96           COLOR       Output   Sync.-Signal für NTSC/ Composit Video
 
  62           CSYNC       Output   CompositVideo / Sync. Ausgang
 
@@ -262,7 +262,7 @@ Chip-Beschreibung
 
  1            BMODE        Input   86030 oder 68000 Busmaster
                                    High ist 68000
- 95,90,82     A1-A23       I/O     23 Bit Adressbus. F&uuml;r die MCU nur Input
+ 95,90,82     A1-A23       I/O     23 Bit Adressbus. Für die MCU nur Input
  68,65,63
  29,24,17
  15,12,7
@@ -279,8 +279,8 @@ Chip-Beschreibung
  11,15,23
  25,64,69
  91,94
- 186          AS-          I/O     Adress-Strobe Input f&uuml;r MCU
-                                   Input f&uuml;r Blitter falls Slave. Output
+ 186          AS-          I/O     Adress-Strobe Input für MCU
+                                   Input für Blitter falls Slave. Output
                                    wenn Blitter als Busmaster.
  171          UDS-         I/O     UPPER Data Strobe. Kontrolliert den
                                    Datenfluss mit LDS- R/W
@@ -296,7 +296,7 @@ Chip-Beschreibung
 
  198          BGACK-       Output  Bus Grand Acknowlede korrespondiert mit
                                    der CPU wenn der Blitter &quot;Busmaster&quot; ist
- 173,172      IPL0-        Output  Interrupt Priorit&auml;tsausg&auml;nge zur CPU
+ 173,172      IPL0-        Output  Interrupt Prioritätsausgänge zur CPU
 
  166          IPL1-
               IPL2-
@@ -312,18 +312,18 @@ Chip-Beschreibung
                                    Speicheradresse der CPU an.
  141,133      FC0          I/O     MCU Eingangs-Funktionscodes
 
- 123          FC1                  Eingang f&uuml;r den Blitter wenn der Bus
-              FC2                  als 'Slave' l&auml;uft. Ausgang bei 'Master'
+ 123          FC1                  Eingang für den Blitter wenn der Bus
+              FC2                  als 'Slave' läuft. Ausgang bei 'Master'
  20           CLK          Input   32Mhz Eingang Taktsignal / Mainboard
 
  150          TOK          Input   <a href="0c02.htm" target="UDOcon">Keyboard</a> Transmit OK. Speichert ein
                                    Zeichen vom <a href="0c02.htm" target="UDOcon">Keyboard</a> wenn TOK nach
                                    &quot;High&quot; geht.
- 139          TXD          Input   Eingang f&uuml;r COMBO f&uuml;r Daten vom <a href="0c02.htm" target="UDOcon">Keyboard</a>
+ 139          TXD          Input   Eingang für COMBO für Daten vom <a href="0c02.htm" target="UDOcon">Keyboard</a>
 
  151          MFPINT-      Input   MFP Interrupteingang
 
- 202,175,174  EINT1        Input   externe Interrupreing&auml;nge
+ 202,175,174  EINT1        Input   externe Interrupreingänge
 
  72           EINT3
               EINT5
@@ -332,15 +332,15 @@ Chip-Beschreibung
 
  19           EVEN_ODD     Input   EVEN_ODD Frame Eingang vom Video-Shifter
                                    1 = ODD / 0 = EVEN
- 138,125,73   PAD0X-       Input   <a href="0c0c.htm" target="UDOcon">Paddleport</a> aktiv LOW Eing&auml;nge
+ 138,125,73   PAD0X-       Input   <a href="0c0c.htm" target="UDOcon">Paddleport</a> aktiv LOW Eingänge
               PAD1X-
               PAD0Y-
               PAD1Y-
- 191          CPUCLK       Output  16Mhz Taktausgang f&uuml;r die CPU
+ 191          CPUCLK       Output  16Mhz Taktausgang für die CPU
                                     und andere I/O Devices.
- 193,192      CLK4         Output   4Mhz / 8Mhz Ausg&auml;nge
+ 193,192      CLK4         Output   4Mhz / 8Mhz Ausgänge
               CLK8
- 163          KHZ500       Output   Ausgang f&uuml;r 500Khz Takt.
+ 163          KHZ500       Output   Ausgang für 500Khz Takt.
 
  197          MFPCS-       Output   MFP - Chipselekt-Signal
 
@@ -363,7 +363,7 @@ Chip-Beschreibung
 
  60           VREQ         Input    Videorequest Signal
 
- 31           IACK-        Output   Interrupt Acknowledge f&uuml;r CPU
+ 31           IACK-        Output   Interrupt Acknowledge für CPU
 
  32           N6850        Output   ACIA 6850 Chipselekt Signal
 
@@ -409,7 +409,7 @@ Chip-Beschreibung
               CAS1H-
  70,83        CAS0L-       Output   DRAM Low Adressen Selekt
               CAS1L-
- 74           RAMH         Output   Adressen Kontrolle f&uuml;r VideoShifter
+ 74           RAMH         Output   Adressen Kontrolle für VideoShifter
                                     Selektiert das Low oder High 16 Bit
                                     DRAM Word in den Videobus. 0 = Low
  75           RTCCS-       Output   Realtime Clock Chipselekt
@@ -426,7 +426,7 @@ Chip-Beschreibung
 
  88           SCCIACK-     Output   SCC Interrupr Acknowledge
 
- 87           SCCWAIT-     Input    Aktive Low Input f&uuml;r SCC Unterst&uuml;tzung
+ 87           SCCWAIT-     Input    Aktive Low Input für SCC Unterstützung
 
  115          BGO          Output   BGO / Arbitration (Daisy chaninig)
 
@@ -436,7 +436,7 @@ Chip-Beschreibung
                                     6850 wenn Daten transferriert werden
  96           POR          Input    Power On Reset Signal
 
- 99           TEST2        Input    Testpin 2 f&uuml;r Support
+ 99           TEST2        Input    Testpin 2 für Support
               VDD          Input    +5 V DC
               GND          Input    GND
  ______________________________________________________________________________
@@ -460,7 +460,7 @@ Chip-Beschreibung
 
  35           DBP-         I/O      SCSI Bus Parity Bit
 
- 5            SEL-         I/O      W&auml;hlt ein 'Target' aus / Wird vom
+ 5            SEL-         I/O      Wählt ein 'Target' aus / Wird vom
                                     Initator erzeugt
  4            BSY-         I/O      SCSI Bus Busy
 
@@ -471,8 +471,8 @@ Chip-Beschreibung
  7            RST-         I/O      Aktives Signal zeigt einen Reset auf
                                     dem SCSI-Bus an
  32           I/O          I/O      Zeigt die Richtung des Datentransfers an
-                                    Low ist Flu&szlig;richtung zum Initiator
- 30           C/D-         I/O      Kontroll oder Befehle werden &uuml;ber den
+                                    Low ist Flußrichtung zum Initiator
+ 30           C/D-         I/O      Kontroll oder Befehle werden über den
                                     SCSI-Bus verschickt.
  29           MSG-         I/O      Nachricht wird vom Initiator kontrolliert
 
@@ -482,7 +482,7 @@ Chip-Beschreibung
 
  9            DRQ          Output   DMA Request fordert DMA Service vom
                                     DMA-Controller an
- 8            IRQ-         Output   Interrupt Request f&uuml;r die CPU
+ 8            IRQ-         Output   Interrupt Request für die CPU
 
  19           IOR-         Input    Das I/O Lesesignal zum lesen der Register
 
@@ -490,14 +490,14 @@ Chip-Beschreibung
                                     Dieses Signal kann aber als alternative zum
                                     DRQ-Signal verwendet werden!
  11           DTACK-       Input    DMA Aknowledge wird benutzt um auf den
-                                    internen Registern lesen/schreiben zu d&uuml;rfen
+                                    internen Registern lesen/schreiben zu dürfen
  10           EOP-         Input    Ende des Datentransfers
 
- 7            RESET-       Input    Setzt den SCSI-Controller zur&uuml;ck
+ 7            RESET-       Input    Setzt den SCSI-Controller zurück
 
  18           IOW-         Input    I/O Schreibsignal wird benutzt um
                                     Informationen in die Register zu legen
- 14-16        A0-2         Input    Adressanschl&uuml;sse um die internen Register
+ 14-16        A0-2         Input    Adressanschlüsse um die internen Register
                                     anzusprechen
  28-24,22-    D0-7         I/O      CPU Datenbus 0-7 Datenleitungen
 
@@ -519,7 +519,7 @@ Chip-Beschreibung
 
  138, 139     FC0-FC2      I/O      68030 Bus Funktionscode. Bei Bus 'Grand'
 
- 140                                Ausg&auml;nge f&uuml;r DMA
+ 140                                Ausgänge für DMA
 
  30,28,27     A1-A23       I/O      68030 Busadressen
  26,25,24
@@ -564,19 +564,19 @@ Chip-Beschreibung
 
  45           RESET-       Input    Low macht einen Chipreset
 
- 76           UWD          Output   Signal f&uuml;r den MicroWire Bus
+ 76           UWD          Output   Signal für den MicroWire Bus
 
- 75           UWC          Output   Clocksignal f&uuml;r den MicroWire Bus
+ 75           UWC          Output   Clocksignal für den MicroWire Bus
 
- 74           UWEN-        Output   Enable Signal f&uuml;r den MicroWire Bus
+ 74           UWEN-        Output   Enable Signal für den MicroWire Bus
 
- 58           SMCLK        Input    Master <a href="030503.htm" target="UDOcon">Timing</a> Takt f&uuml;r den DMA-Kanal
+ 58           SMCLK        Input    Master <a href="030503.htm" target="UDOcon">Timing</a> Takt für den DMA-Kanal
 
  32           BMODE        Input    BusMaster Eingang. 68000 = Low
                                     68030 = High
  70           PLYDATA      Output   Serieller Sound zum DSP Anschluss
 
- 71           PLYCLK       Output   Taktsignal f&uuml;r PLYDATA. Kontrolliert von
+ 71           PLYCLK       Output   Taktsignal für PLYDATA. Kontrolliert von
                                     der Eingangsmatrix
 
  69           PLYSYNC      I/O      Ausgang wenn fortgesetzter Takt als Eingang
@@ -624,14 +624,14 @@ Chip-Beschreibung
 48             X/(Y)       Output    Das Signal selektiert welcher Bereich des
                                      externen RAM angesprochen wird.
 
-47             RD-         Output    Read Enable, wenn das externe RAM &uuml;ber
+47             RD-         Output    Read Enable, wenn das externe RAM über
                                      D0-D24 gelesen werden soll.
 
 46             WR-         Output    Write Enable, wird aktviert wenn in das
-                                     externe RAM &uuml;ber D0-D23 geschrieben wird.
+                                     externe RAM über D0-D23 geschrieben wird.
 
 45             BR-         Input     Bus Request teilt anderen Bausteinen mit
-                                     das sie Master &uuml;ber den D0-D23 und
+                                     das sie Master über den D0-D23 und
                                      A0-A15 Bus sind. High beim F030!
 
 43             BG-         Output    Externer Bus request. High beim F030!
@@ -651,28 +651,28 @@ Chip-Beschreibung
 
 9              HR/(W)-     Input     Richtung des Zugriffs vom Host-Prozessor.
 
-8              HEN-        Input     Erlaubt den Transport von Daten &uuml;ber
+8              HEN-        Input     Erlaubt den Transport von Daten über
                                      den Host-Datenbus.
 
-10             HREQ-       Output    Mit diesem Signal wird Unterst&uuml;tzung vom
+10             HREQ-       Output    Mit diesem Signal wird Unterstützung vom
                                      Host Prozessor angefordert.
 
-6              HACK-       Input     Empf&auml;ngt Acknowledge f&uuml;r DMA-Transfer oder
+6              HACK-       Input     Empfängt Acknowledge für DMA-Transfer oder
                                      Interrupt Acknowledge vom Host-Prozessor.
 
-27             RXD         Input     Nicht benutzt. (serieller Anschlu&szlig;)!
+27             RXD         Input     Nicht benutzt. (serieller Anschluß)!
 
-28             TXD         Output    Nicht benutzt. (serieller Anschlu&szlig;)!
+28             TXD         Output    Nicht benutzt. (serieller Anschluß)!
 
 29             SCLK        I/O       Nicht benutzt im Falcon.
 
-31,40,37       SC0-2       I/O       Steueranschl&uuml;sse f&uuml;r serielles Syncron
+31,40,37       SC0-2       I/O       Steueranschlüsse für serielles Syncron
                                      Interface!
 
-32             SCK         I/O       serieller Bitraten Takt f&uuml;r das Syncron
+32             SCK         I/O       serieller Bitraten Takt für das Syncron
                                      serielle Interface!
 
-42             SRD         Input     Dateneingang f&uuml;r das SSI Receive Shift
+42             SRD         Input     Dateneingang für das SSI Receive Shift
                                      Register.
 
 39             STD         Output    Daten Ausgang vom SSI Register
@@ -706,7 +706,7 @@ Chip-Beschreibung
  __________________________________________________________________________
 
  12,10.9      FC0-FC2     Output   3 Bit Funktionscode zum unterscheiden der
-                                   Addressr&auml;ume eines jeden Buszyklus.
+                                   Addressräume eines jeden Buszyklus.
 
  21,22,58     A0-A31      Output   32Bit - Adressbus
  33,31,29
@@ -721,27 +721,27 @@ Chip-Beschreibung
  106-109,11-
  114
 
- 120,119      SIZ0-SIZ1   Output   Transfer-Gr&ouml;&szlig;en Bits. Zeigen die Nummer der
-                                   Bytes die &uuml;ber den Bus transferriert werden
+ 120,119      SIZ0-SIZ1   Output   Transfer-Größen Bits. Zeigen die Nummer der
+                                   Bytes die über den Bus transferriert werden
                                    sollen.
 
  117          R/(W)       Output   Zeigt an ob der Bus lesend oder schreibend
                                    aktiv ist. Low ist &quot;schreiben&quot;
 
- 124          DS-         Output   Data Strobe. Zeigt an das ein Device g&uuml;ltige
+ 124          DS-         Output   Data Strobe. Zeigt an das ein Device gültige
                                    Daten auf den Bus gelegt hat.
 
  125          AS-         Output   Adress Strobe. Zeigt an das auf dem Bus eine
-                                   g&uuml;ltige Adresse anliegt. Abh&auml;ngig auch von
+                                   gültige Adresse anliegt. Abhängig auch von
                                    R/(W)-FC0-FC2 und SIZ0-SIZ1
 
- 3,132        DSACK0      Input    Data Transfer und Gr&ouml;ssen Acknowledge 0 und 1
+ 3,132        DSACK0      Input    Data Transfer und Grössen Acknowledge 0 und 1
               DSACK1               Zeigen an das eine Datenanforderung komplett
                                    und korrekt beendet wurde.
 
  131          STERM-      Input    Syncrone Termination zeigt an das der
                                    addressierte Port im 32-Bit Modus ist und
-                                   das die Daten zur n&auml;chsten Taktflanke
+                                   das die Daten zur nächsten Taktflanke
                                    gelesen werden. Low aktive.
                                    (F030 HIGH!!)
 
@@ -749,13 +749,13 @@ Chip-Beschreibung
                                    Zum Daten laden in den Instruktions- und
                                    Datencache.
 
- 70,69,68     IPL0-       Input    Interrupt Priorit&auml;tslevel 0-2
+ 70,69,68     IPL0-       Input    Interrupt Prioritätslevel 0-2
               IPL1-
               IPL2-
 
  7            AVEC-       Input    Autovektor Indikator
 
- 20           BR-         Input    Bus Request. Ein externes Device m&ouml;chte
+ 20           BR-         Input    Bus Request. Ein externes Device möchte
                                    Busmaster sein.
 
  16           BG-         Output   Bus Grand.
@@ -763,7 +763,7 @@ Chip-Beschreibung
  17           BGACK-      Input    Bus Grand Acknowledge. Zeigt an das ein
                                    externes Device den Bus bekommen hat.
 
- 84           RESET-      I/0      L&ouml;st eine Systeminitalisierung aus.
+ 84           RESET-      I/0      Löst eine Systeminitalisierung aus.
                                    Als Output werden nur alle externen Devices
                                    intialisiert.
 
@@ -773,7 +773,7 @@ Chip-Beschreibung
 
  130          BERR-       Input    Bus Error.
 
- 6            CLK         Input    Taktsignal f&uuml;r den MC68030.
+ 6            CLK         Input    Taktsignal für den MC68030.
 
  65,71,73     EM0         Input    Emulator Support Signale.
               EM1                 (High)
@@ -875,7 +875,7 @@ __________________________________________________________________________
  10           SI          Input    USART serieller Dateneingang. Liegt im Falcon
                                    F030 auf GND.
 
- 11           RC          Input    Empf&auml;ngertakt zur Kontrolle der Empf&auml;nger-
+ 11           RC          Input    Empfängertakt zur Kontrolle der Empfänger-
                                    Bitrate ( Timer D Output)
 
  12           Vcc         Input    +5V DC
@@ -891,25 +891,25 @@ __________________________________________________________________________
  17           TCO         Output   Timer C Output. Im Falcon nicht benutzt.
 
  18           TDO         Output   Timer D Output. Ist verbunden mit den
-                                   TC und RC-Anschl&uuml;ssen am MFP.
-                                   &Uuml;bwacht die Baudrate zum Senden und Empfangen.
+                                   TC und RC-Anschlüssen am MFP.
+                                   übwacht die Baudrate zum Senden und Empfangen.
                                    Die serielle Eigenschaften des MFP werden
                                    im Falcon nicht benutzt.
- 19           XTAL1       Input    Anschlu&szlig; f&uuml;r den Quarz. (Takt)
+ 19           XTAL1       Input    Anschluß für den Quarz. (Takt)
 
- 20           XTAL2       Input    Anschlu&szlig; f&uuml;r den Quarz. (Takt)
+ 20           XTAL2       Input    Anschluß für den Quarz. (Takt)
 
  21                                NC
 
- 22           TAI         Input    Timer A Input ist ein Kontrollsignal f&uuml;r
-                                   den internen Timer A. Wird f&uuml;r den
+ 22           TAI         Input    Timer A Input ist ein Kontrollsignal für
+                                   den internen Timer A. Wird für den
                                    Soundinterrupt benutzt.
 
- 23           TBI         Input    Timer B Input ist ein Kontrollsignal f&uuml;r
-                                   den internen Timer B. Wird f&uuml;r den
+ 23           TBI         Input    Timer B Input ist ein Kontrollsignal für
+                                   den internen Timer B. Wird für den
                                    Bildschirminterrupt benutzt.
 
- 24           Reset       Input    Reseteingang f&uuml;r den 68901.
+ 24           Reset       Input    Reseteingang für den 68901.
 
  25           IO0         I/O      GPI 0 = Printer Busy
 
@@ -934,24 +934,24 @@ __________________________________________________________________________
 
  37           IEO         Output   Interrupt Enable Out. Zeigt an das der MFP
                                    einen Interrupt anzeigt und das kein
-                                   Interrupt anliegt der in der Priorit&auml;t h&ouml;her
+                                   Interrupt anliegt der in der Priorität höher
                                    liegt als der gerade Angezeigte.
 
  38           IEI         Input    Zeigt einen Interrupt an der in der
-                                   Priorit&auml;t h&ouml;her liegt als der gerade
+                                   Priorität höher liegt als der gerade
                                    angezeigte Interrupt.
 
- 39           CLK         Input    Takteingang f&uuml;r den MFP
+ 39           CLK         Input    Takteingang für den MFP
 
- 40           GND         Input    GND / Masseanschlu&szlig;
+ 40           GND         Input    GND / Masseanschluß
 
  41-48        D0-D7       I/O      8 Bit breiter Datenbus
 
  49           IACK        Input    Interrupt Acknowledge von der CPU
 
- 50           DTACK       Output   Zeigt das Ende einer Daten&uuml;bertragung an
+ 50           DTACK       Output   Zeigt das Ende einer Datenübertragung an
 
- 51           DS          Input    Data Strobe, Daten in den MFP &uuml;bernehmen
+ 51           DS          Input    Data Strobe, Daten in den MFP übernehmen
 
  52           CS          Input    Chip Selekt Signal. MFP einschalten
  __________________________________________________________________________
@@ -1068,9 +1068,9 @@ __________________________________________________________________________
 
  2            RxData       Input    Empfang seriell
 
- 3            RxCLK        Input    Taktrate f&uuml;r Empfang
+ 3            RxCLK        Input    Taktrate für Empfang
 
- 4            TxCLK        Input    Taktrate f&uuml;r Senden
+ 4            TxCLK        Input    Taktrate für Senden
 
  5            RTS-         Output   Ready to Send. Low active
 

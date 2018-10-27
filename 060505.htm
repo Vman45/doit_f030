@@ -29,18 +29,18 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: MKX SCSI
 <p><img src="image/deutsch.gif" border=0 width="35" height="22"></p><br>
 <p><img src="image/english.gif" border=0 width="35" height="22"></p><br>
 <p>Die Art der Terminierung des SCSI Bus am Falcon ist
-ausschlaggebend f&uuml;r ein korrektes Arbeiten des SCSI Bus.
+ausschlaggebend für ein korrektes Arbeiten des SCSI Bus.
 Normalerweise befinden sich in jedem SCSI-Drive ab Werk
-Abschlu&szlig;widerst&auml;nde die den SCSI-Bus terminieren.
-(Abschlie&szlig;en)
+Abschlußwiderstände die den SCSI-Bus terminieren.
+(Abschließen)
 <br>
 </p>
-<p>Sollte Ihr neues Ger&auml;t einziges oder letztes Laufwerk am
-SCSI-Bus sein sind die Widerst&auml;nde, der Terminierungsjumper, so
+<p>Sollte Ihr neues Gerät einziges oder letztes Laufwerk am
+SCSI-Bus sein sind die Widerstände, der Terminierungsjumper, so
 zu belassen, im anderen Fall, wenn das Laufwerk also an einem Bus
-eingef&uuml;gt wird an dem sich schon ein 'letztes' SCSI-Device
+eingefügt wird an dem sich schon ein 'letztes' SCSI-Device
 befindet, sind die Terminatoren in jedem Fall zu entfernen. Ansonsten
-kommt es zu einer &Uuml;berlastung des SCSI-Bausteins, KEIN
+kommt es zu einer überlastung des SCSI-Bausteins, KEIN
 angeschlossenes Laufwerk arbeitet korrekt. Der SCSI-Controller im
 Falcon kann dadurch Schaden erleiden.
 <br>
@@ -50,7 +50,7 @@ Falcon kann dadurch Schaden erleiden.
 <br>
 </p>
 <p align=center><img src="image/cdterm.gif" border=0 width="480" height="100"></p><br>
-<div align=center><tt>Abbildung 2 - Beispiele f&uuml;r eine korrekte
+<div align=center><tt>Abbildung 2 - Beispiele für eine korrekte
 Bus-Terminierung: </tt>
 <br>
 </div>
@@ -65,8 +65,8 @@ Host, im speziellen der Falcon mit seinem ungebufferten SCSI Bus, kann
 als HOST nicht in der mitte eines SCSI Bus betrieben werden.
 <br>
 </p>
-<p>Beim Falcon z.B sind diese Terminatoren fest eingel&ouml;tet. Sie
-befinden sich direkt hinter der SCSI2-Anschlu&szlig;buchse im Falcon.
+<p>Beim Falcon z.B sind diese Terminatoren fest eingelötet. Sie
+befinden sich direkt hinter der SCSI2-Anschlußbuchse im Falcon.
 Der Falcon ist im ausgeschaltetem Zustand nicht terminiert
 <br>
 </p>
@@ -78,20 +78,20 @@ eine &quot;interne&quot; SCSI Festplatte besitzen und irgendwie
 </p>
 <p>Man ist also einfach hergegangen und hat die internen, auf dem
 Falcon Mainboard Werksseitig vorhandenen Widerstandsarrays
-entl&ouml;tet, die nun so frei gewordenen L&ouml;taugen hat man mit
+entlötet, die nun so frei gewordenen Lötaugen hat man mit
 einem nicht-Standardstecker versehen um so ein Flachbandkabel nebst
-einer &quot;internen&quot; SCSI Festplatte f&uuml;r viel Geld
-verkaufen zu k&ouml;nnen.
+einer &quot;internen&quot; SCSI Festplatte für viel Geld
+verkaufen zu können.
 <br>
 </p>
 <p>Bis hier hin ist das ja weiter noch nicht tragisch.
 <br>
 </p>
 <p>Das wird es jedoch wenn der Anwender am gleichen Falcon externe
-SCSI-Ger&auml;te anschliessen wird. M&ouml;glicherweise, solange man
+SCSI-Geräte anschliessen wird. Möglicherweise, solange man
 sehr kurze SCSI Kabel verwendet, mag das alles perfekt klappen, jedoch
-bildet sich genau bei diesen MK, MKX Falcon nach dem Anschlu&szlig;
-externer SCSI-Ger&auml;te ein sog. Y-f&ouml;rmiger SCSI-Bus der lt.
+bildet sich genau bei diesen MK, MKX Falcon nach dem Anschluß
+externer SCSI-Geräte ein sog. Y-förmiger SCSI-Bus der lt.
 SCSI Spezifikation so nicht existiert.
 <br>
 </p>
@@ -103,7 +103,7 @@ SCSI Spezifikation so nicht existiert.
            Falcon 5380 SCSI Controller             F A L S C H !
                  ######                            W R O N G !
                  +    +
-        Platte   +    +      externe Ger&auml;te
+        Platte   +    +      externe Geräte
    T----######---+    +------######--------####-T
 
 </pre>
@@ -111,17 +111,17 @@ SCSI Spezifikation so nicht existiert.
 <br>
 </p>
 <p>Das -kann- wie oben geschrieben Funktionieren. Jedoch sind mir
-mehrere Benutzer bekannt die nach dem Anschlu&szlig; externer
-Ger&auml;te, in der gerade gezeigten Form, hinterher einen defekten
-SCSI Controller im Rechner hatten. Da mu&szlig; nicht sofort
-passieren, es kann Tage dauern. Eine Y-Form ist nicht zul&auml;ssig.
+mehrere Benutzer bekannt die nach dem Anschluß externer
+Geräte, in der gerade gezeigten Form, hinterher einen defekten
+SCSI Controller im Rechner hatten. Da muß nicht sofort
+passieren, es kann Tage dauern. Eine Y-Form ist nicht zulässig.
 Solage man eine einzelne interne Festplatte an diesem Falcon betreibt,
 diese korrekt Terminiert ist, stellt dies kein Problem dar.
 <br>
 </p>
 <p>Wollten Sie an so einem Falcon nun wirklich mehrere SCSI
-Ger&auml;te -sicher- betreiben m&uuml;ssten Sie den SCSI Bus umbauen.
-Dazu gibt es mehrere M&ouml;glichkeiten:
+Geräte -sicher- betreiben müssten Sie den SCSI Bus umbauen.
+Dazu gibt es mehrere Möglichkeiten:
 <br>
 </p>
 <dl>
@@ -131,73 +131,73 @@ Dazu gibt es mehrere M&ouml;glichkeiten:
 SCSI2 Steckerterminator auf die originale externe <a href="0c08.htm" target="UDOcon">SCSI-Schnittstelle</a>.
 Entfernen Sie die Terminatoren der internen Platte und schliessen sie
 pysikalisch nach dieser internen Platte (zumeist ID0) noch bis zu 6
-weitere Ger&auml;te an diesem intern vorhandenen Flachbandkabel an.
+weitere Geräte an diesem intern vorhandenen Flachbandkabel an.
 <br>
 <br>&nbsp;
-<br>Terminieren sie dann ausschliesslich das letzte Ger&auml;t an
-diesem einen SCSI Strang! Selbstredend geht das nat&uuml;rlich nur
+<br>Terminieren sie dann ausschliesslich das letzte Gerät an
+diesem einen SCSI Strang! Selbstredend geht das natürlich nur
 relativ einfach wenn sich der Falcon schon in einem Tower befindet und
-dieser noch Platz f&uuml;r weitere SCSI-Ger&auml;te bietet.
+dieser noch Platz für weitere SCSI-Geräte bietet.
 <br>
 <br>&nbsp;
-<br>Es d&uuml;rfen keine Ger&auml;te an den originalen externen SCSI
-Anschlu&szlig; angeschlossen werden.
+<br>Es dürfen keine Geräte an den originalen externen SCSI
+Anschluß angeschlossen werden.
 <br>
 <br>&nbsp;
 <dt><b> wieder Umbauen</b></dt><dd>
 <br>&nbsp;
 <br>Sie entfernen alle fremden SCSI Modifikationen aus ihrem Falcon.
-Sie setzen die Terminatorarrays zur&uuml;ck an ihren originalen
+Sie setzen die Terminatorarrays zurück an ihren originalen
 Einbauplatz und sie verzichten auf dieses eine interne
-SCSI-Ger&auml;t.
+SCSI-Gerät.
 <br>
 <br>&nbsp;
-<br>Sie schliessen nun alle SCSI-Ger&auml;te, nach dem Umbau, an der
+<br>Sie schliessen nun alle SCSI-Geräte, nach dem Umbau, an der
 originalen externen <a href="0c08.htm" target="UDOcon">SCSI-Schnittstelle</a> des Falcons an. Die interne
-Platte verfrachten Sie in ein externes SCSI Geh&auml;use aus dem
+Platte verfrachten Sie in ein externes SCSI Gehäuse aus dem
 Fachhandel.
 <br>
 <br>&nbsp;
 <br>Sitz ihr Falcon in einem Tower startet ihr -korrekter- SCSI Bus
 ebenfalls an der originalen externen SCSI-Buchse des Falcon. Mit einem
-SCSI2 Stecker und passendem SCSI Kabel wird der Bus zur&uuml;ck in das
-Geh&auml;use gef&uuml;hrt, mit passendem Kabeladapter, Centronics auf
+SCSI2 Stecker und passendem SCSI Kabel wird der Bus zurück in das
+Gehäuse geführt, mit passendem Kabeladapter, Centronics auf
 Flachband, der kostet ca. 10DM, schliessen Sie alle dort vorhandenen
-SCSI-Ger&auml;te an, maximal sind 6 m&ouml;glich, und terminieren hier
+SCSI-Geräte an, maximal sind 6 möglich, und terminieren hier
 ebenfalls ausschliesslich das letzte pysikalisch vorhandene
-SCSI-Ger&auml;t.
+SCSI-Gerät.
 <br>
 <br>&nbsp;
-<br>Wenn sie nun dennoch SCSI-Ger&auml;te ausserhalb des Towers
-anschliessen wollen f&uuml;hrt der einzig korrekte Weg wieder
-&uuml;ber einen Flachband zu Centronics Adapter aus dem Tower hinaus.
+<br>Wenn sie nun dennoch SCSI-Geräte ausserhalb des Towers
+anschliessen wollen führt der einzig korrekte Weg wieder
+über einen Flachband zu Centronics Adapter aus dem Tower hinaus.
 Dazu entfernen Sie den Terminator am pysikalisch letzten internen
-SCSI-Ger&auml;t. Nach der 50 poligen SCSI Centronics Buchse
-k&ouml;nnen dann externe SCSI-Ger&auml;te betrieben werden. Intern u.
-externe Ger&auml;te bilden zusammen maximal 6 Ger&auml;te. Entfernen
-Sie die externen Ger&auml;te so ist in die 50 polige Buchse ein
-Steckerterminator einzustecken da die internen Ger&auml;te ansonsten
-nicht terminiert w&auml;ren.
+SCSI-Gerät. Nach der 50 poligen SCSI Centronics Buchse
+können dann externe SCSI-Geräte betrieben werden. Intern u.
+externe Geräte bilden zusammen maximal 6 Geräte. Entfernen
+Sie die externen Geräte so ist in die 50 polige Buchse ein
+Steckerterminator einzustecken da die internen Geräte ansonsten
+nicht terminiert wären.
 <br>
 <br>&nbsp;
 <dt><b> warme Worte</b></dt><dd>
 <br>&nbsp;
-<br>Ich wei&szlig; das dies nicht der einfache Weg, den viele gerne
-nehmen, ist und das das gerade beschriebene relativ Umst&auml;ndlich
+<br>Ich weiß das dies nicht der einfache Weg, den viele gerne
+nehmen, ist und das das gerade beschriebene relativ Umständlich
 ist. Seien Sie versichtert, es ist der einzige korrekte Weg lange
 freude an einem funktionierendem SCSI Bus an einem Falcon Computer zu
 haben.
 <br>
 <br>&nbsp;
-<br>Der SCSI Chip ist &uuml;brigens nur in wenigen Falcon Modellen
+<br>Der SCSI Chip ist übrigens nur in wenigen Falcon Modellen
 gesockelt. Auch nicht weiter aufregend, aber ausschlaggebend wenn der
-Chip durch SCSI-Unfug zerst&ouml;rt wurde. Glauben Sie, es macht
--keinen- Spass einen SCSI PLCC zu entl&ouml;ten und einen Sockel oder
-gleich einen neuen Chip auf die dann meist schlechten L&ouml;tpads der
-Platine zu l&ouml;ten.
+Chip durch SCSI-Unfug zerstört wurde. Glauben Sie, es macht
+-keinen- Spass einen SCSI PLCC zu entlöten und einen Sockel oder
+gleich einen neuen Chip auf die dann meist schlechten Lötpads der
+Platine zu löten.
 <br>
 <br>&nbsp;
-<br>Hei&szlig;luft klar, schon die vielen kleinen netten SMD-Teile
+<br>Heißluft klar, schon die vielen kleinen netten SMD-Teile
 drum herum gesehen? Ich schon.
 <br>&nbsp;
 </dl>
@@ -207,7 +207,7 @@ drum herum gesehen? Ich schon.
 <br>
 <br>
 </p>
-<p>Die Pinbelegung entspricht der &uuml;blichen MiniDIN Belegung bzw.
+<p>Die Pinbelegung entspricht der üblichen MiniDIN Belegung bzw.
 dem was sie an jedem Atari <a href="0302.htm" target="UDOcon">Falcon F030</a> an dessen externer SCSI Buchse
 vorfinden.
 <br>
@@ -318,14 +318,14 @@ vorfinden.
 <p>
 <br>
 <br><b> 220/330Ohm Widerstandsarrays auf dem Falcon Mainboard
-(serienm&auml;ssig) </b>
+(serienmässig) </b>
 <br>
 </p>
-<p>&Uuml;bersicht welche Signalleitungen des SCSI Controllers im
+<p>übersicht welche Signalleitungen des SCSI Controllers im
 Falcon abgeschlossen sind.
 <br>Es gibt insgesamt 3 Busterminatoren: (Widerstandsarrays!)
 Widerstandsarrays sind auf einer Seite mit einem Punkt markiert.
-Dieser Punkt definiert den gemeinsamen Anschlu&szlig;. Beachten Sie
+Dieser Punkt definiert den gemeinsamen Anschluß. Beachten Sie
 bitte das SCSI Terminatorarrays zumeist an +5 UND! an GND
 angeschlossen sind.
 <br>

@@ -992,12 +992,12 @@ TOS type *.* (that's everything left) is loaded into GUCK.
 <br>-----
 <br>
 </div>
-<p>Es folgt eine kurze Beschreibung &uuml;ber die Funktion der
-einzelnen Zeilen in der DESKTOP.INF Datei Die maximale L&auml;nge der
+<p>Es folgt eine kurze Beschreibung über die Funktion der
+einzelnen Zeilen in der DESKTOP.INF Datei Die maximale Länge der
 Datei darf beim ST 1024 Byte betragen, laut Atari. Neuere TOS-Releases
-erlauben bis zu 4 Kb lange .INF Dateien. Jede Zeile f&auml;ngt mit
-&quot; # &quot; an, das dem Rechner mitteilt, da&szlig; die darauf
-folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
+erlauben bis zu 4 Kb lange .INF Dateien. Jede Zeile fängt mit
+&quot; # &quot; an, das dem Rechner mitteilt, daß die darauf
+folgenden Daten für die Systemeinstellungen benötigt werden.
 </p>
 <pre>
  #a: In dieser Zeile wird die Konfiguration der RS232 Schnittstelle
@@ -1029,18 +1029,18 @@ folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
      ?                    50
  .........................................................................
  -------------------------------------------------------------------------
- Ungef&auml;hr das gleiche sagt die Zeile aus, die mit #b beginnt, diese Zeile ist
- f&uuml;r die Einstellung der <a href="0c05.htm" target="UDOcon">Druckerschnittstelle</a> zust&auml;ndig. Die Zeile mu&szlig;
+ Ungefähr das gleiche sagt die Zeile aus, die mit #b beginnt, diese Zeile ist
+ für die Einstellung der <a href="0c05.htm" target="UDOcon">Druckerschnittstelle</a> zuständig. Die Zeile muß
  immer mit klein &quot; b &quot; bezeichnet werden, die voreingestellten Parameter
- der Zeilen a und b werden aber nicht ohne Weiteres vom TOS &uuml;bernommen.
- Die Daten werden z.B. vom Kontrollfeld &uuml;bernommen, dann wird die
+ der Zeilen a und b werden aber nicht ohne Weiteres vom TOS übernommen.
+ Die Daten werden z.B. vom Kontrollfeld übernommen, dann wird die
  entsprechende <a href="0305.htm" target="UDOcon">Hardware</a> im Rechner damit versorgt.
  #b001100
  --------------------------------------------------------------------------
  Byte Nr.         $1        $2       $3            $4         $5
  Bedeutung
  --------------------------------------------------------------------------
- Eingesetztes     Typ      Farbe?    Aufl&ouml;sung    Qualit&auml;t    Papier
+ Eingesetztes     Typ      Farbe?    Auflösung    Qualität    Papier
  Zeichen
  --------------------------------------------------------------------------
      0         Matrix-       ja      1200 P/Z     Parallel    Manuell-
@@ -1049,13 +1049,13 @@ folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
      1         Typenrad      nein    960 P/Z      Seriell     Endlos
  --------------------------------------------------------------------------
  ..........................................................................
- #c  Die Zeile mit dem kleinen &quot; c &quot; gibt &uuml;ber die benutzten Farben
+ #c  Die Zeile mit dem kleinen &quot; c &quot; gibt über die benutzten Farben
      und einige andere kleine Einstellungen Auskunft.
      Die Bytes $0-$2F legen die Farbdarstellung fest (3 Byte = 1 Farbe)
      Die Werte bewegen sich zwischen 0-7 wie gehabt !
-     Das Byte mit der Nummer $30 ist f&uuml;r die Geschwindigkeit des
-     Mausklicks zust&auml;ndig. (Das 49te Zeichen in der Kette)
-     Die Werte hierf&uuml;r bewegen sich zwischen 0-4
+     Das Byte mit der Nummer $30 ist für die Geschwindigkeit des
+     Mausklicks zuständig. (Das 49te Zeichen in der Kette)
+     Die Werte hierfür bewegen sich zwischen 0-4
      Das Byte $31 verursacht den Keyklick ..... (0 oder 1)
      Byte $32 schaltet die Software Glocke an oder aus...
      Die Bytes $33 und $34 (52+53 Stelle) beinhalten die Zeit der Tasten-
@@ -1068,11 +1068,11 @@ folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
  ..........................................................................
 
  #D
-     Mit dem gro&szlig;en &quot; D &quot; wird das Aussehen der Icons festgelegt.
+     Mit dem großen &quot; D &quot; wird das Aussehen der Icons festgelegt.
      Der erste Wert ist immer $FF...
      00 = Diskstation
      01 = Ordner Icon
-     02 = das ist der M&uuml;lleimer
+     02 = das ist der Mülleimer
      03 = Programm Icon
      04 = Datei Icon
      Danach folgt meist eine Maske der Dateien, die vom TOS dargestellt
@@ -1081,16 +1081,16 @@ folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
      Muster der Zeile :   #D FF 01   @  *.*@
  ..........................................................................
  #E
-     Hier wird festgehalten, wie das Betriebsystem Kopiervorg&auml;nge behandelt.
-     Untenstehende Tabelle gibt Auskunft &uuml;ber die einzelnen Bits der ersten
+     Hier wird festgehalten, wie das Betriebsystem Kopiervorgänge behandelt.
+     Untenstehende Tabelle gibt Auskunft über die einzelnen Bits der ersten
      Zahl. Die zweite Zahl, das erste Zeichen (0 oder 1) sagt aus, ob der
      Blitter Chip ein oder ausgeschaltet ist.
-     Das zweite Zeichen gibt die momentane Aufl&ouml;sung an 3= High
+     Das zweite Zeichen gibt die momentane Auflösung an 3= High
                                                         2= Mid
                                                         1= Low
      Beispiel:   #E 18 13
-     Diese Zeile sagt aus, da&szlig; TOS l&ouml;scht, kopiert und bei der Verwendung von
-     TOS 1.4 &Uuml;berschreibwarnmeldungen ausgibt. Die Dateien sind alphabetisch
+     Diese Zeile sagt aus, daß TOS löscht, kopiert und bei der Verwendung von
+     TOS 1.4 überschreibwarnmeldungen ausgibt. Die Dateien sind alphabetisch
      sortiert und das Directory wird mit GEM-Icons dargestellt.
      Weitere Einstellungen kann man aus der Tabelle entnehmen.
 
@@ -1099,15 +1099,15 @@ folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
  --------------------------------------------------------------------------
  Bit Nr.     $0      $1      $2      $3      $4      $5      $6      $7
  --------------------------------------------------------------------------
- Bedeut.   Tos 1.4               Kopier-   L&ouml;sch-   Directory-     Darstell.
-           &uuml;ber-                 best&auml;-    best&auml;-     ordnen
+ Bedeut.   Tos 1.4               Kopier-   Lösch-   Directory-     Darstell.
+           über-                 bestä-    bestä-     ordnen
            schreibt              tigung    tigung                   durch
 
                        frei
  -------------------------------------------------------------------------
     0        ein !                 aus       aus    00:Alphabet.    Icons
                                                     01:Nach Datum
-                                                    10:Nach Gr&ouml;&szlig;e   Text
+                                                    10:Nach Größe   Text
     1        aus !                 ein       ein    11:Extension
  -------------------------------------------------------------------------
  .........................................................................
@@ -1116,26 +1116,26 @@ folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
      Hier meldet die Desktop <a href="0205.htm" target="UDOcon">Information</a> dem GEM, welche Dateien als TOS-
      Programm gestartet werden soll.
      Die Zeile wird bei Verwendung der Funktion &quot;Anwendung anmelden&quot;
-     folgenderma&szlig;en aussehen...
+     folgendermaßen aussehen...
      #F 03 04   TEST.TOS@  *.DOC@
-     Es w&uuml;rde bedeuten, da&szlig; wenn man im Desktop eine Datei mit dem
+     Es würde bedeuten, daß wenn man im Desktop eine Datei mit dem
      Extender .DOC anklickt sofort das Programm TEST.TOS gestartet wird.
      Diese Zeile sieht bei TOS 1.4 etwas anders aus, die Funktion ist die
      gleiche.
-     Die Pfadnahmen d&uuml;rfen nat&uuml;rlich auch wesentlich l&auml;nger sein.
+     Die Pfadnahmen dürfen natürlich auch wesentlich länger sein.
 
  ..........................................................................
  #G
      Hier wird festgelegt, welche Programme unter GEM gestartet werden.
-     Die Grundeinstellung ist ungef&auml;hr so:
+     Die Grundeinstellung ist ungefähr so:
      #G 03 FF *.PRG@ @
-     Wie bei &quot;F&quot; Zeilen k&ouml;nnen Voreinstellungen f&uuml;r Autostarts gemacht
+     Wie bei &quot;F&quot; Zeilen können Voreinstellungen für Autostarts gemacht
      werden. (Anwendung anmelden)
  ..........................................................................
  #M
-     Ist f&uuml;r die Laufwerkskennzeichnung zust&auml;ndig. Die ersten beiden Ziffern
+     Ist für die Laufwerkskennzeichnung zuständig. Die ersten beiden Ziffern
      geben die Position des Icons an.
-     Die dritte Ziffer beschreibt den Icon-Typ (schon mal einen M&uuml;lleimer
+     Die dritte Ziffer beschreibt den Icon-Typ (schon mal einen Mülleimer
      als Laufwerk gehabt ?)
      Der Buchstabe vor der Bezeichnung gibt das aktuelle Laufwerk an.
      #M 00 00 00 FF A Floppy 1 @ @
@@ -1147,7 +1147,7 @@ folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
  ...........................................................................
  #T
     Jetzt kommt es...
-    Das ist der Buchstabe f&uuml;r unseren geliebten M&uuml;lleimer !!
+    Das ist der Buchstabe für unseren geliebten Mülleimer !!
     Die Position und der Aufbau ist gleich einer &quot;M&quot; Zeile...
  ...........................................................................
  #W
@@ -1159,22 +1159,22 @@ folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
     $2: Obere linke Ecke des aktuellen Fensters (waagerechte Position)
     $3: Obere linke Ecke des aktuellen Fensters (vertikale Position)
     $4: Breite des Fensters
-    $5: H&ouml;he des Fensters
+    $5: Höhe des Fensters
     $6: wahrscheinlich Laufwerkskennung
-    Bei ge&ouml;ffnetem Fenster erfolgt die Angabe des Pfades, die Zeile wird
-    &uuml;blicherweise mit dem Klammeraffen beendet.
+    Bei geöffnetem Fenster erfolgt die Angabe des Pfades, die Zeile wird
+    üblicherweise mit dem Klammeraffen beendet.
     #W 00 00 20 01 1F 08 0A D:\*.*@
  ..........................................................................
  #Z
     Diese Zeile taucht nur beim TOS 1.4 auf ....
-    Man k&ouml;nnte mit der Zeile einen Autostart erzeugen, ohne da&szlig; man einen
+    Man könnte mit der Zeile einen Autostart erzeugen, ohne daß man einen
     Autoordner benutzt.
-    Nat&uuml;rlich funktioniert das auch mit GEM-Programmen, die ja bekannterweise
+    Natürlich funktioniert das auch mit GEM-Programmen, die ja bekannterweise
     nicht aus einem Autoordner gestartet werden.
     Die erste Ziffer sagt: 00 = GEM AUS \ 01 = GEM AN
-    Danach kommt die Pfadbeschreibung, um die gew&uuml;nschte Datei auch zu finden.
+    Danach kommt die Pfadbeschreibung, um die gewünschte Datei auch zu finden.
     #Z 01 A:\TEST.PRG@
-    Das w&uuml;rde bedeuten, da&szlig; &quot;TEST.PRG&quot; nach dem Booten automatisch gestartet wird !
+    Das würde bedeuten, daß &quot;TEST.PRG&quot; nach dem Booten automatisch gestartet wird !
  ...........................................................................
 
 
@@ -1200,7 +1200,7 @@ folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
  #D FF 01   @ *.*@
  #G 03 FF   *.APP@ @
  #G 03 FF   *.PRG@ @
- #G 03 FF   *.COM@ @               * Das ist doch sehr verd&auml;chtig !!
+ #G 03 FF   *.COM@ @               * Das ist doch sehr verdächtig !!
  #G 03 FF   *.EXE@ @
  #P 03 FF   *.TTP@ @
  #F 03 04   *.TOS@ @
@@ -1212,7 +1212,7 @@ folgenden Daten f&uuml;r die Systemeinstellungen ben&ouml;tigt werden.
 <br>
 <br>
 </p>
-<p>&quot;Master's of the Desktop INF ist aus DOITST1 &uuml;bernommen
+<p>&quot;Master's of the Desktop INF ist aus DOITST1 übernommen
 <br>Bisher hatte ich noch nicht die Zeit, Unterschiede zum TOS 4.04
 rauszusuchen.
 <br>

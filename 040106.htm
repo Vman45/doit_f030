@@ -30,14 +30,14 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: ACIA Chip
 <p>In einigen Atari Computern befinden sich zwei Asyncrone
 Kommunikations Adapter des Typs 6850. Einer der beiden bedient dabei
 die Midi- der andere die Tastaturschnittstelle. Der ACIA-Chip
-enth&auml;lt einen kompletten Sende- und Empfangsteil nach RS232.
-Empf&auml;nger und Sender d&uuml;rfen hierbei mit unterschiedlicher
+enthält einen kompletten Sende- und Empfangsteil nach RS232.
+Empfänger und Sender dürfen hierbei mit unterschiedlicher
 Taktrate betrieben werden.
 </p>
-<p>Vom ST &uuml;ber den TT bis zum Falcon werden die ACIA's idR mit
+<p>Vom ST über den TT bis zum Falcon werden die ACIA's idR mit
 500Khz Takt versorgt um z.B an der Midischnittstelle mit 31250 B/Sec
-und beim <a href="0c02.htm" target="UDOcon">Keyboard</a> mit 7815.5 B/Sec Daten &uuml;bertragen zu
-k&ouml;nnen. Es geht auch schneller, ist bei den Ataris aber auf diese
+und beim <a href="0c02.htm" target="UDOcon">Keyboard</a> mit 7815.5 B/Sec Daten übertragen zu
+können. Es geht auch schneller, ist bei den Ataris aber auf diese
 Transferraten so festgelegt.
 </p>
 <pre>
@@ -47,8 +47,8 @@ PIN    FUNKTION   ST/FALCON
 
 1      Vss        Versorgungsspannung +5V
 2      RxData     Empfang seriell
-3      RxCLK      Taktrate f&uuml;r Empfang
-4      TxCLK      Taktrate f&uuml;r Senden
+3      RxCLK      Taktrate für Empfang
+4      TxCLK      Taktrate für Senden
 5      RTS-       Ready to Send
 6      TxData     Sendedaten
 7      IRQ-       Interrupt Request

@@ -23,7 +23,7 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: NVRAM
 <td valign=top width="8">&nbsp;</td><td valign=top width="100%">
 <h1><a name="NVRAM">4.1.1 NVRAM</a></h1>
 <p align=center><img src="image/line.gif" border=0 width="637" height="6"></p><br>
-<p><tt>Einiges &uuml;ber das NVRAM im Falcon.</tt>
+<p><tt>Einiges über das NVRAM im Falcon.</tt>
 <br>
 <br>
 <br>
@@ -31,23 +31,23 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: NVRAM
 <p><img src="image/deutsch.gif" border=0 width="35" height="22"></p><br>
 <p>Wie ich immer wieder in den verschiedenen Mailboxen u. Netzwerken
 lesen kann gibt es doch Leute die Probleme mit dem
-nichtfl&uuml;chtigen Ram, kurz NVRAM, im <a href="0302.htm" target="UDOcon">Falcon F030</a> haben. Auch ist
-es wohl so das einige Ger&auml;te bzw. dessen Uhrenchip schon eine
+nichtflüchtigen Ram, kurz NVRAM, im <a href="0302.htm" target="UDOcon">Falcon F030</a> haben. Auch ist
+es wohl so das einige Geräte bzw. dessen Uhrenchip schon eine
 leere Batterie hat. Da diese von aussen nicht zu ersetzen ist
-mu&szlig; leider der gesammte Chip daher ausgewechselt werden
+muß leider der gesammte Chip daher ausgewechselt werden
 <br>
 </p>
 <p>Dieser Baustein der auf dem Mainbord die Bezeichnung U64
-tr&auml;gt ist direkt unter der Tastatur zu finden, die Tastatur
-sollte hierzu abgezogen werden. Es ist der gr&ouml;&szlig;te Baustein
+trägt ist direkt unter der Tastatur zu finden, die Tastatur
+sollte hierzu abgezogen werden. Es ist der größte Baustein
 in diesem Bereich. Dieser Chip, Uhrenchip oder wie auch immer, wird
 von einer internen 3,6V Lithium Batterie versorgt die laut
 Herstellerangaben ca. 10 Jahre halten sollte.
 <br>
 </p>
-<p>Jedesmal wenn also der Falcon ausgeschaltet wird &uuml;bernimmt es
+<p>Jedesmal wenn also der Falcon ausgeschaltet wird übernimmt es
 diese interne Batterie das Rechnersetting, inklusive der aktuellen
-Uhrzeit, bis zum n&auml;chsten Einschalten zu sichern.
+Uhrzeit, bis zum nächsten Einschalten zu sichern.
 <br>
 <br>
 <br>
@@ -60,17 +60,17 @@ Uhrzeit, bis zum n&auml;chsten Einschalten zu sichern.
 <br>
 <br>
 </p>
-<p>Im NVRAM sind idR 50 Bytes Platz f&uuml;r die Einstellungen die
-man als Benutzer am Falcon t&auml;tigt. Weiterhin sind 14 Bytes als
+<p>Im NVRAM sind idR 50 Bytes Platz für die Einstellungen die
+man als Benutzer am Falcon tätigt. Weiterhin sind 14 Bytes als
 Clock- / Controll-Register vorhanden. Das SquareWave Output-Signal ist
 Programmierbar, wird aber im <a href="0302.htm" target="UDOcon">Falcon F030</a> nicht verwendet. (Pin 23) U.a
-so auch die Bootaufl&ouml;sung, Bildschirmaufl&ouml;sung usw. Auf
+so auch die Bootauflösung, Bildschirmauflösung usw. Auf
 diese 50 Byte greift man jeweils mit einem Doppelwort zu. Das erste
-Wort enth&auml;lt die entsprechende Adresse, das zweite dann die die
+Wort enthält die entsprechende Adresse, das zweite dann die die
 Daten. Man braucht das aber nicht von Hand zu machen. Es gibt hier
 Programme von Atari und auch z.B von Uwe Seimet,z.B BOOTKONF.PRG, die
-diese Arbeit sehr gut &uuml;bernehmen. Eine &Auml;nderung im NVRAM
-wird jedoch erst beim n&auml;chsten also erneuten Booten des Rechners
+diese Arbeit sehr gut übernehmen. Eine änderung im NVRAM
+wird jedoch erst beim nächsten also erneuten Booten des Rechners
 aktiviert.
 <br>
 <br>
@@ -82,11 +82,11 @@ aktiviert.
 <br>DS12887 /DS12887A (Dallas)
 <br>
 </p>
-<p>Wobei in einigen Falcons wohl eher ein &auml;lteres NVRAM von
+<p>Wobei in einigen Falcons wohl eher ein älteres NVRAM von
 Dallas zu finden sein wird. Meistens wohl der Typ: DS1287 oder der
-noch &auml;ltere Baustein MC146818A. Der neue Baustein DS12887 ist
+noch ältere Baustein MC146818A. Der neue Baustein DS12887 ist
 Pinkompatibel zum alten DS1287 und wird wohl besser zu erhalten sein.
-Er ersetzt den alten DS1287 zum Gl&uuml;ck vollst&auml;ndig.
+Er ersetzt den alten DS1287 zum Glück vollständig.
 <br>
 <br>
 <br><b> Description DS12887 / DS12887A </b>
@@ -121,10 +121,10 @@ even in the absence of power.
 <br>
 </p>
 <p>Alle diese Bausteine sind Pinkompatibel!
-<br>Diese Bauteile lassen sich z.B gut &uuml;ber die Fa. M&Uuml;TRON
+<br>Diese Bauteile lassen sich z.B gut über die Fa. MüTRON
 oder die Fa. SEGOR beziehen.
 <br>PCs benutzen eben die gleichen Bausteine. Die Adressen finden Sie
-unter <a href="1604.htm" target="UDOcon">H&auml;ndler</a>.
+unter <a href="1604.htm" target="UDOcon">Händler</a>.
 <br>
 <br>
 </p>
@@ -138,7 +138,7 @@ unter <a href="1604.htm" target="UDOcon">H&auml;ndler</a>.
 <br>WORD op, start, count; char *buffer;
 <br>
 </p>
-<p>NVMacces() liest oder modifiziert Daten im nicht- fl&uuml;chtigen
+<p>NVMacces() liest oder modifiziert Daten im nicht- flüchtigen
 RAM
 <br>
 </p>
@@ -154,7 +154,7 @@ und legt die Daten in den Buffer.
 Start
 <br>
 </p>
-<p><tt>NVM_RESET 2</tt> L&ouml;scht alle Daten im NVRAM
+<p><tt>NVM_RESET 2</tt> Löscht alle Daten im NVRAM
 </p>
 <p>Binding:
 </p>
@@ -168,9 +168,9 @@ Start
 <br>
 </p>
 <p>Alle oben genannten Uhrenbausteine sind Pinkompatibel und
-k&ouml;nnen jederzeit gegeneinander Ausgetauscht werden. Es kommt also
+können jederzeit gegeneinander Ausgetauscht werden. Es kommt also
 schon vor das irgendwelche Schweineprogramme oder einfach eine
-Unachtsamkeit den Inhalt des NVRAMs zerst&ouml;rt oder einfach mit
+Unachtsamkeit den Inhalt des NVRAMs zerstört oder einfach mit
 sinnlosen Daten beschreibt. Im einfachsten Fall stimmt einfach nur die
 Uhrzeit nicht mehr. Im schlimmsten Fall bootet der Falcon nicht mehr
 korrekt.
@@ -179,30 +179,30 @@ korrekt.
 <p>Hier gibt es ein NVRES.PRG welches man auf einer Diskette im
 Autoordner stets parat halten sollte. Diese Diskette legt man in das
 Diskettenlaufwerk und schaltet den Rechner ein. Das Programm
-l&ouml;scht den gesammten Inhalt des NVRAMs und bringt den Falcon
-wieder dazu sich vern&uuml;nftig zu Verhalten in dem die
+löscht den gesammten Inhalt des NVRAMs und bringt den Falcon
+wieder dazu sich vernünftig zu Verhalten in dem die
 Voreinstellungen aus dem ROM geladen werden. Auch das anschliessen
-einens monochromen Monitors, also eines SM124 oder &auml;hnlichem
-&uuml;ber den ST-Adapter hat in gewissen Situationen einen rettenden
-Einflu&szlig;. Das einstecken eines Atari-Testmoduls l&ouml;scht den
+einens monochromen Monitors, also eines SM124 oder ähnlichem
+über den ST-Adapter hat in gewissen Situationen einen rettenden
+Einfluß. Das einstecken eines Atari-Testmoduls löscht den
 Inhalt des NVRAM ebenfalls und setzt hier ebenfalls die Defauldaten
 aus dem internen ROM des Falcons ein.
 <br>
 </p>
 <p>Im Ordner PROGRAM ist das entsprechende Reset-Programm zu finden,
-auf der Festplatte n&uuml;tzt es wenig da man in einigen F&auml;llen
+auf der Festplatte nützt es wenig da man in einigen Fällen
 auch auf die nicht zugreifen kann. Eine einfache Diskette kann also
-ihre Vorz&uuml;ge haben. Hilft ein Reset des NVRAMs nicht weiter,
-bleibt die Uhrzeit troz allen Versuchen falsch oder l&auml;sst sich
-Stellen, l&auml;uft aber nicht weiter kann es m&ouml;glich sein das
-die interne Batterie ersch&ouml;pft ist oder einfach ein defekt des
+ihre Vorzüge haben. Hilft ein Reset des NVRAMs nicht weiter,
+bleibt die Uhrzeit troz allen Versuchen falsch oder lässt sich
+Stellen, läuft aber nicht weiter kann es möglich sein das
+die interne Batterie erschöpft ist oder einfach ein defekt des
 Chips vorliegt. In diesem Fall hilft leider nur ein Austauschen des
 gesamten Bauteiles. Viele Fehler treten ja erst wieder auf nachdem der
 Falcon eine weile abgeschaltet war. An die interne Batterie des Chips
-kommt man leider nicht heran ohne den Chip zu zerst&ouml;ren.
+kommt man leider nicht heran ohne den Chip zu zerstören.
 <br>
-<br>Den entl&ouml;teten Chip bitte im n&auml;chsten Entsorgungskasten
-f&uuml;r Altbatterieen einwerfen, nicht in den Hausm&uuml;ll geben.
+<br>Den entlöteten Chip bitte im nächsten Entsorgungskasten
+für Altbatterieen einwerfen, nicht in den Hausmüll geben.
 <br>
 </p>
 <p>
@@ -215,65 +215,65 @@ f&uuml;r Altbatterieen einwerfen, nicht in den Hausm&uuml;ll geben.
 </div>
 <p>
 <br>
-<br>Zum Auswechseln des NVRAM mu&szlig; der Falcon ge&ouml;ffnet
-werden, so da&szlig; man auch gleich die inneren Abschirmbleche
+<br>Zum Auswechseln des NVRAM muß der Falcon geöffnet
+werden, so daß man auch gleich die inneren Abschirmbleche
 entfernen kann. Hierzu wird erst das obere Blech komplett entfernt.
-S&auml;mtliche Schrauben des Blechkragens sind zu l&ouml;sen. Nachdem
+Sämtliche Schrauben des Blechkragens sind zu lösen. Nachdem
 alle oberen Bleche entfernt wurden werden die am seitlichen
 Platinenrand sichtbaren Blechhaken gerade gebogen. Danach entfernt man
 die Befestigungsschrauben der Platine rundum komplett. Leider
-mu&szlig; hier auch das interne <a href="0f01.htm" target="UDOcon">Netzteil</a> und das Diskettenlaufwerk
-abgeschraubt werden um die Platine auszubauen zu k&ouml;nnen. Gleiches
+muß hier auch das interne <a href="0f01.htm" target="UDOcon">Netzteil</a> und das Diskettenlaufwerk
+abgeschraubt werden um die Platine auszubauen zu können. Gleiches
 betrifft die interne <a href="060402.htm" target="UDOcon">IDE-Platte</a>. Diese wird nur mit ihrem Blechhalter
 von der Platine geschraubt. Die Flachbandkabel der <a href="060402.htm" target="UDOcon">IDE-Platte</a> und des
-Diskettenlaufwerkes sind m&ouml;glichst nicht zu knicken. Auch ziehen
+Diskettenlaufwerkes sind möglichst nicht zu knicken. Auch ziehen
 und zerren an diesen kurzen Kabeln kann schnell zu einem Defekt
-f&uuml;hren.
+führen.
 <br>Siehe hierzu auch unter <a href="030803.htm" target="UDOcon">Open Case</a>
 <br>
 </p>
-<p>Die Schrauben f&uuml;r das Diskettenlaufwerk befinden sich auf der
-Geh&auml;useunterseite. Es sind hier vier Schrauben zu l&ouml;sen.
+<p>Die Schrauben für das Diskettenlaufwerk befinden sich auf der
+Gehäuseunterseite. Es sind hier vier Schrauben zu lösen.
 <br>
 </p>
 <p>Verwenden Sie BOOTKONF.PRG 1.30 von Uwe Seimet zum Herstellen
-einer korrekten und lauff&auml;higen Bootkonfiguration.
+einer korrekten und lauffähigen Bootkonfiguration.
 <br>
 </p>
 <p><b> Note:</b>
 <br>
 </p>
 <p>Beachten Sie bitte dringlich das im Atari <a href="0302.htm" target="UDOcon">Falcon F030</a> NICHT alle
-Beinchen des NVRAM verl&ouml;tet sind. Nutzen Sie die Gelegenheit vor
-dem Ausl&ouml;ten die entsprechenden Pins zu markieren. Nutzen Sie die
-Pinbelegung! Werden alle Pins verl&ouml;tet kommt es bei einigen
+Beinchen des NVRAM verlötet sind. Nutzen Sie die Gelegenheit vor
+dem Auslöten die entsprechenden Pins zu markieren. Nutzen Sie die
+Pinbelegung! Werden alle Pins verlötet kommt es bei einigen
 Boards zu fehlfunktionen
 <br>
 </p>
-<p><b> Fehler die nach dem auswechseln Auftreten k&ouml;nnen </b>
+<p><b> Fehler die nach dem auswechseln Auftreten können </b>
 <br>
 <br>
 </p>
-<p>- NVRAM l&auml;sst sich nicht neu beschreiben.
+<p>- NVRAM lässt sich nicht neu beschreiben.
 <br>- Uhrzeit stimmt troz mehrfacher korrektur nicht
 <br>- Uhzeit u. Datum zeigen Phantasiedaten
 <br>- Falcon bootet nicht
 <br>
 <br>
 </p>
-<p>In allen F&auml;llen d&uuml;fen Sie zuerst den gerade eben
-eingel&ouml;teten Baustein wieder entfernen. Untersuchen Sie danach
-zuerst die L&ouml;taugen auf Kurzschl&uuml;sse, Unterbrechungen und
-&auml;hnlichem. Versuchen Sie einen Sockel einzul&ouml;ten, manchmal
+<p>In allen Fällen düfen Sie zuerst den gerade eben
+eingelöteten Baustein wieder entfernen. Untersuchen Sie danach
+zuerst die Lötaugen auf Kurzschlüsse, Unterbrechungen und
+ähnlichem. Versuchen Sie einen Sockel einzulöten, manchmal
 passt das inkl. dem Chip doch noch unter die eingelegte Tastatur.
-Verl&ouml;ten Sie den Sockel erst *nachdem* die dessen Bauh&ouml;he
+Verlöten Sie den Sockel erst *nachdem* die dessen Bauhöhe
 inkl. dem eingestecken NVRAM getestet haben! Die Tastatur darf dabei
-nicht Wackeln, ansonsten dr&uuml;ckt das alles im zugeschraubten
+nicht Wackeln, ansonsten drückt das alles im zugeschraubten
 Zustand auf das wehleidige Falcon Mainboard!
 <br>
 <br>
 </p>
-<p><b> Ersatz f&uuml;r die interne Lithium-Batterie </b>
+<p><b> Ersatz für die interne Lithium-Batterie </b>
 <br>
 <br>Die Grundidee zu diesem Umbau stammt von Andreas Buch@OF2.
 <br>
@@ -282,11 +282,11 @@ Zustand auf das wehleidige Falcon Mainboard!
 <br>
 </p>
 <p>Wenn man keinen neuen Uhrenchip kriegt kann man versuchen eine
-Litium-Batterie &uuml;ber eine Diode direkt an die Pins der
-Versorgungsspannung zu l&ouml;ten. Die interne Lithium-Batterie
-mu&szlig; gegen die Spannung gesch&uuml;tzt sein (auch &uuml;ber 'ne
+Litium-Batterie über eine Diode direkt an die Pins der
+Versorgungsspannung zu löten. Die interne Lithium-Batterie
+muß gegen die Spannung geschützt sein (auch über 'ne
 Diode), daher kann man die 3,6V (wahrsch. tuts auch eine 3V ) Batterie
-folgenderma&szlig;en anl&ouml;ten. +Pol der Batterie an die Anode der
+folgendermaßen anlöten. +Pol der Batterie an die Anode der
 Diode und die Kathode (da wo der Ring ist )dann an Pin 24, -Pol der
 Batterie an Pin 12.
 </p>
@@ -300,8 +300,8 @@ Batterie an Pin 12.
 <br>
 </p>
 <p>Da aber so die Batterie den gesamten Falcon mit Strom versorgen
-w&uuml;rde, demnach ziemlich schnell leer w&auml;re, erfolgt eine
-kleine Korrektur der Schaltung durch das einf&uuml;gen einer weiteren
+würde, demnach ziemlich schnell leer wäre, erfolgt eine
+kleine Korrektur der Schaltung durch das einfügen einer weiteren
 Diode und dem Unterbrechen einer Leiterbahn im Falcon.
 <br>
 </p>
@@ -313,38 +313,38 @@ Diode und dem Unterbrechen einer Leiterbahn im Falcon.
 <div align=center><tt> Abbildung 4 - Modifikation der Stromversorgung des NVRAM </tt>
 </div>
 <p>Beachten Sie bitte das diese Modifikation nicht leicht ist,
-eventuell besch&auml;digen Sie hier wichtige Leiterbahen ihres Atari
+eventuell beschädigen Sie hier wichtige Leiterbahen ihres Atari
 <a href="0302.htm" target="UDOcon">Falcon F030</a>. Bedenken Sie bitte das die +5 Versorgung bei Falcon
 Multilayer zumeist in den mittleren Schichten der Platine stattfindet.
-L&ouml;ten Sie daher, wenn der Chip schon raus mu&szlig;, einen
+Löten Sie daher, wenn der Chip schon raus muß, einen
 passenden Sockel ein, trennen Sie zuvor den Pin 24 am Sockel so kurz
-wie m&ouml;glich ab. L&ouml;ten sie hier einen roten Draht an den Sie
-sp&auml;ter zurechtschneiden k&ouml;nnen.
+wie möglich ab. Löten sie hier einen roten Draht an den Sie
+später zurechtschneiden können.
 <br>
 </p>
-<p>L&ouml;ten Sie den Sockel nun ein. Besorgen Sie sich zwei Dioden
-1N4001 od. &auml;hnlich. L&ouml;ten Sie eine Diode an das Ende des
-roten Drahtes und zwr so da&szlig; der Markierungsring der Diode in
-Richtung des NVRAM-Sockels zeigt. Am selben Pin 24 l&ouml;ten sie die
+<p>Löten Sie den Sockel nun ein. Besorgen Sie sich zwei Dioden
+1N4001 od. ähnlich. Löten Sie eine Diode an das Ende des
+roten Drahtes und zwr so daß der Markierungsring der Diode in
+Richtung des NVRAM-Sockels zeigt. Am selben Pin 24 löten sie die
 zweite Diode, ebenfalls mit Markierungsring in Richtung Pin 24, fest.
 An das Ende dieser Diode kommt der Pluspol ihrer 3.6V
 Lithium-Batterie. Minus dieser Batterie verbinden Sie mit Pin 12 des
 NVRAM oder mit jedem anderen GND-Punkt im Falcon.
 <br>
 </p>
-<p>Der rote Draht, dessen noch freies Ende, l&ouml;ten sie irgendwo
-an +5V fest. Benutzen Sie die Abbildung 3 um eine &Uuml;bersicht zu
+<p>Der rote Draht, dessen noch freies Ende, löten sie irgendwo
+an +5V fest. Benutzen Sie die Abbildung 3 um eine übersicht zu
 erhalten.
 </p>
 <p>Beide Dioden verhindern das sich +5V und die 3.6V der Batterie
-behinden und die Batterie sich nicht &uuml;ber den Rechner entleeren
+behinden und die Batterie sich nicht über den Rechner entleeren
 wird. Im ausgeschalteten Zustand des Falcon wird die neue
 Lithiumbatterie NUR den NVRAM-Chip versorgen. Sobald der Rechner
-eingeschaltet wird &uuml;bernimmt die h&ouml;here +5 Spannung die
+eingeschaltet wird übernimmt die höhere +5 Spannung die
 notwendige Versorgung des Chips.
 <br>
 </p>
-<p>Zu kompliziert? Dann m&uuml;ssen Sie den Chip halt eben wechseln
+<p>Zu kompliziert? Dann müssen Sie den Chip halt eben wechseln
 :)
 <br>
 <br>

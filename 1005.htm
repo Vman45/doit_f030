@@ -23,7 +23,7 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Device LED
 <td valign=top width="8">&nbsp;</td><td valign=top width="100%">
 <h1><a name="Device_20LED">16.5 Device LED</a></h1>
 <p align=center><img src="image/line.gif" border=0 width="637" height="6"></p><br>
-<p><tt> Eine zus&auml;tzliche Laufwerk-LED </tt>
+<p><tt> Eine zusätzliche Laufwerk-LED </tt>
 <br>
 <br>
 <br>
@@ -31,63 +31,63 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Device LED
 <p><img src="image/deutsch.gif" border=0 width="35" height="22"></p><br>
 <p><img src="image/english.gif" border=0 width="35" height="22"></p><br>
 <p>Falcon-Benutzer, die ihren Falcon in Tower- oder
-Desktopgeh&auml;use umgebaut haben, werden sicherlich die LEDs der
+Desktopgehäuse umgebaut haben, werden sicherlich die LEDs der
 dabei verwendeten Festplatten nicht immer im Blickfeld haben.
-Gleicherma&szlig;en eignet sich diese Anleitung nat&uuml;rlich auch
-f&uuml;r alle Falcons, die sich noch im normalen Geh&auml;use
+Gleichermaßen eignet sich diese Anleitung natürlich auch
+für alle Falcons, die sich noch im normalen Gehäuse
 befinden.
-<br>Einige Festplattentypen besitzen keinen Anschlu&szlig; f&uuml;r
+<br>Einige Festplattentypen besitzen keinen Anschluß für
 eine eigene LED, welche den Zugriff auf das Laufwerk anzeigt. Andere
 besitzen nur spezielle Stecker, um eine LED anzuschliessen. Zugriffe
-auf SCSI-Devices werden beim FalconF030 &uuml;berhaupt nicht
+auf SCSI-Devices werden beim FalconF030 überhaupt nicht
 angezeigt. Lediglich die interne IDE und das Floppylaufwerk besitzen
 eine gemeinsame LED auf dem <a href="0c02.htm" target="UDOcon">Keyboard</a>.
 <br>
 <br>
 </p>
 <p align=center><img src="image/driveled.gif" border=0 width="253" height="200"></p><br>
-<div align=center><tt> Abbildung 1 - eine zus&auml;tzliche Laufwerk-LED </tt>
+<div align=center><tt> Abbildung 1 - eine zusätzliche Laufwerk-LED </tt>
 </div>
 <p>
 <br>
 </p>
-<p>Mit der Schaltung aus Abbildung 1 ist es m&ouml;glich, eine LED am
+<p>Mit der Schaltung aus Abbildung 1 ist es möglich, eine LED am
 Rechner zu installieren, die prinzipiell alle Zugriffe auf jedes
 vorhandene Laufwerk anzeigt. Also auch Zugriffe auf externe
 SCSI-Devices.
 <br>
 </p>
 <p>Es kommen hier lediglich zwei billige TTL-Chips zur Anwendung. Die
-Chips k&ouml;nnen Sie auf einer kleinen Platine verdrahten, die sich
-dann irgendwo im Rechner leicht befestigen l&auml;sst. Die Verkabelung
-ist kein Problem, da alle L&ouml;tstellen sehr leicht erreichbar sind.
-Sie sollten daf&uuml;r keine Gatter an etwa einen vorhandenen
-<a href="0e.htm" target="UDOcon">Clockpatch</a> oder anderen Chips benutzen, die zuf&auml;llig noch ein
-Gatter frei haben. Es w&uuml;rde nat&uuml;rlich einen Chip sparen. Es
-ist allerdings fraglich, ob der Preis f&uuml;r einen 7404 es wert ist,
+Chips können Sie auf einer kleinen Platine verdrahten, die sich
+dann irgendwo im Rechner leicht befestigen lässt. Die Verkabelung
+ist kein Problem, da alle Lötstellen sehr leicht erreichbar sind.
+Sie sollten dafür keine Gatter an etwa einen vorhandenen
+<a href="0e.htm" target="UDOcon">Clockpatch</a> oder anderen Chips benutzen, die zufällig noch ein
+Gatter frei haben. Es würde natürlich einen Chip sparen. Es
+ist allerdings fraglich, ob der Preis für einen 7404 es wert ist,
 sich eventuell Interferrenzen mit z.B. dem Taktsignal im <a href="0e.htm" target="UDOcon">Clockpatch</a>
 74F04 einzufangen.
 <br>
 </p>
-<p>An Pin 3 von J18 -das ist der Anschlu&szlig;stecker f&uuml;r die
+<p>An Pin 3 von J18 -das ist der Anschlußstecker für die
 Tastatur- greifen Sie das Signal der internen IDE-Festplatte und des
-Floppylaufwerks ab. Pin 17 an U7 f&uuml;hrt das Chip Select (CS)
+Floppylaufwerks ab. Pin 17 an U7 führt das Chip Select (CS)
 Signal des SCSI-Bausteins. Beide Signale werden in dem 7404 durch zwei
-Gatter gef&uuml;hrt, um das urspr&uuml;ngliche Signal nicht zu
+Gatter geführt, um das ursprüngliche Signal nicht zu
 belasten. Der 7402 ist lediglich ein NOR-Gatter, das die neue LED eben
-bei IDE, Floppy oder SCSI-Zugriffen leuchten l&auml;sst. Negiert und
-gebuffert kann die LED dann direkt am Ausgang 6 des 7404 &uuml;ber
+bei IDE, Floppy oder SCSI-Zugriffen leuchten lässt. Negiert und
+gebuffert kann die LED dann direkt am Ausgang 6 des 7404 über
 einen Vorwiderstand betrieben werden. Die Versorgungsspannung der
 beiden Chips entnehmen Sie einfach irgendwo im Rechner; wo eben +5 V
 und GND vorhanden sind.
 <br>
 </p>
-<p>Mit einer weiteren &Auml;nderung dieser Schaltung -einer
-&Auml;nderung im Layout des Falcon- k&ouml;nnte auch die originale
+<p>Mit einer weiteren änderung dieser Schaltung -einer
+änderung im Layout des Falcon- könnte auch die originale
 Tastatur-LED zur Anzeige verwendet werden.
 <br>
 </p>
-<p>Alle Angaben ohne Gew&auml;hr
+<p>Alle Angaben ohne Gewähr
 <br>
 <br>
 </p>

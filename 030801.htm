@@ -27,63 +27,63 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Testkit
 <br>
 </p>
 <p>Das Falcon Testmodul ist ein letztes Testkit in einer Serie von
-Diagnosemodulen f&uuml;r ST, STe und Atari TT Computer. Diese letzte
-Release der Testsoftware enth&auml;lt einige spezielle Routinen die
+Diagnosemodulen für ST, STe und Atari TT Computer. Diese letzte
+Release der Testsoftware enthält einige spezielle Routinen die
 nur am Atari <a href="0302.htm" target="UDOcon">Falcon F030</a> verwendung finden. Das Testkit wurde
 hergestellt um die <a href="0308.htm" target="UDOcon">Fehlersuche</a> an defekten Atari-Computern zu
 erleichtern und schnell defekte Systemkomponenten ausfindig zu machen.
 <br>
 </p>
-<p>Eine Quelle f&uuml;r zumindest das Romportmodul ist
+<p>Eine Quelle für zumindest das Romportmodul ist
 <a href="1601.htm" target="UDOcon">BEST-Electronics</a>.
 <br>
 </p>
 <p>Beachten Sie bitte das Romportmodule nur gesteckt werden wenn der
 entsprechende Computer ausgeschaltet ist. Das trifft also auch auf das
 Testmodul zu. Ein Testmodul besteht aus einer Platine welche zwei
-Sockel f&uuml;r zwei St&uuml;ck 27C256 Proms tr&auml;gt, dieses sog.
-128K-Modul reicht aus um die Teststoftware f&uuml;r Atari Falcon
+Sockel für zwei Stück 27C256 Proms trägt, dieses sog.
+128K-Modul reicht aus um die Teststoftware für Atari Falcon
 Computer unterzubringen. Auch unterteilt sich das in die unteren und
 die oberen 8-Bit. Also jeweils ein Prom mit den LOW- und eines mit den
 HIGH-Daten die zusammen 16 Bit Datenbreite ergeben die auch so am
 <a href="0c09.htm" target="UDOcon">Romport</a> gelesen werden.
 </p>
 <p>Entfernen Sie niemals das Modul bei eingeschaltetem Rechner. So
-vermeiden Sie teuere Sch&auml;den an ihrem System. Wie bei allen
+vermeiden Sie teuere Schäden an ihrem System. Wie bei allen
 Atari-Computern liegt auch am Falcon der Systembus ungepuffert am
 <a href="0c09.htm" target="UDOcon">Romport</a> an.
 </p>
-<p>Alle Testkits sind Men&uuml;gesteuert. Nach dem Einstecken eines
+<p>Alle Testkits sind Menügesteuert. Nach dem Einstecken eines
 Moduls und dem Einschalten des Computers wird die Testsoftware vom
 Modul/Cardridge direkt geladen. Der Falcon bootet von diesem Modul.
-Hierzu gen&uuml;gen bereits 2 KB aktives Ram im Ger&auml;t. Eben in
-diesem Moment werden schon die ersten Tests durchgef&uuml;hrt und
+Hierzu genügen bereits 2 KB aktives Ram im Gerät. Eben in
+diesem Moment werden schon die ersten Tests durchgeführt und
 zeigen dem Benutzer weitere Probleme mit einem roten Bildschirm an.
-Ist kein RAM verf&uuml;gbar kann das Testkit nicht arbeiten!
+Ist kein RAM verfügbar kann das Testkit nicht arbeiten!
 </p>
-<p>Ein solches Testkit &uuml;berpr&uuml;ft den Rechner in
-verschiedenen Schritten die alle ein eigenes Men&uuml; haben. Die
+<p>Ein solches Testkit überprüft den Rechner in
+verschiedenen Schritten die alle ein eigenes Menü haben. Die
 entsprechenden Diagnosergebnisse werden auf dem Bildschirm angezeigt
 oder Anhand der entsprechende Bildschirm-Hintergrundfarbe angezeigt.
 </p>
 <p>Unterteilt sind die Tests in automatisch ablaufende und in Tests
 die die Aufmerksamkeit des Benutzers erfordern. Automatisch laufende
 Tests dienen so auch dem Dauertest bestimmter Baugruppen oder auch den
-sog. &quot;Burn In&quot; bei neuen Ger&auml;ten.
+sog. &quot;Burn In&quot; bei neuen Geräten.
 </p>
 <p>Eine der Hauptgruppen ist der umfassende Speicher- und
 Taktratentest.
 </p>
 <p>Jederzeit wird von diesem Testkit die serielle Schnittstelle
-&uuml;berwacht. Das dient f&uuml;r den Fall das am zu testenden Falcon
+überwacht. Das dient für den Fall das am zu testenden Falcon
 die Tastatur oder/und auch der Bildschirm ausgefallen ist.
-S&auml;mmtliche Bildschirmausgaben werden so an einen weiteren Atari
+Sämmtliche Bildschirmausgaben werden so an einen weiteren Atari
 gesendet der hier dann als Terminal fungiert.
 </p>
-<p>Ein Falcon-Testkit kann man bei der Fa. Best-Electronics f&uuml;r
-ca. 80$ US erwerben. Um ein vollst&auml;ndiges Testkit zu erwerben
+<p>Ein Falcon-Testkit kann man bei der Fa. Best-Electronics für
+ca. 80$ US erwerben. Um ein vollständiges Testkit zu erwerben
 sind noch einige Schnittstellenadapter notwendig die u.A aber auch
-selber Hergestellt werden k&ouml;nnen.
+selber Hergestellt werden können.
 </p>
 <pre>Falcon diagnostic parts
 ---------------------------------
@@ -99,18 +99,18 @@ Expansionport test fixture $70.00
 <br>
 </p>
 <p>Die Adressen von Best-Electronics oder der Fa. Wizztronics
-entnehmen Sie bitte dem <a href="1604.htm" target="UDOcon">H&auml;ndler</a>-Verzeichniss aus DOITF030.
+entnehmen Sie bitte dem <a href="1604.htm" target="UDOcon">Händler</a>-Verzeichniss aus DOITF030.
 </p>
 <p align=center><img src="image/loopbak1.gif" border=0 width="330" height="180"></p><br>
 <div align=center><tt> Abbildung 1 - <a href="0907.htm" target="UDOcon">Audio</a> Loopback Verbindung </tt>
 </div>
-<p>Wenn Sie ein Modul ohne Geh&auml;use erhalten stellen Sie sicher
+<p>Wenn Sie ein Modul ohne Gehäuse erhalten stellen Sie sicher
 das sie die Karte mit den beiden Eproms nach UNTEN in den Falcon
-stecken! Module im Plastikkgeh&auml;use werden mit dem Label nach oben
+stecken! Module im Plastikkgehäuse werden mit dem Label nach oben
 in den Falcon gesteckt. Wenn Sie einen bestimmten Test machen wollen
 schliessen sie auch den entsprechenden Loopback-Tester an die richtige
 Schnittstellen des Falcon an. Selbstredend sollte am Monitorport ein
-Monitor angesteckt sein. Im g&uuml;nstigsten Fall ist das ein
+Monitor angesteckt sein. Im günstigsten Fall ist das ein
 RGB-Farbmonitor!
 </p>
 <p>Nach dem Einschalten des Falcon sollten sie den Schiftzug:
@@ -118,11 +118,11 @@ RGB-Farbmonitor!
 </p>
 <p>&quot;FALCON 030 Diagnostic Cardridge&quot;
 <br>
-<br>auf ihrem Bildschirm lesen k&ouml;nnen. Bis zu diesem Punkt wurden
+<br>auf ihrem Bildschirm lesen können. Bis zu diesem Punkt wurden
 bereits diverse Tests vorgenommen dessen Ergebnisse Sie weiter unten
 sehen sollten. Mit dem Booten von einem solchen Testkit werden
-s&auml;mtliche Parameter die bis dahin im <a href="040101.htm" target="UDOcon">NVRAM</a> gespeichert waren
-durch die Default-Parameter des Atari-Testkit &uuml;berschrieben.
+sämtliche Parameter die bis dahin im <a href="040101.htm" target="UDOcon">NVRAM</a> gespeichert waren
+durch die Default-Parameter des Atari-Testkit überschrieben.
 <br>
 </p>
 <p>
@@ -138,10 +138,10 @@ durch die Default-Parameter des Atari-Testkit &uuml;berschrieben.
 <br>
 </p>
 <p>
-<br><tt> <a href="0308.htm" target="UDOcon">Fehlersuche</a> an einem toten Ger&auml;t </tt>
+<br><tt> <a href="0308.htm" target="UDOcon">Fehlersuche</a> an einem toten Gerät </tt>
 <br>
 </p>
-<p>Wenn Sie ihrem Falcon trotz korrektem Anschlu&szlig;, einer
+<p>Wenn Sie ihrem Falcon trotz korrektem Anschluß, einer
 intakten Stromversorgung und einer einwandfreien Peripherie kein Bild
 entlocken sollten beginnen Sie mit den weiteren Schritten.
 <br>Beachten Sie auch hierzu die Flowcharts.
@@ -151,12 +151,12 @@ entlocken sollten beginnen Sie mit den weiteren Schritten.
 <br>Stellen Sie eine Verbindung zu einem weiteren Atari-Computer her.
 <br>Starten Sie auf dieser Maschine ein VT52-Terminalprogramm.
 <br>Stellen Sie sich folgendes serielles Verbindungskabel selber her:
-<br>Das Terminal mu&szlig; auf die Parameter 9600 Baud, 8N1
+<br>Das Terminal muß auf die Parameter 9600 Baud, 8N1
 eingestellt werden.
 <br>
 </p>
 <pre>
-Totes Ger&auml;t        Weiterer Atari
+Totes Gerät        Weiterer Atari
 
 Pin 2 ----------- Pin 3
 Pin 3 ----------- Pin 2
@@ -167,15 +167,15 @@ Pin 5 ----------- Pin 5 GND (7 an ST, STE)
 <br>Schalten Sie den toten Falcon ein.
 <br>Meldet sich das Diagnosemodul auf dem zweiten Atari benutzen
 <br>sie die dort vorhanden Bildschirmausgabe und die Tastatur
-<br>f&uuml;r weitere Tests. Sollten Sie nichts sehen beginnen Sie
+<br>für weitere Tests. Sollten Sie nichts sehen beginnen Sie
 <br>damit den toten Falcon zu zerlegen.
 <br>
 </p>
 <p>2.
-<br>Nach dem &ouml;ffen des Falcons ben&ouml;tigen Sie hier nicht
-n&auml;her beschriebene Me&szlig;ger&auml;te.
+<br>Nach dem öffen des Falcons benötigen Sie hier nicht
+näher beschriebene Meßgeräte.
 <br>Messen Sie den 32Mhz Takt mit einen Oszilloskop nach.
-<br>Das Taktsignal sollte eine gleichf&ouml;rmige stabile Wellenform
+<br>Das Taktsignal sollte eine gleichförmige stabile Wellenform
 haben.
 <br>Messen Sie die 32Mhz direkt am Eingang des COMBO Chips nach!
 <br>Ist der Takt hier nicht vorhanden ersetzen Sie den Oszillator.
@@ -187,7 +187,7 @@ haben.
 <p>a.)
 <br>
 </p>
-<p>Testen Sie den Resetschaltungszweig ob von hier st&auml;ndig HALT
+<p>Testen Sie den Resetschaltungszweig ob von hier ständig HALT
 geliefert wird.
 <br>
 </p>
@@ -197,14 +197,14 @@ geliefert wird.
 <p>Testen Sie auf einen doppelten Bus-Error. Das bekommt man herraus
 in
 <br>dem man das BERR-Signal der CPU kontrolliert. Das in ein Input
-f&uuml;r die CPU!
+für die CPU!
 <br>Das Signal sollte immer HIGH sein. Sehen Sie hier auf ihrem
 Oszilloskop
-<br>h&auml;ufig folgende LOW-Impulse so werden diese vom COMBO
+<br>häufig folgende LOW-Impulse so werden diese vom COMBO
 generiert.
 <br>Das bedeutet das das System, der COMBO, eine Fehlfunktion
 festgestellt hat.
-<br>Verfolgen Sie die Mastertaktleitung r&uuml;ckw&auml;rts vom COMBO
+<br>Verfolgen Sie die Mastertaktleitung rückwärts vom COMBO
 bis zum Oszillator.
 <br>Beachten Sie dabei auch bitte die Taktleitungen nach dem COMBO!
 <br>Auch hier sollten Takte zu messen sein!
@@ -224,14 +224,14 @@ Funktioniert.
 <br>Im einfachsten Fall ist die <a href="040109.htm" target="UDOcon">68030 CPU</a> defekt.
 <br>
 </p>
-<p>Testen Sie die Leitungen XROM3 und XROM4 auf Signale f&uuml;r den
+<p>Testen Sie die Leitungen XROM3 und XROM4 auf Signale für den
 Cardridegeport.
 <br>Wenn hier nichts messbar ist sollten Sie dringend den COMBO
 wechseln.
 <br>Testen Sie danach am VIDEL ob hier Videosignale erzeugt werden.
 <br>Tut sich hier nichts testen Sie wieder die Taktsignale, die
 Stromversorgung
-<br>f&uuml;r den VIDEL IC. Wechseln Sie den VIDEL oder die
+<br>für den VIDEL IC. Wechseln Sie den VIDEL oder die
 entsprechenden
 <br>fehlerhaften Bauteile. (Takt ect.pp)
 <br>Erhalten Sie noch immer kein Display testen Sie das
@@ -240,14 +240,14 @@ Chipselekt-Signal am MFP!
 (DataStrobe) am MFP.
 <br>Sollte auch das jetzt vorhanden sein fahren Sie mit DTACK fort.
 <br>Stehen die Signale CD und DS an, sind die Leitungen RS1-RS5 sowie
-<br>D0-D7 aktiv und DTACK r&uuml;hrt sich nicht d&uuml;rfen Sie damit
+<br>D0-D7 aktiv und DTACK rührt sich nicht dürfen Sie damit
 beginnen
 <br>ebenfalls den MFP zu wechseln.
 <br>
 </p>
-<p>Es gibt keinen vern&uuml;nfigen Weg eine defekte CPU zu
+<p>Es gibt keinen vernünfigen Weg eine defekte CPU zu
 lokalisieren.
-<br>Einzige der Fall das die CPU so hei&szlig; ist das man sich die
+<br>Einzige der Fall das die CPU so heiß ist das man sich die
 <br>Finger verbrennt deutet darauf hin das der Chip defekt ist.
 <br>
 </p>
@@ -261,51 +261,51 @@ Diagnosmodul zu lesen
 <br>sollte die CPU gewechselt werden. Sollte die CPU aber das
 Diagnosemodul
 <br>lesen, das sieht man an den Datenleitungen, besteht die
-M&ouml;glichkeit
-<br>das die RS232 UND das Videosubsystem besch&auml;digt sind.
-<br>&Uuml;berpr&uuml;fen Sie den Output des MFP wenn das Testmodul
+Möglichkeit
+<br>das die RS232 UND das Videosubsystem beschädigt sind.
+<br>überprüfen Sie den Output des MFP wenn das Testmodul
 gesteckt ist
 <br>und der Falcon eingeschaltet wird. Pin 8 am MFP sollte Daten
 senden.
-<br>Ist das der Fall &uuml;berpr&uuml;fen sie den Treiber 1488.
+<br>Ist das der Fall überprüfen sie den Treiber 1488.
 <br>Beachten Sie dringlich das zum Betrieb der seriellen Schnittstelle
-<br>unbedingt die -12V Versorgung intakt sein mu&szlig;!
+<br>unbedingt die -12V Versorgung intakt sein muß!
 <br>Ist das alles in Ordnung haben Sie ein Problem mit ihrer
 Kabelverbindung
 <br>zum externen Terminal.
 <br>
 </p>
-<p>&Uuml;berpr&uuml;fen Sie den VIDEL. Benutzen Sie einen
+<p>überprüfen Sie den VIDEL. Benutzen Sie einen
 RGB-Monitor, testen Sie
-<br>den Videl-Output an den R-,G-,B- Summenwiderst&auml;nden.
+<br>den Videl-Output an den R-,G-,B- Summenwiderständen.
 <br>Beachten Sie dringlich das Sie keinen IDE-Zugriff haben solange
 <br>es kein Bild zu sehen gibt! Sollten Sie einen Monochrome-Monitor
-<br>benutzen m&uuml;ssen Sie das Mono-Signal &uuml;berpr&uuml;fen.
+<br>benutzen müssen Sie das Mono-Signal überprüfen.
 Messen Sie direkt
 <br>am Baustein. Ebenso sollten sie den Videl-Input, Pin 8 testen.
-<br>Wichtig: Erkennt die CPU w&auml;hrend dem Einschalten hier ein
+<br>Wichtig: Erkennt die CPU während dem Einschalten hier ein
 LOW-Signal
-<br>benutzt sie den R,G,B-Modus f&uuml;r den VIDEL.
+<br>benutzt sie den R,G,B-Modus für den VIDEL.
 <br>Testen Sie U42, das ist ein 74LS244 welcher die Monitor- und
 Ramselektion festlegt.
 <br>Logischerweise gibt es auch kein Bild wenn die
 Syncronisationssignale fehlen!
 <br>Laufende Bilder kann man am TV sehen wenn z.B Vsync. fehlt
-<br>Ein sicheres Zeichen f&uuml;r einen defekten COMBEL
+<br>Ein sicheres Zeichen für einen defekten COMBEL
 <br>Vsync. wird vom COMBEL an Pin 34 ausgegeben und direkt an Pin 6
 des VIDEL eingespeist
 <br>Dazwischen liegt lediglich ein 33 Ohm Widerstand, eine
-unwarscheinliche Quelle f&uuml;r einen defekt
+unwarscheinliche Quelle für einen defekt
 <br>
 </p>
 <p>Produziert der VIDEL ein Videosignal und das Bild ist nicht lesbar
 oder
 <br>auch nicht vorhanden kann noch ein Problem mit dem Videoram
 vorliegen.
-<br>Das Testkit sollte diesen Ramfehler leicht aufsp&uuml;ren
-k&ouml;nnen.
-<br>Stellenweise l&auml;sst sich bei einem defekten COMBEL ein TV-Bild
-erzeugen wenn man an Pin 7 des VIDEL mit der Hand ber&uuml;hrt.
+<br>Das Testkit sollte diesen Ramfehler leicht aufspüren
+können.
+<br>Stellenweise lässt sich bei einem defekten COMBEL ein TV-Bild
+erzeugen wenn man an Pin 7 des VIDEL mit der Hand berührt.
 <br>
 </p>
 <p>
@@ -315,13 +315,13 @@ erzeugen wenn man an Pin 7 des VIDEL mit der Hand ber&uuml;hrt.
 <p><tt> PowerUp beim Einschalten </tt>
 </p>
 <p>Beim Einschalten mit eingestecktem Testkit werden die untersten
-2KB RAM &uuml;berpr&uuml;ft. Wird hier ein Fehler entdeckt, erfolgt
+2KB RAM überprüft. Wird hier ein Fehler entdeckt, erfolgt
 Meldung an das RS232-Terminal. Fehlt RAM kann kein Stack und kein
-Speicher f&uuml;r Systemvariablen angelegt werden. Der Bildschirm
+Speicher für Systemvariablen angelegt werden. Der Bildschirm
 bleibt dunkel und das Testmodul wird die Ramfehler an das Terminal
-senden. (Eventuell roter Bildschirm) Ist das <a href="0c02.htm" target="UDOcon">Keyboard</a> besch&auml;digt,
-wird es deaktiviert, der Benutzter mu&szlig; das RS232-Terminal
-benutzen. Alle Tasteneingaben werden &uuml;ber die serielle
+senden. (Eventuell roter Bildschirm) Ist das <a href="0c02.htm" target="UDOcon">Keyboard</a> beschädigt,
+wird es deaktiviert, der Benutzter muß das RS232-Terminal
+benutzen. Alle Tasteneingaben werden über die serielle
 Schnittstelle geleitet.
 </p>
 <p>
@@ -338,17 +338,17 @@ Defaultwerte gesetzt. Ihre eigenen Parameter gehen dadurch verloren.
 Es wird so Sichergestellt das keine unsinnigen Parameter im <a href="040101.htm" target="UDOcon">NVRAM</a>
 vorhanden sind.
 </p>
-<p>Steigt der Falcon aus bevor Sie das Men&uuml; des Testkits
-komplett auf dem Bildschirm sehen k&ouml;nnen zeigt die letzte
+<p>Steigt der Falcon aus bevor Sie das Menü des Testkits
+komplett auf dem Bildschirm sehen können zeigt die letzte
 Bildschirmaufschrift die Stelle oder Adresse, das Subsystem an bei
-welcher der Absturz erfolgt ist. Hier d&uuml;rfen Sie dann n&auml;her
+welcher der Absturz erfolgt ist. Hier dürfen Sie dann näher
 in die <a href="0305.htm" target="UDOcon">Hardware</a> einsteigen.
 </p>
 <p>Die niedrigsten 2 KB RAM werden beim PowerUp getestet, stellt das
-Kit hier einen Fehler fest wird dieser &uuml;ber die
+Kit hier einen Fehler fest wird dieser über die
 RS232-Schnittstelle gesendet. Es kann dann auch keine
 Bildschirmausgabe erfolgen. Das Kit wird den Ramtest fortsetzen und
-die Meldungen &uuml;ber RS232 ausgeben.
+die Meldungen über RS232 ausgeben.
 </p>
 <p>
 <br>
@@ -356,24 +356,24 @@ die Meldungen &uuml;ber RS232 ausgeben.
 
 <p><tt> Initalisierung des Systems </tt>
 </p>
-<p>Der Speicherbereich f&uuml;r den Bildschirmspeicher wird
+<p>Der Speicherbereich für den Bildschirmspeicher wird
 eingerichtet. Alle Pointer zum lesen und schreiben von Daten werden
 gesetzt. Die so festgelegten Adressen werden an die CPU-Register
-&uuml;bergeben. Fehler werden &uuml;ber die RS-232 ausgegeben,
-nachfolgend wird das zur Verf&uuml;gung stehende RAM getestet.
+übergeben. Fehler werden über die RS-232 ausgegeben,
+nachfolgend wird das zur Verfügung stehende RAM getestet.
 </p>
 <p>Das Falcon RAM wird vom Testkit auf 5 verschiedene Arten getestet.
 Hierbei werden alle bekannten Testmuster verwendet. Bei einer
-14MB-Maschine dauern diese Tests l&auml;nger!
+14MB-Maschine dauern diese Tests länger!
 </p>
 <p>Wird arbeitendes Ram gefunden werden die 68030 Exeption Handler
 geladen und der MFP initalisiert. Alle Interrupts eingeschaltet, das
 Videosubsystem aktiviert und die RS-232 initalisiert. Danach wird der
-Bildschirmspeicher gel&ouml;scht und die erste Meldung erblickt das
+Bildschirmspeicher gelöscht und die erste Meldung erblickt das
 Licht der Welt. Ab diesem Punkt ist das System soweit in Ordnung das
-diverse weitere Tests vorgenommen werden k&ouml;nnten. Ebenso werden
-Meldungen per RS-232 an einen weiteren Atari &uuml;bermittelt. Nach
-jeder gestesteten Funktion werden Sie eine Schlu&szlig;meldung oder
+diverse weitere Tests vorgenommen werden könnten. Ebenso werden
+Meldungen per RS-232 an einen weiteren Atari übermittelt. Nach
+jeder gestesteten Funktion werden Sie eine Schlußmeldung oder
 eine Fehlermeldung erhalten.
 </p>
 <p>
@@ -384,7 +384,7 @@ eine Fehlermeldung erhalten.
 </p>
 <p>Ein Bus-Error tritt z.B beim beschreiben des ROM auf. Hier sollten
 Sie einen roten Bildschirm erhalten. Einige Busfehler erzeugen nur
-eine Statusmeldung, das System l&auml;uft aber weiter.
+eine Statusmeldung, das System läuft aber weiter.
 </p>
 <p>
 <br>
@@ -403,8 +403,8 @@ Bildschirm wird dabei nicht rot.
 <p><tt> Falcon30 Specific Tests </tt>
 </p>
 <p>Lassen Sie diese Tests laufen und notieren/speichern Sie sich die
-Ergebnisse. U.u k&ouml;nnen sie die eine oder andere Meldung
-sp&auml;ter verwerten.
+Ergebnisse. U.u können sie die eine oder andere Meldung
+später verwerten.
 <br>
 </p>
 
@@ -421,18 +421,18 @@ Notwendig! Entfernen Sie vorher einen dort angsteckten Drucker!
 <p><tt> Timer Testing - Genlock</tt>
 </p>
 <p>Beim Start des sog. &quot;Timingtest&quot; wird ein eigenes
-Programmteil aufgerufen das s&auml;mtliche systemrelevanten Routinen
-und Signalabl&auml;ufe testet. Dieses Programmodul generiert seine
+Programmteil aufgerufen das sämtliche systemrelevanten Routinen
+und Signalabläufe testet. Dieses Programmodul generiert seine
 eigenen Meldungen. Es werden alle Timer am MFP getestet und die
-Ergebnisse an die aufrufende Routine zur&uuml;ckgeliefert. Sobald bei
+Ergebnisse an die aufrufende Routine zurückgeliefert. Sobald bei
 diesen Tests ein einziger Fehler auftritt wird die Testroutine
 abgebrochen und das Ergebniss ausgegeben. Stellt die
 Software-Testroutine keinen Fehler in den MFP-Timern fest werden diese
-Timer als Referenztimer f&uuml;r weitere Systemtests benutzt. U.a wird
+Timer als Referenztimer für weitere Systemtests benutzt. U.a wird
 dann auch damit der Takt des Hauptsystems, alle kleineren Taktraten
-und das Genlock-Interface, bzw. der dazu passende Takt gr&uuml;ndlich
-getestet. S&auml;mtliche Meldungen erscheinen auf dem Bildschirm oder
-werden auch hier &uuml;ber RS232 ausgegeben. &quot;pass&quot; bedeutet
+und das Genlock-Interface, bzw. der dazu passende Takt gründlich
+getestet. Sämtliche Meldungen erscheinen auf dem Bildschirm oder
+werden auch hier über RS232 ausgegeben. &quot;pass&quot; bedeutet
 jeweils das der entsprechende Test erfolgreich war. Ohne Fehler.
 </p>
 <p>Zum allgemeinen Funktionsablauf ist zu sagen das bei dieser
@@ -440,18 +440,18 @@ jeweils das der entsprechende Test erfolgreich war. Ohne Fehler.
 eine Instruktionsschleife startet. Ist die Zeit des MFP-Timers
 abgelaufen bevor die CPU diese Schleife abgearbeitet hat, ist die
 entsprechend getestete Taktrate zu langsam oder das System wird
-&uuml;ber Genlock mit einer externen Taktrate gefahren. In diesem Fall
+über Genlock mit einer externen Taktrate gefahren. In diesem Fall
 wird das Testmodul einen Dauerton generieren, die Bildschirmausgabe
-wird gestoppt und der Rechner wird einen Reset ben&ouml;tigen.
+wird gestoppt und der Rechner wird einen Reset benötigen.
 </p>
 <p>Erzeugt diese Test keinen sog. Timeout erfolgt eine entsprechende
 positive Meldung und der Test ist beendet.
 </p>
 <p>Als Teil des Genlock-Tests wird das sog.
 &quot;Pixelcontol-Bit&quot; im SP-Shiftmode Register gesetzt. Sie als
-Benutzer k&ouml;nnen dieses Bit quasi als Oszilloskop nutzen da,
+Benutzer können dieses Bit quasi als Oszilloskop nutzen da,
 sollten Sie das STe-Testboard besitzen, Sie so leicht sehen
-k&ouml;nnen ob der Genlock-Pin auf dem Testboard mit der Pixeltaktrate
+können ob der Genlock-Pin auf dem Testboard mit der Pixeltaktrate
 getoggelt wird. Das Funktioniert nicht wenn ein externer Genlock-Takt
 anliegt!
 </p>
@@ -463,7 +463,7 @@ anliegt!
 </p>
 <p>Unter diesem Punkt wird das <a href="0c02.htm" target="UDOcon">Keyboard</a> neu initalisiert. Die
 Taktrate wird neu gesetzt und der CPU Cache abgeschaltet. Nach einer
-Sekunde Pause wird der Bildschirm gel&ouml;scht und neu Aufgebaut.
+Sekunde Pause wird der Bildschirm gelöscht und neu Aufgebaut.
 </p>
 <p>
 <br>
@@ -472,14 +472,14 @@ Sekunde Pause wird der Bildschirm gel&ouml;scht und neu Aufgebaut.
 <p><tt> Fehlermeldungen bei allgemeinen Tests </tt>
 <br>
 </p>
-<p>Dieser Fehler k&ouml;nnen u.U sofort nach dem Einschalten
+<p>Dieser Fehler können u.U sofort nach dem Einschalten
 auftreten.
 <br>
 </p>
 <dl>
 <dt><b>I1</b></dt><dd> RAM data line is stuck.
-<br>Eine Datenleitung zum RAM ist besch&auml;digt
-<br>Es kann auch eine Unterbrechung oder ein Kurzschlu&szlig; sein
+<br>Eine Datenleitung zum RAM ist beschädigt
+<br>Es kann auch eine Unterbrechung oder ein Kurzschluß sein
 <br>
 <br>&nbsp;
 <dt><b>I2</b></dt><dd> RAM disturbance. Location is altered by write to another
@@ -498,7 +498,7 @@ location.
 <br>&nbsp;
 <dt><b>I5</b></dt><dd> RAM sizing error. Uppermost address fails.
 <br>Fehlerhafte Speichererkennung
-<br>Die h&ouml;chste Adresse im RAM ist falsch
+<br>Die höchste Adresse im RAM ist falsch
 <br>
 <br>&nbsp;
 <dt><b>I6</b></dt><dd> Bus error handling failed. Bus error occurred (on purpose), but
@@ -526,7 +526,7 @@ location.
 <br>
 <br>&nbsp;
 <dt><b>T4</b></dt><dd> Memory controller video address counter failed
-<br>Der Adressz&auml;hler des Videorams arbeitet Fehlerhaft
+<br>Der Adresszähler des Videorams arbeitet Fehlerhaft
 <br>
 <br>&nbsp;
 <dt><b>T5</b></dt><dd> PSG Bus test. PSG chips is causing a bus error by staying on the
@@ -559,20 +559,20 @@ location.
 <p><tt> RAM und SRAM Test </tt>
 <br>
 </p>
-<p>Die ausf&uuml;hrlichen RAM-Tests starten mit dem testen des 32K
+<p>Die ausführlichen RAM-Tests starten mit dem testen des 32K
 SRAM. Es werden bei jedem Ramtest unterschiedliche Testmuster in den
 entsprechenden Speicher geschrieben und dann wieder gelesen. Der Reihe
 nach laufen so Tests mit 11, 00 und AA sowie 55 Bitmustern ab. Danach
-werden die Muster zuf&auml;llig geschrieben und wieder gelesen. Nach
+werden die Muster zufällig geschrieben und wieder gelesen. Nach
 dem SRAM beginnt der Test des Systemrams. Das Systemram wird in drei
 Stufen getestet, zuerst die untersten 2K, dann der Bereich bis 64K und
-als letztes alles was &uuml;ber diesen 64K liegt.
+als letztes alles was über diesen 64K liegt.
 <br>Das DSP SRAM wird mit den gleichen Mustern getestet. Nachfolgend
-eventuell m&ouml;gliche Fehlermeldungen.
+eventuell mögliche Fehlermeldungen.
 <br>
 </p>
 <p>Wird ein Ramfehler erkannt wechselt die Bildschirmfarbe nach Rot
-und es wird eine Reihe von Beept&ouml;nen ausgegeben, einem Fehlercode
+und es wird eine Reihe von Beeptönen ausgegeben, einem Fehlercode
 folgt die zutreffende Adresse des Ram an dem der entsprechende Fehler
 entdeckt wurde. Mit diesen Daten lassen sich dann die Adressleitungen
 und auch der entsprechende Speicherchip ausfindig machen.
@@ -594,7 +594,7 @@ der betroffenen Speicherbits ausgegeben.
 </p>
 <dl>
 <dt><b>R0</b></dt><dd> Low memory failed while setting up to run test
-<br>Die untersten 2K Ram stehen nicht zur Verf&uuml;gung
+<br>Die untersten 2K Ram stehen nicht zur Verfügung
 <br>
 <br>&nbsp;
 <dt><b>R1</b></dt><dd> Failed walking 1s or 0s
@@ -633,10 +633,10 @@ kommerzielle ferige Loopback-Kabel hat zu diesem Zweck ein Leuchtdiode
 im Kabel die blinkt sofern Daten gesendet werden. Zum Test wird ein
 Datenpacket versendet welches sogleich auf der zweiten Midibuchse
 wieder emfpfangen und mit den eben gesendeten Daten verglichen wird.
-Zu bemerken w&auml;re noch das nicht alle Kabel die man erh&auml;lt
+Zu bemerken wäre noch das nicht alle Kabel die man erhält
 eine LED eingebaut haben!
 <br>Wenn dieser Test gestartet wurde wird gleichzeitig der Interrupt
-vom 8650 &uuml;berpr&uuml;ft der am MFP dann ankommen sollte.
+vom 8650 überprüft der am MFP dann ankommen sollte.
 <br>
 </p>
 <p>Nachfolgend die Midi-Fehlermeldungen des Testmoduls.
@@ -655,7 +655,7 @@ the data read
 <br>
 <br>&nbsp;
 <dt><b>M2</b></dt><dd> Input frame error or noisy signal
-<br>Kein Signal oder unvollst&auml;ndiges schlechtes Midi-Signal
+<br>Kein Signal oder unvollständiges schlechtes Midi-Signal
 <br>
 <br>&nbsp;
 <dt><b>M3</b></dt><dd> Input parity error.
@@ -664,7 +664,7 @@ the data read
 <br>&nbsp;
 <dt><b>M4</b></dt><dd> Input data overrun. The 6850 received a byte before the previous
 byte was read
-<br>Zuviele Daten. Der 6850 emfp&auml;ngt Daten bevor welche gesendet
+<br>Zuviele Daten. Der 6850 emfpängt Daten bevor welche gesendet
 wurden
 <br>
 <br>&nbsp;
@@ -679,14 +679,14 @@ wurden
 
 <p><tt> SCC serial Port </tt>
 </p>
-<p>Dieser Test &uuml;berpr&uuml;ft den kompletten seriellen Chip
+<p>Dieser Test überprüft den kompletten seriellen Chip
 inklusive dem Datentransfer
 <br>Ebenso ist der <a href="0c06.htm" target="UDOcon">LAN-Port</a> in diesen Test integriert.
 <br>Es sollten alle Loopback-Kabel angeschlossen sein. Ohne die
 entsprechenden Kabel wird dieser Test immer negativ ausfallen.
-<br>Lassen Sie sich nicht von der Geschwindigkeit verbl&uuml;ffen,
-alle diese Testes ben&ouml;tigen sehr wenig Zeit.
-<br>Nachfolgend die m&ouml;glichen Fehlermeldungen dieses Tests
+<br>Lassen Sie sich nicht von der Geschwindigkeit verblüffen,
+alle diese Testes benötigen sehr wenig Zeit.
+<br>Nachfolgend die möglichen Fehlermeldungen dieses Tests
 <br>
 </p>
 <dl>
@@ -769,18 +769,18 @@ occurred
 <p><tt> SCSI DMA </tt>
 </p>
 <p>Der SCSI-Port des <a href="0302.htm" target="UDOcon">Falcon F030</a> wird getestet in dem man eine
-normale SCSI- Festplatte am externen Anschlu&szlig; des Falcons
-anschliesst. Dieses Laufwerk mu&szlig; dringlich als Unit 0, Device 0
-gejumpert werden. Ebenso m&uuml;ssen die Terminatorarrys gesteckt
-werden oder der entsprechende Jumper mu&szlig; gesetzt sein.
+normale SCSI- Festplatte am externen Anschluß des Falcons
+anschliesst. Dieses Laufwerk muß dringlich als Unit 0, Device 0
+gejumpert werden. Ebenso müssen die Terminatorarrys gesteckt
+werden oder der entsprechende Jumper muß gesetzt sein.
 <br>Es wird zum Test nur dieses eine Device erlaubt.
 <br>Zum Test wird Busarbitration benutzt!
 <br>Das SCSI-Interface des F030 wird im DMA- und im CPU-Mode getestet
-<br>Die SCSI-Testroutinen zerst&ouml;ren unter normalen Umst&auml;nden
+<br>Die SCSI-Testroutinen zerstören unter normalen Umständen
 den Block 0 einer angeschlossenen SCSI-Festplatte nicht!
-<br>Die Lese- und Schreibtests &uuml;ber das SCSI-Interface werden mit
-den &uuml;blichen Lang- und Kurzkommandos ausgef&uuml;hrt. Also nichts
-ungew&ouml;hnliches.
+<br>Die Lese- und Schreibtests über das SCSI-Interface werden mit
+den üblichen Lang- und Kurzkommandos ausgeführt. Also nichts
+ungewöhnliches.
 <br>Die Tests laufen nach folgendem Schema ab:
 <br>
 </p>
@@ -793,7 +793,7 @@ ungew&ouml;hnliches.
 <br>verwendund des Read-Short Kommandos
 <br>
 <br>&nbsp;
-<dt><b>Step 3</b></dt><dd> Schreiben eines 512K Block zur&uuml;ck in Block 0 der Festplatte
+<dt><b>Step 3</b></dt><dd> Schreiben eines 512K Block zurück in Block 0 der Festplatte
 unter
 <br>benutzung des Write-Short Kommandos
 <br>
@@ -821,30 +821,30 @@ Speicherbereich schreiben
 <br>
 <br>&nbsp;
 <dt><b>Step 10</b></dt><dd> Hier wird der DMA-Controller dazu benutzt verschiedene 64K
-Bl&ouml;cke von (nl) der Platte zu lesen und in unterschiedliche
+Blöcke von (nl) der Platte zu lesen und in unterschiedliche
 RAM-Bereiche zu schreiben
 <br>Es werden hier die extendet SCSI-Kommandos benutzt
 <br>
 <br>&nbsp;
 <dt><b>Step 11</b></dt><dd> Vergleichen der Speicherbereiche im RAM
-<br>Testen auf Datenintegrit&auml;t
+<br>Testen auf Datenintegrität
 <br>
 <br>&nbsp;
 </dl>
-<p>Fehlermeldungen die w&auml;hrend oder nach diesen Tests auftauchen
-k&ouml;nnen:
+<p>Fehlermeldungen die während oder nach diesen Tests auftauchen
+können:
 <br>
 </p>
 <dl>
 <dt><b>Error-SCSI Status Code xx</b></dt><dd> SCSI-Controller sendet den Fehlercode xx
 <br>
 <br>&nbsp;
-<dt><b>Error-Cannot Select SCSI Disk</b></dt><dd> Kann keine Arbitration &uuml;ber den Bus erhalten
+<dt><b>Error-Cannot Select SCSI Disk</b></dt><dd> Kann keine Arbitration über den Bus erhalten
 <br>
 <br>&nbsp;
 <dt><b>Error-PRG Mode Read and Write Buffer do not compare</b></dt><dd> Die Daten in den beiden Ram-Buffern sind nicht die gleichen.
-<br>Das k&ouml;nnen dann auch Lesefehler von der Platte sein.
-<br>U.u auch den <a href="0e.htm" target="UDOcon">Clockpatch</a> nachr&uuml;sten!
+<br>Das können dann auch Lesefehler von der Platte sein.
+<br>U.u auch den <a href="0e.htm" target="UDOcon">Clockpatch</a> nachrüsten!
 <br>
 <br>&nbsp;
 <dt><b>Error-DMA Mode 5380 or SCSI Disk is not responding</b></dt><dd> Der versuch Daten von der Platte zu erhalten ist fehlgeschlagen
@@ -854,7 +854,7 @@ k&ouml;nnen:
 <dt><b>Error-DMA Mode Read and Write Buffers do not compare</b></dt><dd> Die Daten in den eingelesenen Datenbuffern sind nicht gleich!
 <br>
 <br>&nbsp;
-<dt><b>Error-DMA Block Move time out</b></dt><dd> Der DMA-Blockdatentransfer hat eine Zeit&uuml;berschreitung
+<dt><b>Error-DMA Block Move time out</b></dt><dd> Der DMA-Blockdatentransfer hat eine Zeitüberschreitung
 <br>
 <br>&nbsp;
 <dt><b>Error-Time out SCSI Bus always Busy</b></dt><dd> Der SCSI-Interrupt fehlt am MFP
@@ -868,7 +868,7 @@ k&ouml;nnen:
 <p><tt> Floppy Disk Test </tt>
 <br>
 </p>
-<p>Wenn Sie den Test f&uuml;r das Diskettenlaufwerk anw&auml;hlen
+<p>Wenn Sie den Test für das Diskettenlaufwerk anwählen
 wird eine Testreihe gestartet die sich aus sieben Punkten
 zusammensetzt
 <br>
@@ -882,59 +882,59 @@ logischerweise
 <br>auf beiden Seiten dieser Diskette statt.
 <br>Ist das Diskettenlaufwerk nicht installeriert wird an dieser
 Stelle
-<br>&uuml;berpr&uuml;ft ob das Drive aktiv ist und ob es sich um ein
+<br>überprüft ob das Drive aktiv ist und ob es sich um ein
 ein- oder
 <br>doppelseitiges Laufwerk handelt
 <br>Bevor man diesen Test startet kann man allerdings schon im
-Hauptmen&uuml;
+Hauptmenü
 <br>direkt unter dem RAM-Test sehen ob das Diskettenlaufwerk aktiv ist
 <br>
 <br>&nbsp;
 <dt><b>Read Track</b></dt><dd> Kontinuierliches lesen eines Track von einer speziellen analogen
-<br>Testdiskette. Zum Start kann ein bestimmter Track ausgew&auml;hlt
+<br>Testdiskette. Zum Start kann ein bestimmter Track ausgewählt
 werden
 <br>Default-Lesetrack ist Track 40 eingestellt
 <br>
 <br>&nbsp;
-<dt><b>Interchangeabilitiy Test</b></dt><dd> Hier wird &uuml;berpr&uuml;ft ob das Laufwerk in der Lage ist
+<dt><b>Interchangeabilitiy Test</b></dt><dd> Hier wird überprüft ob das Laufwerk in der Lage ist
 eine Diskette
 <br>zu erkennen die mit einen anderen Laufwerk/Computer formatiert
 wurde
 <br>
 <br>&nbsp;
 <dt><b>Disk exerciser</b></dt><dd> Ein Disketten / Drive Dauertest
-<br>Es werden alle Tracks einer Diskette f&uuml;r eine bestimmte dauer
+<br>Es werden alle Tracks einer Diskette für eine bestimmte dauer
 getestet
 <br>
 <br>&nbsp;
 <dt><b>Copy Protect Tracks</b></dt><dd> Testet die Tracks 80 - 82 einer eingelegten Diskette
-<br>Einige Softwarehersteller ben&uuml;tzen diese Spuren f&uuml;r
+<br>Einige Softwarehersteller benützen diese Spuren für
 einen Kopierschutz
-<br>WARNUNG: Nicht alle <a href="0606.htm" target="UDOcon">Diskettenlaufwerke</a> k&ouml;nnen auf diesen
+<br>WARNUNG: Nicht alle <a href="0606.htm" target="UDOcon">Diskettenlaufwerke</a> können auf diesen
 Spuren lesen
-<br>und schreiben, mechanische Sch&auml;den am Laufwerk sind nicht
+<br>und schreiben, mechanische Schäden am Laufwerk sind nicht
 ausgeschlossen!!
 <br>
 <br>&nbsp;
-<dt><b>Test Speed</b></dt><dd> Dieser Test &uuml;berpr&uuml;ft die Drehzahl des
+<dt><b>Test Speed</b></dt><dd> Dieser Test überprüft die Drehzahl des
 Diskettenlaufwerks
 <br>Die Geschwindigkeit wird am Bildschirm angezeigt
-<br>Eine Drehzahl von 196-204 Upm (Millisekunden) ist f&uuml;r ein
+<br>Eine Drehzahl von 196-204 Upm (Millisekunden) ist für ein
 Atari-Kompatibles Diskettenlaufwerk akzeptabel
-<br>H&ouml;here oder niedrigere Drehzahlen f&uuml;hren zur
-inkompatibilit&auml;t mit andern Drives
+<br>Höhere oder niedrigere Drehzahlen führen zur
+inkompatibilität mit andern Drives
 <br>Der Test wird mit einem Tastendruck beendet
 <br>
 <br>&nbsp;
-<dt><b>Install Disk</b></dt><dd> Hier geben Sie spezifisch f&uuml;r ihren Falcon an welchen Typ
+<dt><b>Install Disk</b></dt><dd> Hier geben Sie spezifisch für ihren Falcon an welchen Typ
 <br>von Diskettenlaufwerk sie einbauen wollen
 <br>
 <br>&nbsp;
 </dl>
-<p>Ist einer oder mehrere Testzyklen vom Hauptmen&uuml; aus
-angew&auml;hlt wird das spezielle Floppy-Men&uuml; nicht angezeigt,
+<p>Ist einer oder mehrere Testzyklen vom Hauptmenü aus
+angewählt wird das spezielle Floppy-Menü nicht angezeigt,
 hier startet der &quot;Quick-Test&quot; automatisch.
-<br>Mit diesem Test ist es weiterhin m&ouml;glich den Schreibschutz
+<br>Mit diesem Test ist es weiterhin möglich den Schreibschutz
 des Laufwerks zu testen. Aber das Testen Sie am besten selber einmal
 aus.
 <br>
@@ -989,17 +989,17 @@ Austausch der gesammten Hauptplatine zu beseitigen sind.
 <p><tt> Printer und Joystick Test </tt>
 <br>
 </p>
-<p>Das Anschu&szlig;kit f&uuml;r den Drucker- und die Joystickports
-erlaubt das senden von Testdaten &uuml;ber den Druckerport. Diese
+<p>Das Anschußkit für den Drucker- und die Joystickports
+erlaubt das senden von Testdaten über den Druckerport. Diese
 Daten werden auf dem Testboard von einem Latch empfangen und wieder an
-den Druckerport gesendet. Tests f&uuml;r die Joystickports generieren
-Daten die &uuml;ber den Druckerport zu den verschiedenen
-Joystick-Eing&auml;ngen geschickt werden. Die Tastatur liest diese
-Daten in den Antwortpaketen die die CPU versendet. S&auml;mmtliche
-Richtungsangaben, das Bet&auml;tigen der Feuerkn&ouml;pfe sowie die
-Testes der Paddle- und Lightgun-Anschl&uuml;sse kann nur so getestet
-werden. Es ist im &uuml;brigen die gleiche Testplatine wie sie auch
-f&uuml;r STe-Computer zum Einsatz kommt.
+den Druckerport gesendet. Tests für die Joystickports generieren
+Daten die über den Druckerport zu den verschiedenen
+Joystick-Eingängen geschickt werden. Die Tastatur liest diese
+Daten in den Antwortpaketen die die CPU versendet. Sämmtliche
+Richtungsangaben, das Betätigen der Feuerknöpfe sowie die
+Testes der Paddle- und Lightgun-Anschlüsse kann nur so getestet
+werden. Es ist im übrigen die gleiche Testplatine wie sie auch
+für STe-Computer zum Einsatz kommt.
 <br>
 </p>
 <p>Folgende Fehlermeldungen kann das Testkit erzeugen:
@@ -1016,7 +1016,7 @@ f&uuml;r STe-Computer zum Einsatz kommt.
 <br>The input to the MFP is not being read, or the STROBE output from
 <br>the PSG is not funcioning, or Joystick Port 0 Pin 3 is not
 connected
-<br>Das Busysignal l&ouml;st am MFP keinen Interrupt aus
+<br>Das Busysignal löst am MFP keinen Interrupt aus
 <br>Entweder erzeugt der PSG-Chip kein STROBE-Signal oder am Joystick
 0
 <br>ist Pin 3 nicht angeschlossen. Es kann auch der PSG defekt sein
@@ -1024,12 +1024,12 @@ connected
 <br>&nbsp;
 <dt><b>J0</b></dt><dd> Joystick port 0
 <br>The keyboard input is not functioning
-<br>Es k&ouml;nnen keine Inputs von diesem Joystick gelesen werden
+<br>Es können keine Inputs von diesem Joystick gelesen werden
 <br>
 <br>&nbsp;
 <dt><b>J1</b></dt><dd> Joystick port 1
 <br>The keyboard input is not functioning
-<br>Es k&ouml;nnen keine Inputs von diesem Joystick gelesen werden
+<br>Es können keine Inputs von diesem Joystick gelesen werden
 <br>
 <br>&nbsp;
 <dt><b>J2</b></dt><dd> Joystick time out
@@ -1042,9 +1042,9 @@ inputs
 <br>This error can be caused by printer port failure (code P0),
 keyoard failure
 <br>or keyboard-CPU communication line
-<br>Die Joystick Inputs die &uuml;ber den Druckerport generiert wurden
-und &uuml;ber das
-<br>externe Testboard zu den Joystick-Eing&auml;ngen geroutet wurden
+<br>Die Joystick Inputs die über den Druckerport generiert wurden
+und über das
+<br>externe Testboard zu den Joystick-Eingängen geroutet wurden
 sind fehlerhaft
 <br>Dieser Fehler kann auf einen defekt der Tastatur-ACIA, einen
 defekt am PSG
@@ -1091,7 +1091,7 @@ fixture
 <br>This current charges the RC network on the Falcon, varying the
 output pulse
 <br>of the LM556
-<br>Das Testboard generriert analoge &quot;Steuerdaten&quot; f&uuml;r
+<br>Das Testboard generriert analoge &quot;Steuerdaten&quot; für
 die RC-Glieder
 <br>Einmal sind das 5V/100Ohm und 5V/1MOhm, diese Inputs werden an die
 internen
@@ -1105,9 +1105,9 @@ internen
 screen
 <br>The Combel should return the X/Y coordinates of the screen
 position
-<br>&Uuml;ber den XPEN Pin werden Daten eines Lichtpunktes auf dem
+<br>über den XPEN Pin werden Daten eines Lichtpunktes auf dem
 Bildschirm geliefert
-<br>Der Videoadressenz&auml;hler wird benutzt um die Position auf dem
+<br>Der Videoadressenzähler wird benutzt um die Position auf dem
 Schirm zu finden
 <br>Der Combel liefert danach die relevante X/Y Koordinate auf dem
 Bildschirm
@@ -1121,9 +1121,9 @@ Bildschirm
 <p><tt> <a href="0c09.htm" target="UDOcon">Romport</a> / Expansions Bus </tt>
 <br>
 </p>
-<p>Das Anschu&szlig;kit f&uuml;r den <a href="030702.htm" target="UDOcon">Expansionsport</a> des <a href="0302.htm" target="UDOcon">Falcon F030</a>
+<p>Das Anschußkit für den <a href="030702.htm" target="UDOcon">Expansionsport</a> des <a href="0302.htm" target="UDOcon">Falcon F030</a>
 erlaubt es den gesammten <a href="0c09.htm" target="UDOcon">Romport</a> mit allen Adress- und Datenleitungen
-komplett zu testen. Der Testanschlu&szlig; hat einen Speicher von 64Kb
+komplett zu testen. Der Testanschluß hat einen Speicher von 64Kb
 statischem Ram und ist mit Jumpern auch auf 128K selektierbar. Dieses
 Ram wird beim PowerUp adressiert von $FC000 bis $FDFFFF und kann per
 Software in den Bereich von $FA0000 bis $FDFFFF gemappt werden. Das
@@ -1131,26 +1131,26 @@ ist der eigentliche Modul - Bereich im Ram. Das bedeutet das die
 Software des Testmoduls hier geladen werden kann um dann aus dem
 statischen Ram gestartet zu werden. Der '<a href="0c09.htm" target="UDOcon">Romport</a>-Tester' kann
 ebendfalls so Konfiguriert werden das er die beiden Eproms aus dem
-Testmodul auf seiner eigenen Platine tragen und auch ausf&uuml;hren
+Testmodul auf seiner eigenen Platine tragen und auch ausführen
 kann.
 <br>
 </p>
-<p>Bevor Sie jedoch die schlimmsten Bef&uuml;rchtungen anstellen
+<p>Bevor Sie jedoch die schlimmsten Befürchtungen anstellen
 sollten Sie einfach nachsehen ob die <a href="0c09.htm" target="UDOcon">Romport</a>-Sicherung F1 noch intakt
-ist, n&auml;heres dazu finden Sie unter <a href="030702.htm" target="UDOcon">Expansionsport</a> oder <a href="0c09.htm" target="UDOcon">Romport</a>.
-Auch ist es durch normalen verschlei&szlig; m&ouml;glich das die Karte
+ist, näheres dazu finden Sie unter <a href="030702.htm" target="UDOcon">Expansionsport</a> oder <a href="0c09.htm" target="UDOcon">Romport</a>.
+Auch ist es durch normalen verschleiß möglich das die Karte
 welche Sie in den <a href="0c09.htm" target="UDOcon">Romport</a> gesteckt haben einfach keinen richtigen
 Kontakt zu der Federleiste herstellen kann. U.u liegt es einfach nur
 an verschmutzten Kontakten.
-<br>Die Kontaktfl&auml;chen der Module / Karten lassen sich gut mit
-einem normalen Radiergummi reinigen. Hier gen&uuml;gt leichtes Rubbeln
+<br>Die Kontaktflächen der Module / Karten lassen sich gut mit
+einem normalen Radiergummi reinigen. Hier genügt leichtes Rubbeln
 mit der blauen Seite
-<br>Die Kontaktfedern der Romportbuchse bed&uuml;rfen eigentlich
+<br>Die Kontaktfedern der Romportbuchse bedürfen eigentlich
 keiner Wartung.
 <br>Sollten Kontaktfedern verbogen oder gar Kurzgeschlossen sein sind
 Sie gut beraten die ganze Buchse komplett Auszutauschen. Das
 Nachbiegen einzelner Kontaktfedern wird nur in den wenigsten
-F&auml;llen gl&uuml;cklich enden
+Fällen glücklich enden
 <br>
 </p>
 <p>Bei einer normalen Testkonfiguration hat der Porttester folgende
@@ -1162,30 +1162,30 @@ F&auml;llen gl&uuml;cklich enden
 <br>64K / 120 nS. statisches Ram von FC0000 bis FCFFFF
 <br>
 </p>
-<p>Die Testzyklen f&uuml;r den <a href="0c09.htm" target="UDOcon">Romport</a> laufen nach folgendem Schema
+<p>Die Testzyklen für den <a href="0c09.htm" target="UDOcon">Romport</a> laufen nach folgendem Schema
 ab:
 <br>
 </p>
 <dl>
 <dt><b>Step 1</b></dt><dd> Die 64K Ram werden benutzt um die Adressleitungen A0-A15
 <br>und alle Datenleitungen auf offene oder kurzgeschlossene
-<br>Verbindungen zu pr&uuml;fen
+<br>Verbindungen zu prüfen
 <br>
 <br>&nbsp;
 <dt><b>Step 2</b></dt><dd> Die Adressleitungen A16-A32 werden beim lesen von den oberen 256
 Adressen
-<br>und dem Zwischenspeichern in einem Latch Adresse f&uuml;r Adresse
+<br>und dem Zwischenspeichern in einem Latch Adresse für Adresse
 getestet
 <br>
 <br>&nbsp;
 <dt><b>Step 3</b></dt><dd> Der externe Blitter hat einige Modifikationen um den Falcon
 internen
-<br>Blitter testen zu k&ouml;nnen. Dieser Test kontrolliert die
+<br>Blitter testen zu können. Dieser Test kontrolliert die
 Master-
 <br>Handshakeleitungen komplett
 <br>
 <br>&nbsp;
-<dt><b>Step 4</b></dt><dd> Dieser Schritt testet die Interrupts nach ihrer Priorit&auml;t
+<dt><b>Step 4</b></dt><dd> Dieser Schritt testet die Interrupts nach ihrer Priorität
 <br>Getestet wird Interrupt 1,3,5 sowie 6
 <br>Gefolgt vom Bus Error, HALT, RESET und 500Khz
 <br>
@@ -1209,24 +1209,24 @@ externe Romporttester vorhanden und auch angeschlossen ist
 <br>COMBEL, MFP und Interruptleitung 6 testen
 <br>
 <br>&nbsp;
-<dt><b>Bus Error from Interrupt Level 6</b></dt><dd> Ein Buserror ist w&auml;hrend dem Test von Interrupt 6
+<dt><b>Bus Error from Interrupt Level 6</b></dt><dd> Ein Buserror ist während dem Test von Interrupt 6
 aufgetreten
 <br>COMBEL, MFP und Interruptleitung 6 testen
 <br>
 <br>&nbsp;
-<dt><b>Bus Error</b></dt><dd> Ein Buserror ist w&auml;hrend dem Test aufgetreten
+<dt><b>Bus Error</b></dt><dd> Ein Buserror ist während dem Test aufgetreten
 <br>COMBEL testen
 <br>
 <br>&nbsp;
-<dt><b>Spurious Interrupt</b></dt><dd> Ein Interrupt wurde w&auml;hrend dem Test empfangen
+<dt><b>Spurious Interrupt</b></dt><dd> Ein Interrupt wurde während dem Test empfangen
 <br>Alle Interruptleitungen testen
 <br>MFP, COMBEL testen
 <br>
 <br>&nbsp;
-<dt><b>Adress Error</b></dt><dd> Ein Interrupt wurde w&auml;hrend dem Test empfangen
+<dt><b>Adress Error</b></dt><dd> Ein Interrupt wurde während dem Test empfangen
 <br>Alle Interruptleitungen testen
 <br>COMBEL, MC68030 und alle Adressleitungen auf Unterbrechung
-<br>oder Kurzschlu&szlig; testen!
+<br>oder Kurzschluß testen!
 <br>
 <br>&nbsp;
 <dt><b>Halt Failed Test</b></dt><dd> Eine 'HALT' Operation ist Fehlgeschlagen
@@ -1241,7 +1241,7 @@ aufgetreten
 <br>COMBEL und die Taktleitung testen
 <br>
 <br>&nbsp;
-<dt><b>Printer is not Responding</b></dt><dd> Der Druckeranschlu&szlig; gibt keine Antwort
+<dt><b>Printer is not Responding</b></dt><dd> Der Druckeranschluß gibt keine Antwort
 <br>Die Druckerdatenleitungen testen
 <br>SDMA, COMBEL und PSG testen
 <br>
@@ -1258,10 +1258,10 @@ aufgetreten
 <br>COMBEL und alle Adress- und Datenleitungen testen
 <br>
 <br>&nbsp;
-<dt><b>Expansions Port is not connected</b></dt><dd> Das Testboard f&uuml;r den <a href="0c09.htm" target="UDOcon">Romport</a> ist nicht angesteckt worden
+<dt><b>Expansions Port is not connected</b></dt><dd> Das Testboard für den <a href="0c09.htm" target="UDOcon">Romport</a> ist nicht angesteckt worden
 <br>
 <br>&nbsp;
-<dt><b>Adress Latch Failed</b></dt><dd> Das Latch f&uuml;r die Adressen hat einen fehler
+<dt><b>Adress Latch Failed</b></dt><dd> Das Latch für die Adressen hat einen fehler
 <br>COMBEL testen
 <br>
 <br>&nbsp;
@@ -1281,7 +1281,7 @@ aufgetreten
 <br>Testen Sie den COMBEL, MFP und die Interruptleitung 6
 <br>
 <br>&nbsp;
-<dt><b>Interrupt Priority failed</b></dt><dd> Der Interrupt-Priorit&auml;tstest ist fehlgeschlagen
+<dt><b>Interrupt Priority failed</b></dt><dd> Der Interrupt-Prioritätstest ist fehlgeschlagen
 <br>MFP, COMBEL und die Interruptleitungen testen
 <br>
 <br>&nbsp;
@@ -1290,11 +1290,11 @@ aufgetreten
 <br>
 <br>&nbsp;
 </dl>
-<p>An dieser Stelle ist &uuml;brigens f&uuml;r jeden gut zu erkennen
-das es nicht m&ouml;glich ist mit dem Testmodul alleine bestimmte
+<p>An dieser Stelle ist übrigens für jeden gut zu erkennen
+das es nicht möglich ist mit dem Testmodul alleine bestimmte
 Fehler des <a href="0302.htm" target="UDOcon">Falcon F030</a> zu erkennen. Nur mit den Externen und
-Zus&auml;tzlichen Testbaugruppen ist ein ausf&uuml;hrlicher und
-kompletter Test des Computers m&ouml;glich.
+Zusätzlichen Testbaugruppen ist ein ausführlicher und
+kompletter Test des Computers möglich.
 <br>
 </p>
 <p>
@@ -1302,26 +1302,26 @@ kompletter Test des Computers m&ouml;glich.
 </p>
 
 <p>Wenn Sie eine defekte Einheit reparieren wollen sollten Sie sich
-so weit wie m&ouml;glich an die einzelnen Schritte der Grafiken
-halten. Nur so ist es m&ouml;glich gezielt und ohne sich zu verheddern
+so weit wie möglich an die einzelnen Schritte der Grafiken
+halten. Nur so ist es möglich gezielt und ohne sich zu verheddern
 einen bestimmten Fehler zu finden. Sehr viele Fehler werden damit
 beginnen das der Falcon keine Bildschirmausgabe erzeugt.
 </p>
-<p>Sollten Sie keine Bildschirmausgabe haben k&ouml;nnen Sie auch
+<p>Sollten Sie keine Bildschirmausgabe haben können Sie auch
 zuerst versuchen die H- und Vsync. Signale im Falcon zu lokalieren.
 Werden die nicht erzeugt liegt das meistens an einem defekten COMBEL
 <br>
 <br>
 </p>
-<p>Abschlie&szlig;end bleibt noch zu sagen das das hier auf keinen
-Fall und unter keinen Umst&auml;nden das Manual f&uuml;r eben das
+<p>Abschließend bleibt noch zu sagen das das hier auf keinen
+Fall und unter keinen Umständen das Manual für eben das
 Atari-Testkit ersetzt wird!
-<br>Es k&ouml;nnen hier lediglich einige erg&auml;nzende Tips und
-&uuml;bersetzte Fehlermeldungen wiedergegeben werden um so die Arbeit,
-eine n&ouml;tige Reparatur am Atari <a href="0302.htm" target="UDOcon">Falcon F030</a> wesentlich zu
+<br>Es können hier lediglich einige ergänzende Tips und
+übersetzte Fehlermeldungen wiedergegeben werden um so die Arbeit,
+eine nötige Reparatur am Atari <a href="0302.htm" target="UDOcon">Falcon F030</a> wesentlich zu
 erleicherten
 <br>Auch hat diese Zusammenstellung keinen Anspruch auf
-Vollst&auml;ndigkeit
+Vollständigkeit
 <br>Es werden nur Punkte wiedergegeben die ich selber schon benutzen
 musste
 <br>
@@ -1330,10 +1330,10 @@ musste
 </p>
 <p>Beachten Sie bitte das bei einmaligen einstecken eines Testmoduls
 in einen Atari <a href="0302.htm" target="UDOcon">Falcon F030</a> dessen Setup im <a href="040101.htm" target="UDOcon">NVRAM</a> komplett durch das
-Default-Setting des Testkits &uuml;berschrieben wird. Keine Panik, Ihr
+Default-Setting des Testkits überschrieben wird. Keine Panik, Ihr
 Rechner bootet nachher wie gewohnt auch von der IDE-Festplatte.
 Allerdings ist die Landessprache, die Keyboardbelegung und die
-Bildschirmaufl&ouml;sung verstellt.
+Bildschirmauflösung verstellt.
 <br>Ebenso stimmt die Uhrzeit und das Datum nicht mehr
 <br>
 </p>
@@ -1348,19 +1348,19 @@ Bildschirmaufl&ouml;sung verstellt.
 <p>BOOTKONF.PRG dient dazu alle <a href="040101.htm" target="UDOcon">NVRAM</a>-Parameter einzustellen.
 <br>Mit CONFIG.PRG stellen Sie den Rechner auf ihre Landessprache ein.
 <br>RESETNVR.PRG sollten Sie auf einer Diskette im Autoordner liegen
-haben, das ist f&uuml;r den Fall in dem ihr Falcon nichts mehr tut,
+haben, das ist für den Fall in dem ihr Falcon nichts mehr tut,
 booten Sie dann einmal von dieser Diskette. Alle Parametereingaben aus
 beiden Programmen werden erst nach einem erneuten Kaltstart des
 Systems aktiv!
 <br>
 </p>
-<p>F&uuml;r Notf&auml;lle sollten Sie immer eine Diskette mir diesen
+<p>Für Notfälle sollten Sie immer eine Diskette mir diesen
 Programmen bereit liegen haben. Der Fall tritt auch ein wenn Sie das
-<a href="040101.htm" target="UDOcon">NVRAM</a> auswechseln m&uuml;ssen.
+<a href="040101.htm" target="UDOcon">NVRAM</a> auswechseln müssen.
 <br>
 <br>
 </p>
-<p>&Uuml;bersetzung: robscha@data.rhein-main.de
+<p>übersetzung: robscha@data.rhein-main.de
 <br>
 <br>
 <br>

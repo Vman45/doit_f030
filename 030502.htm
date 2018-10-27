@@ -26,32 +26,32 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Busemulation
 <p><tt> Falcon F30 interne Busemulation </tt>
 </p>
 <p>Eine Auflistung und Beschreibung der vier PAL/GAL-
-<br>Bausteine im Falcon die f&uuml;r die Busemulation verantwortlich
+<br>Bausteine im Falcon die für die Busemulation verantwortlich
 sind.
-<br>Die k&uuml;rze der einzelnen Beschreibungen stammt aus den
+<br>Die kürze der einzelnen Beschreibungen stammt aus den
 Serviceunterlagen und wurden von mir eingedeutscht.
 <br>
 </p>
-<p>Die Busemulation ist der Block im Falcon der es erm&ouml;glicht
-den ansonsten f&uuml;r eine 16Mhz 68000 CPU konzipierten Falcon an die
+<p>Die Busemulation ist der Block im Falcon der es ermöglicht
+den ansonsten für eine 16Mhz 68000 CPU konzipierten Falcon an die
 abgespeckte Version der <a href="040109.htm" target="UDOcon">68030 CPU</a> anzupassen. In meinen Augen eine
-reine Notl&ouml;sung. Die in diesen vier Bausteinen steckende logik
+reine Notlösung. Die in diesen vier Bausteinen steckende logik
 passt die Leitungen, Daten- und Adressleitungen so an das die 68030
 CPU mit der weitern Falcon-Peripherie arbeiten kann.
 <br>
 </p>
 <dl>
-<dt><b>68000 Bus Decoder PAL U68</b></dt><dd> Das GAL U68 wird benutzt um BUS GRAND f&uuml;r 68000 Devices zu
+<dt><b>68000 Bus Decoder PAL U68</b></dt><dd> Das GAL U68 wird benutzt um BUS GRAND für 68000 Devices zu
 erzeugen.
 <br>Ebenso generiert es das BMODE-Signal welches benutzt wird um
 <br>dem SDMA- und dem COMBO-Chip mitzuteilen das ein 68000 Device
-<br>den Bus benutzen wird. Dieser Baustein ben&ouml;tigt einen extra
+<br>den Bus benutzen wird. Dieser Baustein benötigt einen extra
 <br>System-Taktzyklus um den Takt und das Strobesignal zu
 kompletieren.
 <br>
 <br>&nbsp;
 <dt><b>68000 Bus Decoder PAL U63</b></dt><dd> Das GAL U63 erzeugt die Expansions Data, Bus Error und Daten-
-<br>Transfer Acknowledge Signale f&uuml;r das gesammte System.
+<br>Transfer Acknowledge Signale für das gesammte System.
 <br>Ebenso erzeugt es das Data Transfer Size- und Acknowledge 1
 Signal.
 <br>
@@ -60,7 +60,7 @@ Signal.
 <br>Valid Memory Adress (VMA, Read/Write (R/W) und das SIZE 1 Bit.
 <br>
 <br>&nbsp;
-<dt><b>68000 Bus Decoder PAL U67</b></dt><dd> U67 decodiert die Adressen f&uuml;r den DSP.
+<dt><b>68000 Bus Decoder PAL U67</b></dt><dd> U67 decodiert die Adressen für den DSP.
 <br>Ebenso generiert es die partitielle DSP decodierung.
 <br>
 <br>&nbsp;
@@ -77,18 +77,18 @@ Signal.
 <div align=center><tt> Abbildung 1 - Busemulation / Location </tt>
 </div>
 <br>Verschiedentlich ist es aufgetreten das ein <a href="0302.htm" target="UDOcon">Falcon F030</a> keinerlei
-Lebenszeichen von sich gibt. In den meisten F&auml;llen ist es wohl
-auch so das keine weiteren Testm&ouml;glichkeiten vorhanden sind.
+Lebenszeichen von sich gibt. In den meisten Fällen ist es wohl
+auch so das keine weiteren Testmöglichkeiten vorhanden sind.
 Erfolgt nach dem Einschalten auch kein Zugriff auf das
 Diskettenlaufwerk und der Bildschirm erhellt sich nicht besteht die
-M&ouml;glichkeit das lediglich eines oder mehrere GALs / PALs der
+Möglichkeit das lediglich eines oder mehrere GALs / PALs der
 Busemulation defekt sind. Die CPU kann hier also keine korrekten
 Instruktionen abarbeiten geschweige den das ROM lesen. Ergo bleibt der
 Rechner einfach stumm.
-<br>Einige Ger&auml;te konnten durch einfachen Ersatz der GALs wieder
-zum normalen Arbeiten gebracht werden. Beachten Sie bitte das f&uuml;r
+<br>Einige Geräte konnten durch einfachen Ersatz der GALs wieder
+zum normalen Arbeiten gebracht werden. Beachten Sie bitte das für
 bestimmte Bereiche im Falcon mehrere GALs verantwortlich sein
-k&ouml;nnen!
+können!
 <br>
 <br>
 <br>&nbsp;

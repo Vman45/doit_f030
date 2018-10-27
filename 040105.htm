@@ -31,17 +31,17 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: DSP Chip
 <p>
 <br>
 </p>
-<p>DSP ist eine Abk&uuml;rzung, hinter der sich das folgende
+<p>DSP ist eine Abkürzung, hinter der sich das folgende
 &quot;Langwort&quot; Digitaler Signal Prozessor versteckt. Dieser Chip
 stammt von Motorola und ist ein kleines Wunderwerk, in dem sich
 diverse Funktionen verstecken.
 <br>
 </p>
-<p>Der DSP wird im Falcon in der Hauptsache f&uuml;r Audioanwendungen
+<p>Der DSP wird im Falcon in der Hauptsache für Audioanwendungen
 benutzt. Spezielle Effekte wie Hall, Echo usw. lassen sich mittels DSP
 und geeigneter Audiosoftware erzeugen. Auch Grafikanwendungen laufen
-&uuml;ber den DSP Chip. Der DSP nutzt die Daten- und Adressleitungen
-der CPU, um an die Audiodaten heranzukommen. F&uuml;r sich selbst hat
+über den DSP Chip. Der DSP nutzt die Daten- und Adressleitungen
+der CPU, um an die Audiodaten heranzukommen. Für sich selbst hat
 der DSP 32K RAM, das 24-bit breit ist und keine Waitstates hat.
 <br>
 </p>
@@ -87,14 +87,14 @@ der DSP 32K RAM, das 24-bit breit ist und keine Waitstates hat.
 48             X/(Y)       Output    Das Signal selektiert, welcher Bereich des
                                      externen RAM angesprochen wird.
 
-47             RD-         Output    Read Enable; wenn das externe RAM &uuml;ber
+47             RD-         Output    Read Enable; wenn das externe RAM über
                                      D0-D24 gelesen werden soll.
 
 46             WR-         Output    Write Enable; wird aktiviert, wenn in das
-                                     externe RAM &uuml;ber D0-D23 geschrieben wird.
+                                     externe RAM über D0-D23 geschrieben wird.
 
 45             BR-         Input     Bus Request teilt anderen Bausteinen mit,
-                                     da&szlig; sie Master &uuml;ber den D0-D23 und
+                                     daß sie Master über den D0-D23 und
                                      A0-A15 Bus sind. High beim F030!
 
 43             BG-         Output    Externer Bus Request. High beim F030!
@@ -114,28 +114,28 @@ der DSP 32K RAM, das 24-bit breit ist und keine Waitstates hat.
 
 9              HR/(W)-     Input     Richtung des Zugriffs vom Host-Prozessor.
 
-8              HEN-        Input     Erlaubt den Transport von Daten &uuml;ber
+8              HEN-        Input     Erlaubt den Transport von Daten über
                                      den Host-Datenbus.
 
-10             HREQ-       Output    Mit diesem Signal wird Unterst&uuml;tzung vom
+10             HREQ-       Output    Mit diesem Signal wird Unterstützung vom
                                      Host Prozessor angefordert.
 
-6              HACK-       Input     Empf&auml;ngt Acknowledge f&uuml;r DMA-Transfer oder
+6              HACK-       Input     Empfängt Acknowledge für DMA-Transfer oder
                                      Interrupt Acknowledge vom Host-Prozessor.
 
-27             RXD         Input     Nicht benutzt. (serieller Anschlu&szlig;)!
+27             RXD         Input     Nicht benutzt. (serieller Anschluß)!
 
-28             TXD         Output    Nicht benutzt. (serieller Anschlu&szlig;)!
+28             TXD         Output    Nicht benutzt. (serieller Anschluß)!
 
 29             SCLK        I/O       Nicht benutzt im Falcon.
 
-31,40,37       SC0-2       I/O       Steueranschl&uuml;sse f&uuml;r serielles Synchron-
+31,40,37       SC0-2       I/O       Steueranschlüsse für serielles Synchron-
                                      Interface!
 
-32             SCK         I/O       serieller Bitraten Takt f&uuml;r das Synchron-
+32             SCK         I/O       serieller Bitraten Takt für das Synchron-
                                      serielle Interface!
 
-42             SRD         Input     Dateneingang f&uuml;r das SSI Receive Shift
+42             SRD         Input     Dateneingang für das SSI Receive Shift
                                      Register.
 
 39             STD         Output    Daten Ausgang vom SSI Register
@@ -151,13 +151,13 @@ der DSP 32K RAM, das 24-bit breit ist und keine Waitstates hat.
 <br>
 </p>
 <p>Macht der Falcon Schwierigkeiten beim Zugriff auf den DSP ist u.U
-mit L&Uuml;tarbeiten zu rechnen, der DSP selbst ist eher selten
+mit Lütarbeiten zu rechnen, der DSP selbst ist eher selten
 defekt, wohl aber ein oder mehrere RAM-Bausteine.
 <br>
 <br>Symtome:
 <br>
 </p>
-<p>Sobald der DSP angesprochen wird, werden Grafiken zerst&Uuml;rt
+<p>Sobald der DSP angesprochen wird, werden Grafiken zerstürt
 und Soundausgabe funktioniert &#166;berhaupt nicht mehr.
 </p>
 <p>Das Testmodul von ATARI sagt beim Test von Digital <a href="0907.htm" target="UDOcon">Audio</a>:
@@ -181,7 +181,7 @@ schon aus! Es handelt sich dann hier nur um ein Kontaktproblem, was
 bei allen Atari Computern leider keine Seltenheit ist.
 <br>
 </p>
-<p>Sie k&Uuml;nnten Testweise das GAL mal gegen das GAL aus einem
+<p>Sie künnten Testweise das GAL mal gegen das GAL aus einem
 anderen Falcon tauschen. Zeigt sich hier das gleiche Ph&egrave;nomen
 ist es meiner Meinung nach ein defektes DSP RAM.
 <br>
@@ -193,12 +193,12 @@ leider auch nur general die Meldung - defekt oder in Ordnung aus,
 nicht aber die defekte Stelle.
 <br>
 </p>
-<p>Es bleibt dann nur das Ausl&Uuml;ten des DSP RAM und der Ersatz
+<p>Es bleibt dann nur das Auslüten des DSP RAM und der Ersatz
 mit Baugleichen Chips die man beim guten Elektronikdistributor
 erhalten kann.
 <br>
 </p>
-<p>Das TOS st&Uuml;rt sich beim <a href="030504.htm" target="UDOcon">Systemstart</a> &#166;brigens nicht dran
+<p>Das TOS stürt sich beim <a href="030504.htm" target="UDOcon">Systemstart</a> &#166;brigens nicht dran
 ob die DSP Baugruppe sich korrekt meldet oder nicht.
 <br>
 </p>

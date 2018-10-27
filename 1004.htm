@@ -29,25 +29,25 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: DCF77 Decoder
 </p>
 <p><img src="image/deutsch.gif" border=0 width="35" height="22"></p><br>
 <p>Um auch -wie bereits beim ST- immer die aktuelle Uhrzeit per DCF77
-im Rechner zu haben gen&uuml;gt es, wenn man sich bei Conrad
-Electronic den DCF-Empf&auml;nger mit der Bestellnummer: 641138-77
+im Rechner zu haben genügt es, wenn man sich bei Conrad
+Electronic den DCF-Empfänger mit der Bestellnummer: 641138-77
 besorgt.
 <br>
 </p>
-<p>Ein wenig Kabel, ein St&uuml;ckchen Software und ein
-Joystickstecker erm&ouml;glichen die atomgenaue Zeit auch im Falcon
+<p>Ein wenig Kabel, ein Stückchen Software und ein
+Joystickstecker ermöglichen die atomgenaue Zeit auch im Falcon
 F030.
 <br>
 </p>
 <p>Ralf Zimmermann hat hier mit DCF-Time den passenden
-Softwaredecoder, der auch als .CPX auf dem Falcon l&auml;uft. Ein
-kleines Treiberprogramm geh&ouml;rt hier in den Autoordner, um nach
+Softwaredecoder, der auch als .CPX auf dem Falcon läuft. Ein
+kleines Treiberprogramm gehört hier in den Autoordner, um nach
 dem Bootvorgang die genaue Zeit zu haben. DCF77 stellt nach Abblauf
 der Zeitsynconisation die rechnerinterne Uhr auf die aktuelle Uhrzeit
-ein. Der Installationsaufwand beschr&auml;nkt sich auf ein Minimum.
+ein. Der Installationsaufwand beschränkt sich auf ein Minimum.
 <br>
 </p>
-<p>Die passende Steckerbelegung f&uuml;r dieses Uhrenmodul:
+<p>Die passende Steckerbelegung für dieses Uhrenmodul:
 <br>
 </p>
 <pre>
@@ -59,21 +59,21 @@ DCF Modul            Joystickport
 4 Ausg. invers       NC
 
 </pre>
-<p>Dem Modul spendiert man ein kleines Geh&auml;use und stellt es in
-Richtung des n&auml;chsten Fensters auf. M&ouml;glichst nicht auf den
-Monitor. Als Anschlu&szlig;kabel dient mir das Kabel eines alten,
+<p>Dem Modul spendiert man ein kleines Gehäuse und stellt es in
+Richtung des nächsten Fensters auf. Möglichst nicht auf den
+Monitor. Als Anschlußkabel dient mir das Kabel eines alten,
 billigen Joysticks.
 <br>
 </p>
-<p>Wer ein Uhrenmodul mit LC-Display hat, kann nat&uuml;rlich auch
-das verwenden. Zu beachten w&auml;re noch, da&szlig; manche
-Bildschirmschoner nicht aktiv werden, da hier st&auml;ndig &uuml;ber
+<p>Wer ein Uhrenmodul mit LC-Display hat, kann natürlich auch
+das verwenden. Zu beachten wäre noch, daß manche
+Bildschirmschoner nicht aktiv werden, da hier ständig über
 den Joystickport Impulse vom Uhrenmodul angelegt werden. In Twilight
 kann man den Joystickport daher aus der Abfrage des Schoners
 rausnehmen.
 <br>
 </p>
-<p><a href="030806.htm" target="UDOcon">Schaltplan</a> f&uuml;r ein Interface, um Conrad DCF-77-Module
+<p><a href="030806.htm" target="UDOcon">Schaltplan</a> für ein Interface, um Conrad DCF-77-Module
 anzupassen:
 <br>
 <br>
@@ -101,11 +101,11 @@ Pinbelegung zu beachten:
 </p>
 <p>Das Ausgangssignal wird mit Pin 1 des Joystickports verbunden. Die
 Schaltung arbeitet nur korrekt mit der aktuellen Version 1.2 des
-DCF_TIME Programms zusammen. Daf&uuml;r aber auch an der Modem 1
-Schnittstelle. Beim Mega ST gen&uuml;gen 5 Volt als
-Versorgungsspannung f&uuml;r den Modem 1 Anschlu&szlig;. (Ausgang auf
-Pin 22 (RI) Ring Indicator). F&uuml;r den TT-Anschlu&szlig; an Modem 1
-(Ausgang auf Pin 9, Masse Pin 5) kann die Schaltung unver&auml;ndert
+DCF_TIME Programms zusammen. Dafür aber auch an der Modem 1
+Schnittstelle. Beim Mega ST genügen 5 Volt als
+Versorgungsspannung für den Modem 1 Anschluß. (Ausgang auf
+Pin 22 (RI) Ring Indicator). Für den TT-Anschluß an Modem 1
+(Ausgang auf Pin 9, Masse Pin 5) kann die Schaltung unverändert
 mit 12 statt mit 5 Volt versorgt werden. Es geht auch mit einer 9 Volt
 Blockbatterie.
 <br>
@@ -114,8 +114,8 @@ Blockbatterie.
 <br>
 </p>
 <p>Die Uhr nicht zu dicht neben einem Monitor oder anderen,
-Hochfrequenz abstrahlenden Ger&auml;ten aufstellen; es
-beeintr&auml;chtigt den Empfang des HF-Zeitzeichens.
+Hochfrequenz abstrahlenden Geräten aufstellen; es
+beeinträchtigt den Empfang des HF-Zeitzeichens.
 <br>
 <br>
 </p>
@@ -131,23 +131,23 @@ beeintr&auml;chtigt den Empfang des HF-Zeitzeichens.
 <p>IP, ON und GND sind Punkte auf der Uhrenplatine. Das
 Ausgangssignal hat als Ruhepegel LOW und folgt den Sekundenbits auf
 HIGH. Bei Verwendung eines CMOS 7414 (74HC14, 74HCT14 etc.) unbedingt
-alle nicht benutzten Eing&auml;nge auf einen definierten Pegel legen,
+alle nicht benutzten Eingänge auf einen definierten Pegel legen,
 z.B. Masse. Sonst neigen CMOS Schaltungen zu wilden Schwingungen und
-es funktioniert unter Umst&auml;nden nicht.
+es funktioniert unter Umständen nicht.
 <br>
 </p>
-<p>Um das Funkuhrmodul in unmittelbarer N&auml;he des Rechners
-betreiben zu k&ouml;nnen, sollte man die Antenne inkl. der
+<p>Um das Funkuhrmodul in unmittelbarer Nähe des Rechners
+betreiben zu können, sollte man die Antenne inkl. der
 Empfangseinheit vom Anzeigemodul trennen und in ca. 1m Entfernung vom
-Computer betreiben. Bei mir steht die Uhr ca. 30cm &uuml;ber einem
+Computer betreiben. Bei mir steht die Uhr ca. 30cm über einem
 Monitor in einem Regal; auch das geht problemlos.
 <br>
 </p>
 <p>Von einem Einbau der Empfangseinheit in den Rechner ist daher
-abzuraten. Die Empfangsprobleme steigen, je n&auml;her die Uhr sich am
+abzuraten. Die Empfangsprobleme steigen, je näher die Uhr sich am
 Computer befindet und je weiter man sich vom Zeitzeichensender
 entfernt befindet. Der DCF77- Sender befindet sich in Mainflingen in
-der N&auml;he von Frankfurt am Main. Die eigentliche Atomuhr befindet
+der Nähe von Frankfurt am Main. Die eigentliche Atomuhr befindet
 sich in Braunschweig.
 <br>
 </p>

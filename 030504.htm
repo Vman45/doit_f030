@@ -31,7 +31,7 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Systemstart
 interne <a href="040109.htm" target="UDOcon">68030 CPU</a> bei den Adressen 4-7. Diese Adressen befinden sich
 auf Grund der Systemlogik im Falcon ROM. Die im COMBEL enthaltene MCU
 legt die ersten 8 Bytes des Rom ab Adresse $E00000 in die Adressen 0-7
-so da&szlig; hier ein Start an der Adresse 000004 erfolgen kann.
+so daß hier ein Start an der Adresse 000004 erfolgen kann.
 <br>Die Startadresse des OS im ROM.
 <br>
 </p>
@@ -43,8 +43,8 @@ Peripheriebausteine in einen definierten Zustand.
 Befindet sich ein magisches Langwort wird direkt Software von einem
 <a href="0c09.htm" target="UDOcon">Romport</a>-Modul eingelesen. Ohne wird normal weiter gestartet.
 <br>&nbsp;
-<dt><b>Step 3</b></dt><dd> Kontrolle ob ein Warmstart m&ouml;glich ist. Ist das nicht der
-Fall wird das gesammte RAM initalisiert. Auch wird hier gepr&uuml;ft
+<dt><b>Step 3</b></dt><dd> Kontrolle ob ein Warmstart möglich ist. Ist das nicht der
+Fall wird das gesammte RAM initalisiert. Auch wird hier geprüft
 wieviel Speicher vorhanden ist.
 <br>&nbsp;
 <dt><b>Step 4</b></dt><dd> Deselektierung der <a href="0606.htm" target="UDOcon">Diskettenlaufwerke</a> und initalisierung des
@@ -54,7 +54,7 @@ PSG-Soundchips im Falcon.
 Farbpalettem.
 <br>&nbsp;
 <dt><b>Step 6</b></dt><dd> Erfolgte kein Warmstart wird an diesem Punkt das gesammte RAM
-gel&ouml;scht. (Zero RAM)
+gelöscht. (Zero RAM)
 <br>&nbsp;
 <dt><b>Step 7</b></dt><dd> Setzt die Betriebssystemvariablem im RAM aktiv.
 <br>&nbsp;
@@ -62,15 +62,15 @@ gel&ouml;scht. (Zero RAM)
 <br>&nbsp;
 <dt><b>Step 9</b></dt><dd> Initalisieren des MFP-Baustein.
 <br>&nbsp;
-<dt><b>Step 10</b></dt><dd> Bildschirmaufl&ouml;sung setzen
+<dt><b>Step 10</b></dt><dd> Bildschirmauflösung setzen
 <br>&nbsp;
 <dt><b>Step 11</b></dt><dd> An diesem Punkt wird versucht vom internen Diskettenlaufwerk zu
-booten. Wird hier keine ausf&uuml;hrbare Software gefunden versucht
+booten. Wird hier keine ausführbare Software gefunden versucht
 der Falcon von der internen <a href="060402.htm" target="UDOcon">IDE-Platte</a> Partition C zu booten. Wird
-hier ein ausf&uuml;hrbarer Autoordner gefunden werden die darin
+hier ein ausführbarer Autoordner gefunden werden die darin
 enthaltenen Programme geladen und gestartet.
 <br>&nbsp;
-<dt><b>Step 12</b></dt><dd> Wird kein ausf&uuml;hrbares Medium gefunden wird das <a href="030505.htm" target="UDOcon">Desktop</a> aus
+<dt><b>Step 12</b></dt><dd> Wird kein ausführbares Medium gefunden wird das <a href="030505.htm" target="UDOcon">Desktop</a> aus
 dem ROM geladen.
 <br>&nbsp;
 </dl>

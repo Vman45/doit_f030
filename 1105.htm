@@ -23,24 +23,24 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Falcon mit Macintosh verbinden
 <td valign=top width="8">&nbsp;</td><td valign=top width="100%">
 <h1><a name="Falcon_20mit_20Macintosh_20verbinden">17.5 Falcon mit Macintosh verbinden</a></h1>
 <p align=center><img src="image/line.gif" border=0 width="637" height="6"></p><br>
-<p><tt> Atari Computer &uuml;ber den <a href="0c09.htm" target="UDOcon">Romport</a> mit einem LAN verbinden
+<p><tt> Atari Computer über den <a href="0c09.htm" target="UDOcon">Romport</a> mit einem LAN verbinden
 </tt>
 <br>
 <br>
 </p>
 <p><img src="image/deutsch.gif" border=0 width="35" height="22"></p><br>
 <p>Ethernet Project, bestehend aus Hard- &amp; Software. Die Treiber
-sind f&uuml;r <a href="1501.htm" target="UDOcon">STinG</a> ausgelegt. Ben&ouml;tigt wird die <a href="0305.htm" target="UDOcon">Hardware</a>, die
+sind für <a href="1501.htm" target="UDOcon">STinG</a> ausgelegt. Benötigt wird die <a href="0305.htm" target="UDOcon">Hardware</a>, die
 Treiber und ein &quot;Parallel Pocket Ethernet Adapter&quot; mit einem
 Realtek RTL 8012 Chip. Die <a href="0305.htm" target="UDOcon">Hardware</a> wird in den ROM-Port gesteckt und
 daran der &quot;Pocket Adapter&quot; angeschlossen. Mittels BNC oder
-UTP l&auml;&szlig;t sich der Atari an ein LAN anschlie&szlig;en.
+UTP läßt sich der Atari an ein LAN anschließen.
 <br>
 </p>
-<p>Dieses Projekt hatte das Ziel auf m&ouml;glichst einfache Art
-Atari-Rechner LAN-F&auml;hig zu machen. Dabei stand im Vordergrund
+<p>Dieses Projekt hatte das Ziel auf möglichst einfache Art
+Atari-Rechner LAN-Fähig zu machen. Dabei stand im Vordergrund
 nicht in die Rechnerhardware einzugreifen, oder bestimmte Componenten
-vorauszusetzen. Au&szlig;er dem Rom-Port. So ist es m&ouml;glich
+vorauszusetzen. Außer dem Rom-Port. So ist es möglich
 Rechner-Typen vom 520er mit TOS 1.02, wobei <a href="1501.htm" target="UDOcon">STinG</a> von Diskette
 gebootet wurde, bis zum TT oder Falcon in ein LAN zu integrieren.
 Inwieweit die Hard- und Software auch auf ROM-Karten des Milans laufen
@@ -55,25 +55,25 @@ bleibt abzuwarten.
 <p>Als Erstes soll die Harware beschrieben werden, die aus zwei
 Teilen besteht. Zum einen das Parallel-Port-Interface, welches in den
 ROM-Port gesteckt wird und einen Parallel-Port (abgespeckte
-EPP-Mode-Version) f&uuml;r den Pocket-LAN-Adapter zur verf&uuml;gung
-stellt. Die Schaltung ist komplett mit SMD-Bausteinen best&uuml;ckt,
-was sie sehr klein macht. Die Kontakte f&uuml;r den ROM-Port sind
+EPP-Mode-Version) für den Pocket-LAN-Adapter zur verfügung
+stellt. Die Schaltung ist komplett mit SMD-Bausteinen bestückt,
+was sie sehr klein macht. Die Kontakte für den ROM-Port sind
 vergoldet um Kontaktproblemen durch Oxidation vorzubeugen. Einzig der
-mechanische Halt ist ein Problem. Die Platine l&auml;st sich nicht
-veranken oder festschrauben. Man mu&szlig; selbst daf&uuml;r sorgen,
+mechanische Halt ist ein Problem. Die Platine läst sich nicht
+veranken oder festschrauben. Man muß selbst dafür sorgen,
 das die Platine nicht durch versehentliches ziehen an der
 Ethernet-Leitung aus dem ROM-Port herausgerissen wird.
 <br>
 </p>
 <p>Zum anderen der LAN-Adapter vom Typ E3000II. Er besitzt einen BNC
-und UTP Anschlu&szlig;. Der noch aufgef&uuml;hrte Multiplexer Parallel
+und UTP Anschluß. Der noch aufgeführte Multiplexer Parallel
 Port kann auf Atari-Rechnern nicht genutzt werden. Funktionieren
 sollten auch andere Pocket-Lan-Adapter mit RTL 8012 Chip. Gefertigt
 wird meines Wissens nur noch der E3000II. Mit Spannung wird der
 LAN-Adapter mit einem separaten <a href="0f01.htm" target="UDOcon">Netzteil</a> versorgt. Messungen der
-Stromaufnahme haben allerdings gezeigt das er auch &uuml;ber den
-ROM-Port mit Spannung versorgt werden kann. Zuk&uuml;nftige Interfaces
-erhalten einen Anschlu&szlig;, mit dem man den LAN-Adapter vom
+Stromaufnahme haben allerdings gezeigt das er auch über den
+ROM-Port mit Spannung versorgt werden kann. Zukünftige Interfaces
+erhalten einen Anschluß, mit dem man den LAN-Adapter vom
 Interface aus mit Spannung versorgen kann.
 <br>
 </p>
@@ -82,7 +82,7 @@ Interface aus mit Spannung versorgen kann.
 <br>
 </p>
 <p align=center><img src="image/romlan.gif" border=0 width="200" height="89"></p><br>
-<div align=center><tt> Abbildung 1 - Der Romportadapter f&uuml;r den Pocked Adapter
+<div align=center><tt> Abbildung 1 - Der Romportadapter für den Pocked Adapter
 </tt>
 <br>
 </div>
@@ -104,28 +104,28 @@ Interface aus mit Spannung versorgen kann.
 <br><b> Beschreibung der Software </b>
 <br>
 </p>
-<p>Die Treiber sind f&uuml;r <a href="1501.htm" target="UDOcon">STinG</a> 1.2x ausgelegt und laufen unter
+<p>Die Treiber sind für <a href="1501.htm" target="UDOcon">STinG</a> 1.2x ausgelegt und laufen unter
 MagiC 6 bzw. TOS, stammen von Vassilis Papathanassiou und sind
-Freeware. Vielen dank an Vassilis f&uuml;r die Gute Arbeit.
+Freeware. Vielen dank an Vassilis für die Gute Arbeit.
 Voraussetzung ist eine funktionierende <a href="1501.htm" target="UDOcon">STinG</a> installation der Version
-1.20 oder h&ouml;her.
+1.20 oder höher.
 <br>
 </p>
-<p>Demn&auml;chst wird es auch MiNTNet-Treiber geben!
+<p>Demnächst wird es auch MiNTNet-Treiber geben!
 <br>
 </p>
 <p>
 <br>
-<br><b> Beschreibung einer m&ouml;glichen <a href="0204.htm" target="UDOcon">Installation</a> </b>
+<br><b> Beschreibung einer möglichen <a href="0204.htm" target="UDOcon">Installation</a> </b>
 <br>
 </p>
 <p>Der Pocket LAN-Adapter vom Typ E3000II besitzt einen BNC und UTP
-Anschlu&szlig;. Der noch vorhandene Multiplexer Parallel Port kann auf
+Anschluß. Der noch vorhandene Multiplexer Parallel Port kann auf
 Atari-Rechnern generell nicht genutzt werden. Funktionieren sollten
 auch andere Pocket-Lan-Adapter mit RTL 8012 Chip.
 <br>
 </p>
-<p>Es ist mit dieser Erweiterung m&ouml;glich Atari- und Macintosh
+<p>Es ist mit dieser Erweiterung möglich Atari- und Macintosh
 oder auch PCs und Amiga Computer zusammen per Ethernet zu verbinden.
 <br>
 </p>
@@ -133,25 +133,25 @@ oder auch PCs und Amiga Computer zusammen per Ethernet zu verbinden.
 Atari <a href="0302.htm" target="UDOcon">Falcon F030</a> zusammen an einem Netzwerk dessen Mittelpunkt ein
 10/100Mbit Ethernet Hub und ein G3 Mac, mit Softwarerouter, ist. Der
 Atari Falcon ist mit der ROM Port Ethernetkarte ausgestattet. Alle
-Rechner sind mit UTP-Kabeln verbunden. Alle k&ouml;nnen &uuml;ber den
-G3 Mac, der als Router fungiert, darauf l&auml;uft
-&quot;IPNetRouter&quot;, eine Shareware, selbstst&auml;ndig in das
-<a href="15.htm" target="UDOcon">Internet</a> einw&auml;hlen.
+Rechner sind mit UTP-Kabeln verbunden. Alle können über den
+G3 Mac, der als Router fungiert, darauf läuft
+&quot;IPNetRouter&quot;, eine Shareware, selbstständig in das
+<a href="15.htm" target="UDOcon">Internet</a> einwählen.
 <br>
 </p>
-<p>Auf dem Falcon, als ein m&ouml;gliches Beispiel, kann ein FTP
-Server laufen. Dies erm&ouml;glicht dann direkten Dateiaustausch mit
+<p>Auf dem Falcon, als ein mögliches Beispiel, kann ein FTP
+Server laufen. Dies ermöglicht dann direkten Dateiaustausch mit
 anderen Computern.
 <br>
 </p>
-<p>Generell sind die Macintosh dabei &uuml;ber TCP/IP zu betreiben.
-AppleTalk, l&auml;uft weiterhin nebenbei, also kein Problem.
+<p>Generell sind die Macintosh dabei über TCP/IP zu betreiben.
+AppleTalk, läuft weiterhin nebenbei, also kein Problem.
 <br>
 </p>
-<p>Vorhandene, Ethernet-f&auml;hige Drucker, k&ouml;nnen so direkt
+<p>Vorhandene, Ethernet-fähige Drucker, können so direkt
 eingebunden werden. Momentan ist mir allerdings kein
 Atari-Druckertreiber bekannt der einen Ethernet-Drucker
-unterst&uuml;tzen w&uuml;rde.
+unterstützen würde.
 <br>
 </p>
 <p>
@@ -185,35 +185,35 @@ versucht hat.
 <p><b> Notwendige Software </b>
 <br>
 </p>
-<p>Voraussetzung f&uuml;r den Betrieb der EtherNet-Treiber ist eine
-komplett funktionionsf&auml;hige <a href="1501.htm" target="UDOcon">STinG</a> <a href="0204.htm" target="UDOcon">Installation</a> Version 1.26 oder
-h&ouml;her. Wie <a href="1501.htm" target="UDOcon">STinG</a> installiert wird, falls nicht vorhanden,
+<p>Voraussetzung für den Betrieb der EtherNet-Treiber ist eine
+komplett funktionionsfähige <a href="1501.htm" target="UDOcon">STinG</a> <a href="0204.htm" target="UDOcon">Installation</a> Version 1.26 oder
+höher. Wie <a href="1501.htm" target="UDOcon">STinG</a> installiert wird, falls nicht vorhanden,
 entnehmen sie bitte der <a href="1501.htm" target="UDOcon">STinG</a>-Dokumentation, die dem <a href="1501.htm" target="UDOcon">STinG</a> Paket
 beiliegt oder der deutschen <a href="1501.htm" target="UDOcon">STinG</a>-Dokumentation von Finn Bastinansen.
 <br>
 </p>
 <p>
 <br>
-<br><b> Anschlu&szlig; der <a href="0305.htm" target="UDOcon">Hardware</a> </b>
+<br><b> Anschluß der <a href="0305.htm" target="UDOcon">Hardware</a> </b>
 <br>
 </p>
 <p>Zuerst wird der Pocket-LAN-Adapter mit der 25 poligen SUB-D Buchse
 des Flachbandkabels vom ROM-Port Interface verbunden. Alle weiteren
-Schritte d&uuml;rfen generell nur durchgef&uuml;hrt werden, wenn der
+Schritte dürfen generell nur durchgeführt werden, wenn der
 Atari Falcon ohne Spannung, also komplett ausgeschaltet ist.
 <br>
 </p>
-<p>Anschlu&szlig;arbeiten bei eingeschaltetem Computer
-besch&auml;digen die <a href="0305.htm" target="UDOcon">Hardware</a>!
+<p>Anschlußarbeiten bei eingeschaltetem Computer
+beschädigen die <a href="0305.htm" target="UDOcon">Hardware</a>!
 <br>
 </p>
 <p>Bitte achten Sie dabei generell auf die richtige Lage des
 Interfaces!
 <br><tt>Oben </tt> ist leicht an den beiden SMD ICs und dem
-Anschlu&szlig; f&uuml;r das Flachbandkabel zu erkennen. Beim
+Anschluß für das Flachbandkabel zu erkennen. Beim
 Einstecken in den ROM-Port ist darauf zu achten, das die Platine nicht
 verkantet wird. Ist das der Fall kann die Platine nicht korrekt
-eingesteckt werden und besch&auml;digt eventuell die Computerhardware.
+eingesteckt werden und beschädigt eventuell die Computerhardware.
 <br>
 </p>
 <p>Den LAN-Adapter jetzt noch mit dem mitgelieferten <a href="0f01.htm" target="UDOcon">Netzteil</a>
@@ -231,8 +231,8 @@ ist, erst danach schalten Sie den den Computer ein!
 sollten sie dies nun nachholen. Wie <a href="1501.htm" target="UDOcon">STinG</a> installiert und generell
 konfiguriert wird, entnehmen sie bitte der <a href="1501.htm" target="UDOcon">STinG</a>-Dokumentation. Hier
 im Archiv finden Sie eine Anleitung um mit <a href="1501.htm" target="UDOcon">STinG</a> eine Modemeinwahl in
-das <a href="15.htm" target="UDOcon">Internet</a> herstellen zu k&ouml;nnen. Diese Einstellungen
-k&ouml;nnen mit den n&ouml;tigen Etherneteinstellungen &uuml;bernommen
+das <a href="15.htm" target="UDOcon">Internet</a> herstellen zu können. Diese Einstellungen
+können mit den nötigen Etherneteinstellungen übernommen
 werden.
 <br>
 </p>
@@ -246,7 +246,7 @@ ether_pa.stx.
 <br>Kopieren sie diesen in das StinG Verzeichnis auf ihrer Festplatte.
 Dahin wo sich alle anderen .stx-Treiber befinden. Das hier schon
 vorhandene ether.stx, aus dem <a href="1501.htm" target="UDOcon">STinG</a>-Paket, sollten Sie dabei entfernen
-da sonst sp&auml;ter zwei EtherNet-Eintr&auml;ge im <a href="1501.htm" target="UDOcon">STinG</a> Port Setup
+da sonst später zwei EtherNet-Einträge im <a href="1501.htm" target="UDOcon">STinG</a> Port Setup
 CPX geben wird.
 <br>
 </p>
@@ -256,12 +256,12 @@ Festplatte, vorhandene gleichnamige CPX-Modul aus dem orignal
 <a href="1501.htm" target="UDOcon">STinG</a>-Paket.
 <br>
 </p>
-<p>Vergessen Sie das k&ouml;nnen sie den Adapter nicht konfigurieren.
+<p>Vergessen Sie das können sie den Adapter nicht konfigurieren.
 <br>
 </p>
 <p>Nachdem Sie den Rechner neu gebootet haben, das zwingend, sind im
 CPX-Modul '<a href="1501.htm" target="UDOcon">STinG</a> Port Setup' einige weitere Einstellungen zu
-t&auml;tigen.
+tätigen.
 <br>
 </p>
 <p>
@@ -270,7 +270,7 @@ t&auml;tigen.
 <br>
 </p>
 <div align=center><table border=0>
-<caption align=bottom>Tabelle 55: Ethernet Einstellungen f&uuml;r STinG</caption>
+<caption align=bottom>Tabelle 55: Ethernet Einstellungen für STinG</caption>
 <tr>
   <td align=left valign=top></td>
   <td align=right valign=top></td>
@@ -289,28 +289,28 @@ t&auml;tigen.
 <br>
 <br>
 </p>
-<p>W&auml;hlen Sie 'EtherNet' und 'Addressing' an:
+<p>Wählen Sie 'EtherNet' und 'Addressing' an:
 <br>
 </p>
 <p>Tragen Sie hier die IP Adresse ihres Falcon ein. Jeder Computer in
 einem Netzwerk braucht eine eigene eindeutige IP Adresse. Der Bereich
-192.168.x.x empfiehlt sich, da dieser speziell f&uuml;r lokale
+192.168.x.x empfiehlt sich, da dieser speziell für lokale
 Netzwerke reserviert ist und nicht im <a href="15.htm" target="UDOcon">Internet</a> auftaucht oder dort
 hineingebracht wird. Als Subnet Mask 255.255.255.0 eintragen.
 <br>MTU 1500
 <br>
 </p>
 <p>Wechseln Sie jetzt zu 'General' wechseln:
-<br>Unter 'Choose <a href="0305.htm" target="UDOcon">Hardware</a>' den RTL8012 ausw&auml;hlen, es d&uuml;rfte
-das einzigste sein was sie hier ausw&auml;hlen k&ouml;nnen.
+<br>Unter 'Choose <a href="0305.htm" target="UDOcon">Hardware</a>' den RTL8012 auswählen, es dürfte
+das einzigste sein was sie hier auswählen können.
 <br>
 </p>
 <p>Bei 'MAC' die MAC-Adresse des LAN-Adapters eintragen. Diese steht,
-zumeist noch Handschriftlich, auf der R&uuml;ckseite des Pocket
+zumeist noch Handschriftlich, auf der Rückseite des Pocket
 LAN-Adapters.
 </p>
 <p>Momentan kann die Ethetnet-Software diese Adresse leider noch
-nicht auslesen, deher mu&szlig; man die Mac-Adresse leider noch von
+nicht auslesen, deher muß man die Mac-Adresse leider noch von
 Hand eintragen. Klicken Sie jetzt auf 'Active' und speichern Sie mit
 'SAVE' die aktuelle Konfiguration. Beenden Sie mit 'OK'. Dieser Teil
 der Konfiguration ist damit beendet.
@@ -325,12 +325,12 @@ der Konfiguration ist damit beendet.
 <br>
 <br>
 </p>
-<p>Als n&auml;chstes folgen Einstellungen im CPX-Modul '<a href="1501.htm" target="UDOcon">STinG</a>
+<p>Als nächstes folgen Einstellungen im CPX-Modul '<a href="1501.htm" target="UDOcon">STinG</a>
 Protocols'.
 <br>
 </p>
-<p>Zuerst 'TCP' w&auml;hlen:
-<br>Hier m&uuml;ssen ein paar Werte angepasst werden.
+<p>Zuerst 'TCP' wählen:
+<br>Hier müssen ein paar Werte angepasst werden.
 <br>Max. Segment Size: 1460
 <br>Receive Window: 23360
 <br>First local port: 1024
@@ -340,10 +340,10 @@ Protocols'.
 <p>
 <br>
 </p>
-<p>Nun 'Resolver' w&auml;hlen:
+<p>Nun 'Resolver' wählen:
 <br>Diese Einstellungen sind notwendig, wenn man mit dem Atari ins
 <a href="15.htm" target="UDOcon">Internet</a> will, also z.B. Mails, News holen oder Surfen will. Dazu aber
-sp&auml;ter noch mehr.
+später noch mehr.
 <br>Bei 'Name Server' den seines Providers eintragen.
 <br>Bei 'Domain' ebenfalls die seines Providers oder freilassen.
 <br>
@@ -369,41 +369,41 @@ sp&auml;ter noch mehr.
 </p>
 <p>Hier wird beschrieben wie der Computer in ein schon bestehendes
 Netzwerk via Ethernet korrekt eingebunden wird. Dabei wird der Atari
-Computer keine Routing-Aufgaben &uuml;bernehmen, d.h. mit dem Atari
-wird keine Verbindung zum <a href="15.htm" target="UDOcon">Internet</a> &uuml;ber ein Modem aufgebaut, und
+Computer keine Routing-Aufgaben übernehmen, d.h. mit dem Atari
+wird keine Verbindung zum <a href="15.htm" target="UDOcon">Internet</a> über ein Modem aufgebaut, und
 es sind keine weitere Computer z.B. an der Midi. oder der seriellen
 Schnittstelle angeschlossen.
 <br>
 </p>
 <p>
-<br>Grunds&auml;tzlich bestehen mit dem E3000II Pocket LAN Adapter
-zwei M&ouml;glichkeiten um sich damit an ein bereits vorhandenes
+<br>Grundsätzlich bestehen mit dem E3000II Pocket LAN Adapter
+zwei Möglichkeiten um sich damit an ein bereits vorhandenes
 Netzwerk anzuschliessen.
 <br>
 </p>
-<p>Die eine ist &uuml;ber ein BNC Kabel, welches maximal 185 Meter
+<p>Die eine ist über ein BNC Kabel, welches maximal 185 Meter
 lang sein darf, generell an beiden Enden mit einem
-Abschlu&szlig;-Widerstand zu terminieren ist und maximal 10Mbit
-schnell sein wird. Wird dieses L&ouml;sung irgendwo mechanisch
-unterbrochen kann keiner der an diese L&ouml;sung angeschlossenen
-Computer, Endger&auml;te, ein Datenpaket senden oder empfangen.
+Abschluß-Widerstand zu terminieren ist und maximal 10Mbit
+schnell sein wird. Wird dieses Lösung irgendwo mechanisch
+unterbrochen kann keiner der an diese Lösung angeschlossenen
+Computer, Endgeräte, ein Datenpaket senden oder empfangen.
 </p>
 <p>Wichtigster Punkt ist die korrekte 50 Ohm Terminierung an jedem
 Kabelende.
 <br>
 </p>
-<p>Die andere M&ouml;glichkeit besteht darin, mittels TP-Kabel (RJ45)
+<p>Die andere Möglichkeit besteht darin, mittels TP-Kabel (RJ45)
 eine Verbindung herzustellen.
 <br>
 </p>
 <p>Der Vorteil dieser Methode liegt darin, dass jederzeit ein
 weiterer Computer angeschlossen werden kann, ohne das das komplette
 Netzwerk in dieser Zeit lahmgelegt ist. Der Nachteil, man braucht ab
-zwei Rechner, Endger&auml;te immer einen Hub, Switch oder einen
+zwei Rechner, Endgeräte immer einen Hub, Switch oder einen
 Netzwerkrouter.
 <br>
 </p>
-<p>Diese L&ouml;sung erlaubt 100Mbit
+<p>Diese Lösung erlaubt 100Mbit
 <br>
 </p>
 <p>
@@ -415,9 +415,9 @@ Netzwerkrouter.
 <br>
 <br>
 </p>
-<p>w Der LAN-Adapter unterst&uuml;tzt beide M&ouml;glichkeiten und
-erkennt die jeweils von ihnen verwendete gew&auml;hlte L&ouml;sung
-selbst&auml;ndig. Beides zusammen Funktioniert generell nicht.
+<p>w Der LAN-Adapter unterstützt beide Möglichkeiten und
+erkennt die jeweils von ihnen verwendete gewählte Lösung
+selbständig. Beides zusammen Funktioniert generell nicht.
 <br>
 </p>
 <p>
@@ -427,20 +427,20 @@ selbst&auml;ndig. Beides zusammen Funktioniert generell nicht.
 <p><b> Einbinden in ein LAN </b>
 <br>
 </p>
-<p><a href="1501.htm" target="UDOcon">STinG</a> wei&szlig; &uuml;ber seine &quot;ROUTE.TAB&quot; wohin es
-die Daten schicken mu&szlig;. Die ROUTE.TAB - Datei befindet sich
+<p><a href="1501.htm" target="UDOcon">STinG</a> weiß über seine &quot;ROUTE.TAB&quot; wohin es
+die Daten schicken muß. Die ROUTE.TAB - Datei befindet sich
 ebenfalls im <a href="1501.htm" target="UDOcon">STinG</a>-Verzeichniss, direkt bei den *.stx Treiber-Dateien.
 So sieht z.B. ein einfaches Netzwerk aus.
 <br>
 </p>
-<p>Bet&auml;tigen sie &quot;Reload ROUTE.TAB&quot; im <a href="1501.htm" target="UDOcon">STinG</a> Port
-Setup CPX wenn Sie eine &Auml;nderung an der ROUTE.TAB vorgenommen
+<p>Betätigen sie &quot;Reload ROUTE.TAB&quot; im <a href="1501.htm" target="UDOcon">STinG</a> Port
+Setup CPX wenn Sie eine änderung an der ROUTE.TAB vorgenommen
 haben. Das neu booten des Rechners ist hier nicht erforderlich.
 <br>
 </p>
 <p>Computer 1 befindet sich in dem Netzwerk 192.168.x.x und hat die
 IP 192.168.x.1.
-<br>&Uuml;ber Computer 4, der die IP 192.168.x.9 hat, ist er mit dem
+<br>über Computer 4, der die IP 192.168.x.9 hat, ist er mit dem
 <a href="15.htm" target="UDOcon">Internet</a> verbunden.
 <br>Wir betrachten jetzt die 'ROUTE.TAB' von Computer 1.
 <br>
@@ -454,12 +454,12 @@ IP 192.168.x.1.
 <br>
 </p>
 <p>Das ist der einzige Eintrag, der aktiv sein darf. Die 192.168.x.9
-ist die IP eines Gateway-Rechners und kann nat&uuml;rlich auch jede
-andere IP-Adresse sein. Sie mu&szlig; dann nur in der 'ROUTE.TAB'
+ist die IP eines Gateway-Rechners und kann natürlich auch jede
+andere IP-Adresse sein. Sie muß dann nur in der 'ROUTE.TAB'
 angepasst werden. Jetzt nochmal das '<a href="1501.htm" target="UDOcon">STinG</a> Port Setup' aufrufen und
-'Reload Routing Table' anw&auml;hlen und auf 'OK' gehen. Nun sollte
+'Reload Routing Table' anwählen und auf 'OK' gehen. Nun sollte
 ihr Atari Computer erreichbar sein. Dies kann durch 'Pingen' der
-einzelnen Rechner gepr&uuml;ft werden.
+einzelnen Rechner geprüft werden.
 <br>
 </p>
 <p>Im Dialer ist unter Tools eine solche Funktion vorhanden. Alle
@@ -472,27 +472,27 @@ Computer von 1-3, sofern dies Atari Computer sind, erhalten diese
 <br><b> ATARI Computer als Gateway konfigurieren </b>
 <br>
 </p>
-<p>Soll der Atari Computer als Gateway f&uuml;r die Computer 1-3
-arbeiten und ist &uuml;ber z.B. Serial 1 mit einem Modem verbunden,
+<p>Soll der Atari Computer als Gateway für die Computer 1-3
+arbeiten und ist über z.B. Serial 1 mit einem Modem verbunden,
 mit dem wiederum eine Verbindung ins <a href="15.htm" target="UDOcon">Internet</a> hergestellt wird,
 sollten Sie wie folgt vorgehen:
 <br>
 </p>
 <p>Konfigurieren Sie <a href="1501.htm" target="UDOcon">STinG</a> so das ganz normal eine Verbindung,
-&uuml;ber ihr Modem, zu ihrem <a href="15.htm" target="UDOcon">Internet</a>-Provider aufgenommen werden
+über ihr Modem, zu ihrem <a href="15.htm" target="UDOcon">Internet</a>-Provider aufgenommen werden
 kann. Nachlesen kann man dies ebenfalls in der <a href="1501.htm" target="UDOcon">STinG</a>-Dokumentation.
 <br>
 <br>
 </p>
 <p>Funktioniert die Einwahl und sie haben Internetzugriff, kann mit
 dem Erweitern der 'ROUTE.TAB' begonnen werden. Die 'ROUTE.TAB' wird
-sich jetzt wie folgt ver&auml;ndern m&uuml;ssen:
+sich jetzt wie folgt verändern müssen:
 <br>
 <br>
 </p>
 <pre>0.0.0.0         0.0.0.0         Modem 2         0.0.0.0
 </pre>
-<p>Dies ist die 'Default Route'. Erg&auml;nzen Sie die ROUTE.TAB mit
+<p>Dies ist die 'Default Route'. Ergänzen Sie die ROUTE.TAB mit
 folgender Zeile:
 <br>
 <br>
@@ -500,8 +500,8 @@ folgender Zeile:
 <pre>192.168.x.0     255.255.255.0   EtherNet        0.0.0.0
 </pre>
 <p>
-<br>Und zwar mu&szlig; diese Zeile vor der 'Default-Route' stehen,
-soda&szlig; die komplette 'ROUTE.TAB' so aussieht:
+<br>Und zwar muß diese Zeile vor der 'Default-Route' stehen,
+sodaß die komplette 'ROUTE.TAB' so aussieht:
 <br>
 </p>
 <pre>192.168.2.0     255.255.255.0   EtherNet        0.0.0.0
@@ -511,30 +511,30 @@ soda&szlig; die komplette 'ROUTE.TAB' so aussieht:
 <br>
 </p>
 <p>Beachten Sie bitte zwingend das die Konfiguration in diesen
-Beispielen nat&uuml;rlich voraussetzt das Sie ihre eigenen IP-Adressen
+Beispielen natürlich voraussetzt das Sie ihre eigenen IP-Adressen
 verwenden, das die IPs verwenden die in ihrem lokalen Netzwerk
-vorhanden, benutzbar und f&uuml;r Sie freigegeben sind.
+vorhanden, benutzbar und für Sie freigegeben sind.
 <br>
 </p>
-<p>Beachten Sie das nicht ist kein Zugriff m&ouml;glich.
+<p>Beachten Sie das nicht ist kein Zugriff möglich.
 <br>
 </p>
-<p>Im <a href="1501.htm" target="UDOcon">STinG</a>-Dialer mu&szlig; jetzt noch unter 'Configs' -
-'Miscellaneous' f&uuml;r den seriellen Port, der mit dem Modem
+<p>Im <a href="1501.htm" target="UDOcon">STinG</a>-Dialer muß jetzt noch unter 'Configs' -
+'Miscellaneous' für den seriellen Port, der mit dem Modem
 verbunden ist, 'Use IP Masquerading' aktiviert werden. Auch das ist
-zwingend f&uuml;r den Gateway-Betrieb! Nun noch auf 'Acept' klicken
+zwingend für den Gateway-Betrieb! Nun noch auf 'Acept' klicken
 und die neue Konfiguration mit 'Save' abspeichern.
 <br>
 </p>
 <p>Rufen Sie jetzt noch einmal das '<a href="1501.htm" target="UDOcon">STinG</a> Port Setup' auf.
-<br>'Reload Routing Table' anw&auml;hlen und auf 'OK' klicken. Nun
-sollte, nachdem sie auf diesem Atari in das <a href="15.htm" target="UDOcon">Internet</a> eingew&auml;hlt
-haben, auch allen anderen Computern der Zugang zum <a href="15.htm" target="UDOcon">Internet</a>, &uuml;ber
-diesen Atari, m&ouml;glich sein.
+<br>'Reload Routing Table' anwählen und auf 'OK' klicken. Nun
+sollte, nachdem sie auf diesem Atari in das <a href="15.htm" target="UDOcon">Internet</a> eingewählt
+haben, auch allen anderen Computern der Zugang zum <a href="15.htm" target="UDOcon">Internet</a>, über
+diesen Atari, möglich sein.
 <br>
 </p>
 <p>Beachten Sie bitte das dieses Gateway Systemperformance auf dem
-Atari ben&ouml;tigt!
+Atari benötigt!
 <br>
 </p>
 <p>
@@ -547,7 +547,7 @@ Atari ben&ouml;tigt!
 </p>
 <p>
 <br>
-<br><b> <a href="15.htm" target="UDOcon">Internet</a> mit dieser L&ouml;sung </b>
+<br><b> <a href="15.htm" target="UDOcon">Internet</a> mit dieser Lösung </b>
 <br>
 </p>
 <p>T-DSL mit dem Atari, geht das?
@@ -555,26 +555,26 @@ Atari ben&ouml;tigt!
 </p>
 <p>
 <br>Ja, das geht perfekt.
-<br>Wenn der Atari Falcon &uuml;ber das <a href="0c09.htm" target="UDOcon">Romport</a>-Interface von Elmar
-Hilgart verf&uuml;gt kann, bei korrekter <a href="0204.htm" target="UDOcon">Installation</a> von <a href="1501.htm" target="UDOcon">STinG</a> 1.26,
+<br>Wenn der Atari Falcon über das <a href="0c09.htm" target="UDOcon">Romport</a>-Interface von Elmar
+Hilgart verfügt kann, bei korrekter <a href="0204.htm" target="UDOcon">Installation</a> von <a href="1501.htm" target="UDOcon">STinG</a> 1.26,
 der Atari an leicht T-DSL (ADSL) teilnehmen. Mit <a href="1502.htm" target="UDOcon">IConnect</a> so wie
 einigen anderen Atari TCP/IP Sockets ist das wegen fehlender
-Netzwerkf&auml;higkeiten nicht m&ouml;glich.
+Netzwerkfähigkeiten nicht möglich.
 <br>
 </p>
-<p>Gibt es einen DSL PPPoE-Treiber f&uuml;r Atari?
+<p>Gibt es einen DSL PPPoE-Treiber für Atari?
 <br>
 <br>Nein, einen solchen Treiber gibt es nicht.
 <br>
 </p>
-<p><a href="www.adsl-support.de" target="_top">T-DSL</a> kann man mit jedem Atari machen wenn dieser &uuml;ber ein
-Ethernet mit einem DSL-f&auml;higen <a href="0305.htm" target="UDOcon">Hardware</a> Router, wie z.B einem
+<p><a href="www.adsl-support.de" target="_top">T-DSL</a> kann man mit jedem Atari machen wenn dieser über ein
+Ethernet mit einem DSL-fähigen <a href="0305.htm" target="UDOcon">Hardware</a> Router, wie z.B einem
 DrayTek Vigor 2000, Vigor 2200 verbunden ist. Solche Router findet man
 bei z.B bei <a href="http://www.tkr.de" target="_top">TRK</a>
 <br>
 </p>
 <p>Diese Router haben das PPPoE-Protokoll in ihrer Software
-eingebaut. Ein per Ethernet hier angeschlossener Atari ben&ouml;tigt
+eingebaut. Ein per Ethernet hier angeschlossener Atari benötigt
 daher keinen eigenen PPPoE-Treiber.
 <br>
 </p>

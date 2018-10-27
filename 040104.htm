@@ -30,7 +30,7 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: MFP Chip
 <p><img src="image/deutsch.gif" border=0 width="35" height="22"></p><br>
 <p><img src="image/english.gif" border=0 width="35" height="22"></p><br>
 <p>
-<br>MFP ist eine Abk&uuml;rzung, hinter der sich das folgende
+<br>MFP ist eine Abkürzung, hinter der sich das folgende
 &quot;Langwort&quot; Multi-Funktion-Peripheral-Baustein versteckt. was
 auch nicht gelogen ist. Dieses IC ist ein kleines Wunderwerk, in dem
 sich einige Funktionen verstecken.
@@ -41,17 +41,17 @@ Programmierbar - Verwendung eines Portbits als Interrupteingang (siehe
 ST) - verschiedene Interruptquellen - Vier programmierbare universal
 Timer und eine serielle Schnittstelle
 </p>
-<p>Diese Funktionen sind nun alle in einem Geh&auml;use
-untergebracht, das dieses etwas Platz beansprucht f&auml;llt dann an
+<p>Diese Funktionen sind nun alle in einem Gehäuse
+untergebracht, das dieses etwas Platz beansprucht fällt dann an
 dem 52 poligen Baustein schnell auf. Ich will an dieser Stelle
-f&uuml;r die mehr <a href="0305.htm" target="UDOcon">Hardware</a> orientierten Freaks auch die komplette
+für die mehr <a href="0305.htm" target="UDOcon">Hardware</a> orientierten Freaks auch die komplette
 Pinbelegung dieses und des MFP-Bausteines des alten ST ablichten. So
 werden die Unterschiede am deutlichsten.
 <br>
 </p>
 <p><b> Pinbelegung des MFP im ST und im <a href="0302.htm" target="UDOcon">Falcon F030</a> </b>
-<br>Der MFP im ST befinden sich im 48 Pin DIL-Geh&auml;use. Der MFP im
-Falcon besitzt hingegen ein 52 poliges PLCC-Geh&auml;use!
+<br>Der MFP im ST befinden sich im 48 Pin DIL-Gehäuse. Der MFP im
+Falcon besitzt hingegen ein 52 poliges PLCC-Gehäuse!
 </p>
 <p>
 <br>
@@ -298,7 +298,7 @@ Falcon besitzt hingegen ein 52 poliges PLCC-Geh&auml;use!
 </p>
 <p>Kommen wir nun zu den Funktionsbaugruppen des MFP-Bausteins:
 <br>Beachten Sie bitte das die Beschreibung vom ST auf den MFP des
-Falcons nicht immer zu 100% &uuml;bereinstimmt.
+Falcons nicht immer zu 100% übereinstimmt.
 <br>
 </p>
 <dl>
@@ -314,26 +314,26 @@ versorgen (4Mhz)
 DS-Datastrobe / DTACK-Data Transfer Acknowledge / RS1-RS5 Register
 Select / RESET.
 <br>&nbsp;
-<br>Das Restet Signal mu&szlig; 2uS stabil Anliegen um den MFP in
+<br>Das Restet Signal muß 2uS stabil Anliegen um den MFP in
 einen definierten Grundzustand zu versetzen.
 <br>&nbsp;
-<br>Die n&auml;chste und wichtige Gruppe sind die
-Interruptanschl&uuml;sse. IRQ-Interrupt ReQuest / IACK-Interrupt
+<br>Die nächste und wichtige Gruppe sind die
+Interruptanschlüsse. IRQ-Interrupt ReQuest / IACK-Interrupt
 ACKnowledge / IEI,IEO-Interrupt Enable In/Out
 <br>Der Anschluss IRQ wird LOW wenn ein Ereigniss innerhalb des MFP
-einen Interrupt ausgel&ouml;st hat. Es wird dann dem Prozessor mittels
+einen Interrupt ausgelöst hat. Es wird dann dem Prozessor mittels
 diesem Anschluss ein Interrupt signalisiert.
 <br>&nbsp;
 <dt><b>IACK</b></dt><dd>
 <br>&nbsp;
 <br>Legt bei LOW an IRQ u.IEI einen Interruptvector auf die
 Datenleitungen. Jede der 16 Interruptquellen kann einen eigenen Vector
-liefern, so da&szlig; die Behandlung dessen f&uuml;r den Prozessor
+liefern, so daß die Behandlung dessen für den Prozessor
 wesentlich vereinfacht und somit beschleunigt wird.
 <br>&nbsp;
 <dt><b>IEI,IEO</b></dt><dd>
 <br>&nbsp;
-<br>An diesen Pin's k&ouml;nnen mehre MFP's untereinander Verkettet
+<br>An diesen Pin's können mehre MFP's untereinander Verkettet
 werden. Was aber im Atari nicht der Fall ist. Betrifft auch nur den
 ST.
 <br>&nbsp;
@@ -341,9 +341,9 @@ ST.
 <br>&nbsp;
 <br>Man kann diese Leitungen als normale Ein od. Ausgabeleitungen
 verwenden. Die Datenrichtung ist mittels der Portbits frei
-einstellbar, zus&auml;tzlich kann jedes Portbit als Interrupteingang
-programmiert werden. Mit den internen Registern k&ouml;nnen f&uuml;r
-jedes Bit getrennt die Flanke des ausl&ouml;senden Signals eingestellt
+einstellbar, zusätzlich kann jedes Portbit als Interrupteingang
+programmiert werden. Mit den internen Registern können für
+jedes Bit getrennt die Flanke des auslösenden Signals eingestellt
 werden.
 <br>&nbsp;
 <dt><b>XTAL1 und XTAL2</b></dt><dd>
@@ -351,7 +351,7 @@ werden.
 <br>Timer Quarz
 <br>
 <br>&nbsp;
-<br>An diesen Pin k&ouml;nnen f&uuml;r die internen Timer ein Quarz
+<br>An diesen Pin können für die internen Timer ein Quarz
 angeschlossen werden, welcher die Arbeitsfrequenz der internen Timer
 festlegt
 <br>&nbsp;
@@ -360,10 +360,10 @@ festlegt
 <br>Timer Ausgang
 <br>
 <br>&nbsp;
-<br>Die vier internen Timer verf&uuml;gen jeder &uuml;ber einen
+<br>Die vier internen Timer verfügen jeder über einen
 eigenen Ausgang, an dem der Pegel wechselt wenn der Timer den
-Z&auml;hlerstand von 01 nach 00 wechselt. Die Z&auml;hler arbeiten nur
-als Abw&auml;rtsz&auml;hler !
+Zählerstand von 01 nach 00 wechselt. Die Zähler arbeiten nur
+als Abwärtszähler !
 <br>&nbsp;
 <dt><b>SI, SO</b></dt><dd>
 <br>&nbsp;
@@ -372,7 +372,7 @@ als Abw&auml;rtsz&auml;hler !
 <dt><b>RC,TC</b></dt><dd>
 <br>&nbsp;
 <br>Receive Clock, Transmit Clock
-<br>Die &Uuml;bertragungsgeschwindigkeit der Sende/Empfangsdaten wird
+<br>Die übertragungsgeschwindigkeit der Sende/Empfangsdaten wird
 durch die an diesen Pin liegende Frequenz bestimmt.
 <br>&nbsp;
 <dt><b>RR,TR</b></dt><dd>
@@ -395,7 +395,7 @@ an die Portbits geschrieben / gelesen.
 <br>&nbsp;
 <br>Falls die Portbits als Interrupteingang benutzt werden,wird mit
 diesem Register festgelegt ob der Interrupt bei LOW od. HIGH Pegel
-ausgel&ouml;st wird.
+ausgelöst wird.
 <br>&nbsp;
 <dt><b>Reg 3 Data</b></dt><dd>
 <br>&nbsp;
@@ -417,11 +417,11 @@ MFP komplett ignoriert.
 <br>&nbsp;
 <dt><b>IERA</b></dt><dd>
 <br>&nbsp;
-<br>Bit 7 I/O Port Bit 7, h&ouml;chste Stufe
+<br>Bit 7 I/O Port Bit 7, höchste Stufe
 <br>Bit 6 I/O Port Bit 6
 <br>Bit 5 Timer A
-<br>Bit 4 Empf&auml;nger Buffer voll
-<br>Bit 3 Empf&auml;nger Fehler
+<br>Bit 4 Empfänger Buffer voll
+<br>Bit 3 Empfänger Fehler
 <br>Bit 2 Sender Buffer voll
 <br>Bit 1 Sender Fehler
 <br>Bit 0 Timer B
@@ -450,11 +450,11 @@ Registern.
 <br>Wenn bei einem eingeschaltetem Kanal ein Interrupt auftritt, wird
 das dem Kanal zugeordnete Bit im IPRA, IPRB Register auf &quot;1&quot;
 gesetzt. Wenn das System gebrauch von der Vektor-Erzeugung macht, wird
-das entsprechende Bit automatisch wieder gel&ouml;scht, sobald der MFP
+das entsprechende Bit automatisch wieder gelöscht, sobald der MFP
 die Vektornummer auf den Bus legt. Wenn das System von dieser
-m&ouml;glichkeit keinen Gebrauch macht, mu&szlig; das IPR-Register
-Softwarem&auml;ssig gel&ouml;scht werden. Zu diesem Zweck ist ein Byte
-an den MFP zu schicken in dem alle Bits bis auf das zu l&ouml;schende
+möglichkeit keinen Gebrauch macht, muß das IPR-Register
+Softwaremässig gelöscht werden. Zu diesem Zweck ist ein Byte
+an den MFP zu schicken in dem alle Bits bis auf das zu löschende
 gesetzt sind.
 <br>&nbsp;
 <dt><b>Reg 8,9</b></dt><dd>
@@ -462,31 +462,31 @@ gesetzt sind.
 <br>ISRA,ISRB Interrupt In-Service Register
 <br>
 <br>&nbsp;
-<br>Die Funktion dieser Register h&auml;ngen vom Bit 3 des Registers
+<br>Die Funktion dieser Register hängen vom Bit 3 des Registers
 12 ab. Dieses &quot;S&quot;-Bit bestimmt ob der MFP im Software
 End-of-Interruptmodus (SEI) oder im Automatic End-of-Interruptmodus
-(AEI) arbeitet. Im AEI Modus wird das IPR-Bit gel&ouml;scht,sobald der
-Prozessor w&auml;hrend eines IACK-Zyklus die Vektornummer auf dem Bus
-abholt. Auch das zugeh&ouml;rige In-Service Bit wird zu diesem
-Zeitpunkt gel&ouml;scht. Danach k&ouml;nnen erneute Ereignisse
+(AEI) arbeitet. Im AEI Modus wird das IPR-Bit gelöscht,sobald der
+Prozessor während eines IACK-Zyklus die Vektornummer auf dem Bus
+abholt. Auch das zugehörige In-Service Bit wird zu diesem
+Zeitpunkt gelöscht. Danach können erneute Ereignisse
 (Interrupts) auftreten. Im SEI-Modus dagegen wird das entsprechende
 ISR-Bit gesetzt,wenn die Vektornummer des Interrupts, vom Prozessor
-angefordert wird. Am Ende der Interruptroutine mu&szlig; das Bit
-gel&ouml;scht werden, in dem ein Byte in dem alle Bits bis auf das zu
-l&ouml;schende gesetzt sind, an den MFP geschickt wird. Wenn das
+angefordert wird. Am Ende der Interruptroutine muß das Bit
+gelöscht werden, in dem ein Byte in dem alle Bits bis auf das zu
+löschende gesetzt sind, an den MFP geschickt wird. Wenn das
 Sevice In-Bit gesetzt ist, sind alle Interrupts niedriger Stufe im MFP
-ausmaskiert Da das IPR Bit des aktiven Kanals mit der &uuml;bergabe
-der Vektornummer gel&ouml;scht wurde, kann jetzt ein gleichartiger
+ausmaskiert Da das IPR Bit des aktiven Kanals mit der übergabe
+der Vektornummer gelöscht wurde, kann jetzt ein gleichartiger
 Interrupt sofort wieder auftreten. Allerdings werden dieser u.
-niedrigere Interrupts erst wieder bearbeitet (l&ouml;sen IRQ aus) wenn
-das gesetzte Service-In Bit gel&ouml;scht wird.
+niedrigere Interrupts erst wieder bearbeitet (lösen IRQ aus) wenn
+das gesetzte Service-In Bit gelöscht wird.
 <br>&nbsp;
 <dt><b>Reg 10,11</b></dt><dd>
 <br>&nbsp;
 <br>IMRA,IMRB Interrupt Mask Register
 <br>
 <br>&nbsp;
-<br>Mit diesem Register k&ouml;nnen einzelne, in den IER geschaltete
+<br>Mit diesem Register können einzelne, in den IER geschaltete
 Interruptquellen ausmaskiert werden. Die Ereignisse werden dann zwar
 erkannt und dem IPR signalisiert, die IRQ-Leitung bleibt aber auf
 High-Pegel.
@@ -498,58 +498,58 @@ High-Pegel.
 <br>&nbsp;
 <br>Im Fall eines Ereigniss kann der MFP auf die Anforderung des
 Prozessors im Interrupt-Acknowledge Zyklus eine der Ereigniss-Quellen
-entspechende Vektornummer generieren. Jeder der 8 (16) Kan&auml;le
-verf&uuml;gt &uuml;ber seinen eigenen Vektor. Die 8 (16) Kan&auml;le
-werden entsprechend der Priorit&auml;t in den unteren 4 Bits der
+entspechende Vektornummer generieren. Jeder der 8 (16) Kanäle
+verfügt über seinen eigenen Vektor. Die 8 (16) Kanäle
+werden entsprechend der Priorität in den unteren 4 Bits der
 Vektornummer codiert,die oberen 4 Bits des Vektors werden aus dem VR
-Vektorregister kopiert. Dazu m&uuml;ssen diese Bits im VR gesetzt
-sein. Das Bit 3 des VR ist das schon erl&auml;uterte S-Bit, welches
-&uuml;ber die beiden Arbeitsmodi des MFP entscheidet.
+Vektorregister kopiert. Dazu müssen diese Bits im VR gesetzt
+sein. Das Bit 3 des VR ist das schon erläuterte S-Bit, welches
+über die beiden Arbeitsmodi des MFP entscheidet.
 <br>&nbsp;
 <dt><b>Reg 13,14</b></dt><dd>
 <br>&nbsp;
 <br>TACR,TBCR Timer A/B Contoll Register
 <br>
 <br>&nbsp;
-<br>Die internen Timer A und B verf&uuml;gen &uuml;ber die gleichen
-M&ouml;glichkeiten. Sie bestehen aus je einem Datenregister, einem
-programmierbaren Vorteiler und einem 8-bit Abw&auml;rtsz&auml;hler.
-Der Inhalt des Z&auml;hlers wird bei jedem Impuls, der vom Vorteiler
-geliefert wird um eins verringert. Wenn der Z&auml;hler auf 01 steht,
-wechselt er beim n&auml;chsten Impuls am zugeh&ouml;rigen Ausgang
+<br>Die internen Timer A und B verfügen über die gleichen
+Möglichkeiten. Sie bestehen aus je einem Datenregister, einem
+programmierbaren Vorteiler und einem 8-bit Abwärtszähler.
+Der Inhalt des Zählers wird bei jedem Impuls, der vom Vorteiler
+geliefert wird um eins verringert. Wenn der Zähler auf 01 steht,
+wechselt er beim nächsten Impuls am zugehörigen Ausgang
 seinen Pegel. Zugleich wird der Timer mit dem Wert des
 Timer-Datenregisters geladen. Ist bei diesem Kanal das IER-Bit
-gesetzt, wird ausserdem ein Interrupt ausgel&ouml;st. Als Quelle des
-Z&auml;hlertaktes wird &uuml;blicherweise die Frquenz genommen, die
-als Quarz an den Anschl&uuml;ssen XTAL1/XTAL2 anliegt, diese Frequenz
-wird auch als Delay-Mode bezeichnet. Das selbe trifft auch f&uuml;r
-die Timer C und D zu. Doch k&ouml;nnen auch bei den Timern A und B
-externe Impulse an den Timer- eing&auml;ngen TAI / TBI gez&auml;hlt
+gesetzt, wird ausserdem ein Interrupt ausgelöst. Als Quelle des
+Zählertaktes wird üblicherweise die Frquenz genommen, die
+als Quarz an den Anschlüssen XTAL1/XTAL2 anliegt, diese Frequenz
+wird auch als Delay-Mode bezeichnet. Das selbe trifft auch für
+die Timer C und D zu. Doch können auch bei den Timern A und B
+externe Impulse an den Timer- eingängen TAI / TBI gezählt
 werden. Das wird dann als Event-Count-Mode bezeichnet. Beim
-z&auml;hlen externer Impulse wird der Vorteiler abgeschaltet, um
-wirklich jeden ankommenden Impuls exakt z&auml;hlen zu k&ouml;nnen.
-Die Maximale Z&auml;hlfrequenz darf 1Mhz nicht &uuml;berschreiten, was
+zählen externer Impulse wird der Vorteiler abgeschaltet, um
+wirklich jeden ankommenden Impuls exakt zählen zu können.
+Die Maximale Zählfrequenz darf 1Mhz nicht überschreiten, was
 einem viertel der Betriebsfrequenz des MFP entspricht. Eine weitere
-Besonderheit dieser Betriebsart ist das, die Timer-Eing&auml;nge den
-Interrupts der I/O-Anschl&uuml;sse I3/I4 zugeordnet sind. Je nach
+Besonderheit dieser Betriebsart ist das, die Timer-Eingänge den
+Interrupts der I/O-Anschlüsse I3/I4 zugeordnet sind. Je nach
 Programmierung der entsprechenden Bit's im Active Edge Register kann
-durch einen Pegelsprung an den Timereing&auml;ngen ein Interrupt
-ausgel&ouml;st werden. TAI ist I4,TBI ist I3 zugeordnet,I3 und I4
-k&ouml;nnen dabei jedoch immer noch als I/O-Anschl&uuml;sse ohne
+durch einen Pegelsprung an den Timereingängen ein Interrupt
+ausgelöst werden. TAI ist I4,TBI ist I3 zugeordnet,I3 und I4
+können dabei jedoch immer noch als I/O-Anschlüsse ohne
 Interrupt benutzt werden. Timer A/B haben noch eine dritte
 Betriebsart, die man Pulsweitenmessung nennt. Diese Betriebsart
-&auml;hnelt dem Delay-Mode,als unterschied ist zu erkennen das mittels
-der Timereing&auml;nge TAI /TBI die Timer ein/aus geschaltet werden
-k&ouml;nnen. Auch bei dieser Betriebsart werden die AER-Bit's von
+ähnelt dem Delay-Mode,als unterschied ist zu erkennen das mittels
+der Timereingänge TAI /TBI die Timer ein/aus geschaltet werden
+können. Auch bei dieser Betriebsart werden die AER-Bit's von
 I3/I4 benutzt,um festzulegen ob die Timer bei High oder Low-Pegel an
-den Timereing&auml;ngen arbeiten d&uuml;rfen. Wenn z.B das AER-Bit 4
-gesetzt ist,arbeitet der Z&auml;hler,wenn TAI High ist. Wechselt TAI
+den Timereingängen arbeiten dürfen. Wenn z.B das AER-Bit 4
+gesetzt ist,arbeitet der Zähler,wenn TAI High ist. Wechselt TAI
 von High nach Low, so wird ein Interrupt erzeugt, vorrausgesetzt, der
 Interrupt des I4-Kanal's ist zugelassen.
 <br>&nbsp;
 <br>Die Programmierung von TACR und TBCR.
-<br>In diesen beiden Registern werden nur f&uuml;nf der acht
-m&ouml;glichen Bits genutzt. Die Bits 0 bis 3 bestimmen die
+<br>In diesen beiden Registern werden nur fünf der acht
+möglichen Bits genutzt. Die Bits 0 bis 3 bestimmen die
 Betriebsart des entsprechenden Timers nach der Tabelle:
 <br>&nbsp;
 <br>Bit 3 2 1 0 Funktion
@@ -599,20 +599,20 @@ Betriebsart des entsprechenden Timers nach der Tabelle:
 <br>
 <br>&nbsp;
 <br>Die Timer Datenregister werden mit dem Wert programmiert der in
-den Z&auml;hler geladen wird wenn er nach erreichen des
-Z&auml;hlerstandes 01 einen Impuls bekommt. Von diesem Wert aus wird
-dann kontinuierlich abw&auml;rts gez&auml;hlt.
+den Zähler geladen wird wenn er nach erreichen des
+Zählerstandes 01 einen Impuls bekommt. Von diesem Wert aus wird
+dann kontinuierlich abwärts gezählt.
 <br>&nbsp;
 <dt><b>Reg 20</b></dt><dd>
 <br>&nbsp;
 <br>SCR Syncron Character Register
 <br>
 <br>&nbsp;
-<br>In diesem Register wird bei einer synchronen Daten&uuml;bertragung
+<br>In diesem Register wird bei einer synchronen Datenübertragung
 ein Wert geschrieben der beim Empfang den beginn der Daten
 kennzeichnet. Anschliessend werden alle Daten mit diesem Wert
-verglichen und nach &uuml;bereinstimmung in den Datenbuffer
-&uuml;bertragen.
+verglichen und nach übereinstimmung in den Datenbuffer
+übertragen.
 <br>&nbsp;
 <dt><b>Reg 21</b></dt><dd>
 <br>&nbsp;
@@ -633,7 +633,7 @@ eingestellt. Ausgenommen der Baudrate.
 <br>
 <br>&nbsp;
 <br>Bit 3,4: diese Bits bestimmen Start u. Stoppbits und das
-gew&uuml;nschte Format.
+gewünschte Format.
 <br>Bit 4 3 Start Stop Format
 <br>Bit 0 0 0 0 Syncron
 <br>Bit 0 1 1 1 Asyncron
@@ -641,10 +641,10 @@ gew&uuml;nschte Format.
 <br>Bit 1 1 1 2 &quot;
 <br>
 <br>&nbsp;
-<br>Bit 5,6: geben die Anzahl der zu &uuml;bertragenen Datenbits an.
+<br>Bit 5,6: geben die Anzahl der zu übertragenen Datenbits an.
 <br>
 <br>&nbsp;
-<br>Bit 6 5 Wortl&auml;nge
+<br>Bit 6 5 Wortlänge
 <br>Bit 0 0 8 Bits
 <br>Bit 0 1 7 &quot;
 <br>Bit 1 0 6 &quot;
@@ -652,7 +652,7 @@ gew&uuml;nschte Format.
 <br>
 <br>&nbsp;
 <br>Bit 7 : 0 = Frequenz an TC u. RC wird Direkt als
-&Uuml;bertragungsfrequenz benutzt.
+übertragungsfrequenz benutzt.
 <br>Bit 7 : 1 = Frequenz wird intern durch 16 geteilt.
 <br>
 <br>&nbsp;
@@ -664,37 +664,37 @@ gew&uuml;nschte Format.
 <br>Bit 0 Receiver Enable Bit
 <br>
 <br>&nbsp;
-<br>Wenn dieses Bit gel&ouml;scht wird ist der Empfangsteil sofort
-ausgeschaltet. Alle Flags im RSR werden automatisch gel&ouml;scht.
-Wird das Bit wieder gesetzt arbeitet der Empf&auml;nger normal weiter.
+<br>Wenn dieses Bit gelöscht wird ist der Empfangsteil sofort
+ausgeschaltet. Alle Flags im RSR werden automatisch gelöscht.
+Wird das Bit wieder gesetzt arbeitet der Empfänger normal weiter.
 <br>&nbsp;
 <br>Bit 1 Syncronous Strip Enable
 <br>
 <br>&nbsp;
 <br>Mit diesem Bit kann bei einem synchronem Datentransfer bestimmt
 werden ob ein mit dem im SCR gespeicherten identischen Zeichen in den
-Receiver Buffer &uuml;bertragen wird oder nicht.
+Receiver Buffer übertragen wird oder nicht.
 <br>&nbsp;
 <br>Bit 2 Match/Character In Progress
 <br>
 <br>&nbsp;
-<br>Im synchronen &Uuml;bertragungsmodus wird mit diesem Bit angezeigt
-da&szlig; ein mit dem SCR-Byte identisches Zeichen empfangen wurde. Im
+<br>Im synchronen übertragungsmodus wird mit diesem Bit angezeigt
+daß ein mit dem SCR-Byte identisches Zeichen empfangen wurde. Im
 asynchronen Modus wird dieses Bit gesetzt sobald das Startbit erkannt
 wurde. Mit dem eintreffen des Stopbits wird das Flag sofort wieder
-gel&ouml;scht.
+gelöscht.
 <br>&nbsp;
 <br>Bit 3 Found-Search/Break Detected
 <br>
 <br>&nbsp;
 <br>Bit 3 im RSR zeigt an ob ein empfangenes Zeichen im synchon Modus
-mit dem Zeichen in SCR &uuml;bereinstimmt. Diese Bedingung kann
-&uuml;ber den Receiver Error Kanal einen Interrupt ausl&ouml;sen. In
+mit dem Zeichen in SCR übereinstimmt. Diese Bedingung kann
+über den Receiver Error Kanal einen Interrupt auslösen. In
 der asynchronen Betriebsart wird das Bit gesetzt sobald ein Break
-empfangen wird, die Break-Bedingung wir dann nur erf&uuml;llt wenn
+empfangen wird, die Break-Bedingung wir dann nur erfüllt wenn
 nach dem Startbit nur Nullen empfangen werden. Zur Unterscheidung
-zwischen einem Break und einer 'echten null' mu&szlig; die
-Empf&auml;ngerleitung auch in der Zeit des Stop-Bits auf Low bleiben.
+zwischen einem Break und einer 'echten null' muß die
+Empfängerleitung auch in der Zeit des Stop-Bits auf Low bleiben.
 <br>&nbsp;
 <br>Bit 4 Frame Error
 <br>
@@ -707,26 +707,26 @@ Null ist, dessen Stopbit aber eine Null ist.
 <br>
 <br>&nbsp;
 <br>Dieses Bit gibt an ob auch das letzte empfangene Zeichen den
-Anforderungen der Parit&auml;t gerecht wurde. Wenn die
-Parit&auml;tspr&uuml;fung beim Empfang ausgeschaltet wurde wird das
+Anforderungen der Parität gerecht wurde. Wenn die
+Paritätsprüfung beim Empfang ausgeschaltet wurde wird das
 Bit 5 nicht beeinflusst.
 <br>
 <br>&nbsp;
 <br>Bit 6 Overrun Error
 <br>
 <br>&nbsp;
-<br>Das Bit 6 zeigt an das ein vollst&auml;ndiges Zeichen im Empfangs-
+<br>Das Bit 6 zeigt an das ein vollständiges Zeichen im Empfangs-
 schieberegister bereit liegt, das zuvor empfangene Zeichen aber noch
-nicht aus dem Empf&auml;ngerbuffer ausgelesen wurde. Dieser Fehler
-kann einen Interrupt ausl&ouml;sen.
+nicht aus dem Empfängerbuffer ausgelesen wurde. Dieser Fehler
+kann einen Interrupt auslösen.
 <br>
 <br>&nbsp;
 <br>Bit 7 Buffer Full
 <br>
 <br>&nbsp;
 <br>Bit 7 wird gesetzt sobald, ein fertiges Zeichen aus dem
-Schieberegister in den Empf&auml;ngerbuffer &uuml;bertragen wird.
-Sobald der Prozessor das Byte ausliest wird das Bit gel&ouml;scht.
+Schieberegister in den Empfängerbuffer übertragen wird.
+Sobald der Prozessor das Byte ausliest wird das Bit gelöscht.
 <br>&nbsp;
 <dt><b>Reg 23</b></dt><dd>
 <br>&nbsp;
@@ -736,8 +736,8 @@ Sobald der Prozessor das Byte ausliest wird das Bit gel&ouml;scht.
 <br>Bit 0 Transmitter Enable
 <br>
 <br>&nbsp;
-<br>Wenn dieses Bit gel&ouml;scht wird,ist der Sendteil
-vollst&auml;ndig abgeschaltet.Das End-Bit wird gel&ouml;scht und das
+<br>Wenn dieses Bit gelöscht wird,ist der Sendteil
+vollständig abgeschaltet.Das End-Bit wird gelöscht und das
 UE-Bit wird gesetzt.
 <br>
 <br>&nbsp;
@@ -745,11 +745,11 @@ UE-Bit wird gesetzt.
 <br>
 <br>&nbsp;
 <br>Mit diesen beiden Bits kann der Zustand des abgeschalteten
-Senderausgangs beeinflusst werden,wenn beide Bits gel&ouml;scht sind
+Senderausgangs beeinflusst werden,wenn beide Bits gelöscht sind
 wird der Ausgang hochohmig. Wird das L-Bit gesetzt ist der Ausgang
 Low. Im Gegenzug, also bei gesetztem H-Bit wird der Ausgang High. In
 dem Falle das beide Bits gesetzt werden wird der Senderausgang mit dem
-Empf&auml;ngereingang intern (Loop-Back-Modus)verbunden. Der Ausgang
+Empfängereingang intern (Loop-Back-Modus)verbunden. Der Ausgang
 selber liegt dann auf High-Pegel.
 <br>
 <br>&nbsp;
@@ -764,17 +764,17 @@ ausgesendet.
 <br>Bit 4 End of Transmitt
 <br>
 <br>&nbsp;
-<br>Wird der Sendeteil w&auml;hrend der laufenden &Uuml;bertragung
+<br>Wird der Sendeteil während der laufenden übertragung
 ausgeschaltet so wird das End-Bit gesetzt nachdem das aktuelle Zeichen
-vollst&auml;ndig gesendet wurde. Wird zum Zeitpunkt des Abschaltens
+vollständig gesendet wurde. Wird zum Zeitpunkt des Abschaltens
 gerade kein Zeichen gesendet wird das End-Bit sofort gesetzt.
 <br>
 <br>&nbsp;
 <br>Bit 5 Auto Turnaround
 <br>
 <br>&nbsp;
-<br>Ist das Bit 5 gesetzt wird der Empf&auml;nger automatisch
-eingeschaltet wenn der Sender das letzte Zeichen vollst&auml;ndig
+<br>Ist das Bit 5 gesetzt wird der Empfänger automatisch
+eingeschaltet wenn der Sender das letzte Zeichen vollständig
 gesendet hat.
 <br>&nbsp;
 <br>Bit 6 Underun Error
@@ -789,7 +789,7 @@ in den Sendebuffer geschrieben wurde.
 <br>
 <br>&nbsp;
 <br>Wird gesetzt, wenn ein Zeichen aus dem Senderbuffer in das
-Schieberegister &uuml;bertragen wird. Das Bit wird gel&ouml;scht, wenn
+Schieberegister übertragen wird. Das Bit wird gelöscht, wenn
 neue Daten in den Sendebuffer gelangen.
 <br>
 <br>&nbsp;
@@ -798,7 +798,7 @@ neue Daten in den Sendebuffer gelangen.
 <br>UDR,USART Data Register
 <br>
 <br>&nbsp;
-<br>In diesem Register werden Sende/Empfangsdaten &uuml;bertragen.
+<br>In diesem Register werden Sende/Empfangsdaten übertragen.
 Beim hineinschreiben gelangen die Daten in den Sendebuffer und beim
 Auslesen kommen sie automatisch aus dem Empfangsbuffer.
 <br>

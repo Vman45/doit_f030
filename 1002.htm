@@ -16,7 +16,7 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Taktanzeige
 <table border=0 cellpadding=0 cellspacing=0 width="100%"><tr><td valign=top>
 <a href="00con.htm" target="UDOcon"><img src="udo_hm.gif" alt="Home" border=0 width="24" height="24"></a>
 <a href="10.htm" target="UDOcon"><img src="udo_up.gif" alt="Diverses rund um den Falcon" border=0 width="24" height="24"></a>
-<a href="1001.htm" target="UDOcon"><img src="udo_lf.gif" alt="Eine L&uuml;fterregelung" border=0 width="24" height="24"></a>
+<a href="1001.htm" target="UDOcon"><img src="udo_lf.gif" alt="Eine Lüfterregelung" border=0 width="24" height="24"></a>
 <a href="1003.htm" target="UDOcon"><img src="udo_rg.gif" alt="Videotextdecoder" border=0 width="24" height="24"></a>
 </td></tr></table>
 <table border=0 cellpadding=0 cellspacing=0 width="100%"><tr>
@@ -26,62 +26,62 @@ DOITF030 - Tips u. Tricks zum Atari Falcon F030: Taktanzeige
 <p><tt>Eine Taktanzeige wie am PC</tt>
 </p>
 <p>Viele Leute haben sicher den Wunsch nach einer optischen Anzeige
-mit welcher Geschwindigkeit ihr Falcon gerade l&auml;uft.
+mit welcher Geschwindigkeit ihr Falcon gerade läuft.
 <br>Gut geeignet ist hierzu das Speed-Display eines
-Towergeh&auml;uses. Die meisten Displays werden vom Towernetzteil mit
+Towergehäuses. Die meisten Displays werden vom Towernetzteil mit
 +5 Volt und GND versorgt. Ein passender Stecker baumelt sicher
 irgendwo hinter der Frontpartie herrum. Man stellt hier also nur die
-Verbindung zum <a href="0f01.htm" target="UDOcon">Netzteil</a> her. Ein weiterer Anschlu&szlig; ist das
+Verbindung zum <a href="0f01.htm" target="UDOcon">Netzteil</a> her. Ein weiterer Anschluß ist das
 'Turbo-Signal' ist diese Leitung nicht angschlossen wird das Display
 einen kleineren Wert anzeigen als wenn diese Leitung auf +5 Volt
 gelegt wird.
 <br>Es soll auch welche geben die Umschalten wenn man diese Leitung
-mit GND verbindet. Das mu&szlig; man probieren, wei&szlig; man nicht
+mit GND verbindet. Das muß man probieren, weiß man nicht
 wie es am PC-Mainbord gemacht wird.
 <br>
 </p>
 <p>Wird nun diese Leitung mit dem Punkt des Beschleunigers verbunden
-der bei erh&ouml;hter Taktzahl des Rechners ein 'High'-Signal
-f&uuml;hrt ist die Turbo-Anzeige somit schon realisiert. Die '100Mhz'
-k&ouml;nnen bei den meisten Speed-Displays per Jumper voreingestellt
-werden. Wird der Beschleuniger &uuml;ber ein 'Port-Bit' eingeschaltet
-kann man diese Leitung mit dem gleichen Anschlusspunkt verl&ouml;ten.
-Bei Low-aktiven Displays mu&szlig; das Umschaltsignal invertiert
+der bei erhöhter Taktzahl des Rechners ein 'High'-Signal
+führt ist die Turbo-Anzeige somit schon realisiert. Die '100Mhz'
+können bei den meisten Speed-Displays per Jumper voreingestellt
+werden. Wird der Beschleuniger über ein 'Port-Bit' eingeschaltet
+kann man diese Leitung mit dem gleichen Anschlusspunkt verlöten.
+Bei Low-aktiven Displays muß das Umschaltsignal invertiert
 werden. Im Normalfall ist der Beschleuniger nicht aktiv, das Display
 zeigt '16Mhz' im zweiten Fall ist der Beschleuniger aktiv und das
 Display zeigt '32 Mhz' oder mehr an. Genau so kann das auch
 verschaltet werden wenn der Speeder nur per Handschalter Ein bzw.
-Ausgeschaltet wird. Was das Display anzeigen soll mu&szlig; mit den
+Ausgeschaltet wird. Was das Display anzeigen soll muß mit den
 Jumpern darauf eingestellt werden!
 <br>
 </p>
-<p>Im einfachsten Fall gen&uuml;gt nat&uuml;rlich eine LED zum
-Anzeigen einer h&ouml;heren Geschwindigkeit.
+<p>Im einfachsten Fall genügt natürlich eine LED zum
+Anzeigen einer höheren Geschwindigkeit.
 </p>
 <p>Sicherlich wird an der Frontplatte neben dem Einschalter auch noch
 die Turbotaste und der Resesttaster auffallen sofern der Rechner in
-ein anderes Geh&auml;use gesetzt wurde. Der Resettaster kann einfach
+ein anderes Gehäuse gesetzt wurde. Der Resettaster kann einfach
 mit zwei Leitungen paraell zu dem Resttaster auf der Falconplatine
-verl&auml;ngert werden. Das macht keine Probleme. Man sollte hier nur
-keine Klemmen oder so etwas verwenden, anl&ouml;ten ist wesentlich
-sicherer. Der nun noch &uuml;brige 'Turbotaster', also entweder
-l&auml;sst man ihn wie er ist, als Attrappe, oder man schaltet sich
+verlängert werden. Das macht keine Probleme. Man sollte hier nur
+keine Klemmen oder so etwas verwenden, anlöten ist wesentlich
+sicherer. Der nun noch übrige 'Turbotaster', also entweder
+lässt man ihn wie er ist, als Attrappe, oder man schaltet sich
 damit den Cache oder den ganzen Beschleuniger per 'Hand'. Wie das
 genau Funktioniert kann man aus den Anleitungen der meisten
 Beschleuniger entnehmen. Meistens wird hier auch eine Umschaltung per
 Schalter oder .CPX-Modul angeboten, genau hier kann man dann auch den
 Turboschalter einsetzten.
 </p>
-<p>So kann man z.B bei einem vorhandenen Schl&uuml;sselschalter die
+<p>So kann man z.B bei einem vorhandenen Schlüsselschalter die
 Tastatur verriegeln, der Falcon-Tower ist somit vor unbefugter
-Benutzung schon relativ gut gesch&uuml;tzt. Man f&uuml;gt den Schalter
-dann einfach in die TxD-Leitung der Tastatur ein. Bei ge&ouml;ffnetem
-Schl&uuml;sselschalter kann so nichts mehr zum Rechner gesendet
-werden. Ist der Schl&uuml;sselschalter geschlossen geht das nach wie
+Benutzung schon relativ gut geschützt. Man fügt den Schalter
+dann einfach in die TxD-Leitung der Tastatur ein. Bei geöffnetem
+Schlüsselschalter kann so nichts mehr zum Rechner gesendet
+werden. Ist der Schlüsselschalter geschlossen geht das nach wie
 vor. Es sollte dabei nicht die Masseleitung oder die +5Volt
 Versorgungsleitung der Tastatur unterbrochen werden, der Rechner
-f&auml;ngt sonst an zu spinnen. Er wird sich so verhalten als wenn
-keine Tastatur angesteckt ist. Es ist m&ouml;glich das hierbei das
+fängt sonst an zu spinnen. Er wird sich so verhalten als wenn
+keine Tastatur angesteckt ist. Es ist möglich das hierbei das
 &quot;Klickern&quot; entsteht. Siehe dazu <a href="0c02.htm" target="UDOcon">Keyboard</a>.
 </p>
 <div align=center>robscha@data.rhein-main.de
@@ -96,7 +96,7 @@ keine Tastatur angesteckt ist. Es ist m&ouml;glich das hierbei das
 <table border=0 cellpadding=0 cellspacing=0 width="100%"><tr><td valign=top>
 <a href="00con.htm" target="UDOcon"><img src="udo_hm.gif" alt="Home" border=0 width="24" height="24"></a>
 <a href="10.htm" target="UDOcon"><img src="udo_up.gif" alt="Diverses rund um den Falcon" border=0 width="24" height="24"></a>
-<a href="1001.htm" target="UDOcon"><img src="udo_lf.gif" alt="Eine L&uuml;fterregelung" border=0 width="24" height="24"></a>
+<a href="1001.htm" target="UDOcon"><img src="udo_lf.gif" alt="Eine Lüfterregelung" border=0 width="24" height="24"></a>
 <a href="1003.htm" target="UDOcon"><img src="udo_rg.gif" alt="Videotextdecoder" border=0 width="24" height="24"></a>
 </td></tr></table>
 </body></html>
